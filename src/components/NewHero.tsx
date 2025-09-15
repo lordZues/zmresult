@@ -13,13 +13,13 @@ const NewHero: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
-            Every Company Needs <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">3 Things</span>
+            South Africa's Leading <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Digital Marketing Agency</span>
             <br />
-            <span className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-normal">We Help You Get All Three</span>
+            <span className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-normal">Complete Advertising & Marketing Solutions</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-200 mb-16 leading-relaxed max-w-4xl mx-auto">
-            In today's digital world, success isn't optional. <span className="text-orange-400 font-semibold">ZM Results</span> ensures your business has everything it needs to thrive.
+            Professional digital marketing and advertising services that get results. <span className="text-orange-400 font-semibold">ZM Results</span> is your trusted marketing partner for website design, social media marketing, and lead generation across South Africa.
           </p>
           
           {/* Three Core Services */}

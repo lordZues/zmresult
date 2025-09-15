@@ -8,10 +8,10 @@ const WhyChooseUs: React.FC = () => {
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Why Choose ZM Results</span>
           <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            We're <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Different</span>
+            Why Choose Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Marketing Agency</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            While others promise the world and deliver disappointment, we focus on what actually works for your business.
+            As South Africa's leading digital marketing and advertising agency, we focus on delivering real results for your business through proven marketing strategies.
           </p>
         </div>
 

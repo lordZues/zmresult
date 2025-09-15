@@ -8,10 +8,10 @@ const Services: React.FC = () => {
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Our Services</span>
           <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Complete Solution</span>
+            Full-Service <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Digital Marketing Agency</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Stop juggling multiple agencies. Get everything your business needs in one place.
+            Professional advertising and marketing services from South Africa's trusted digital marketing agency. Get everything your business needs in one place.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">Professional Website</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Every company nowadays must have a website. Your digital storefront that works 24/7 to attract and convert customers.
+              Professional website design and development services. Your digital storefront that works 24/7 to attract and convert customers through strategic web design and SEO optimization.
             </p>
             
             <div className="space-y-3 mb-8">
@@ -70,7 +70,7 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">Social Media Presence</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Every company must have a social media presence. Connect with your audience where they spend their time.
+              Complete social media marketing and management services. Connect with your audience through strategic social media advertising and content marketing campaigns.
             </p>
             
             <div className="space-y-3 mb-8">
@@ -114,7 +114,7 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">Customer Access</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Every company must have customers or access to customers. We connect you with your ideal clients.
+              Professional lead generation and digital advertising services. We connect you with your ideal clients through targeted marketing campaigns and proven advertising strategies.
             </p>
             
             <div className="space-y-3 mb-8">
