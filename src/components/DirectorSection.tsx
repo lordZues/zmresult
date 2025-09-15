@@ -33,7 +33,7 @@ const DirectorSection: React.FC = () => {
                 <p className="text-xl text-orange-400 font-bold mb-8">Director & Founder</p>
                 
                 <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                  "I founded ZM Results as South Africa's premier digital marketing and advertising agency because I saw too many good businesses struggling with their online marketing. My mission is to provide complete digital marketing solutions - from professional website design to social media marketing and lead generation - all working together to grow your business."
+                  "I founded ZM Results because I saw too many good businesses struggling to get customers. My mission is simple: help South African businesses get more customers, build their social media presence, and grow their revenue through proven advertising strategies that actually work."
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

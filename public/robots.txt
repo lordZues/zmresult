@@ -10,6 +10,15 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# Encourage indexing of key pages
+User-agent: *
+Allow: /#services
+Allow: /#contact
+Allow: /#why-choose-us
+
 # Block access to admin areas (if any)
 Disallow: /admin/
 Disallow: /.env
+
+# Additional crawl directives for better SEO
+Crawl-delay: 1

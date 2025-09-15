@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">ZM Results</h3>
             <p className="text-gray-300 mb-6 max-w-md">
-              South Africa's leading digital marketing and advertising agency. We help businesses grow through professional website design, social media marketing, lead generation, and complete digital advertising solutions.
+              South Africa's premier advertising agency helping businesses get more customers. We specialize in customer acquisition, social media growth, lead generation, website design, and proven advertising strategies that grow your business.
             </p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" className="bg-blue-900 hover:bg-orange-500 h-10 w-10 rounded-full flex items-center justify-center transition-colors">

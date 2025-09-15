@@ -92,10 +92,10 @@ Best regards`);
               Get Started Today
             </div>
             <h2 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Transform</span> Your Business?
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Get More Customers?</span>
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Get your website, social media, and lead generation working together. Contact us now for a free consultation.
+              Stop struggling to find customers. Let South Africa's premier advertising agency help you get more customers, grow your social media, and expand your business. Contact us now for a free consultation.
             </p>
           </div>
 

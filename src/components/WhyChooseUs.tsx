@@ -7,11 +7,11 @@ const WhyChooseUs: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Why Choose ZM Results</span>
-          <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            Why Choose Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Marketing Agency</span>
+          <h2 className="text-3xl md:text-5xl font-black text-blue-950 mt-2 mb-6 leading-tight">
+            Why Businesses Choose Us to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Get More Customers</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            As South Africa's leading digital marketing and advertising agency, we focus on delivering real results for your business through proven marketing strategies.
+            When you need more customers, want to grow your social media, or expand your business, ZM Results is the advertising agency that delivers real results. Here's why South African businesses trust us:
           </p>
         </div>
 
@@ -22,7 +22,7 @@ const WhyChooseUs: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-blue-950 mb-4">Results Guaranteed</h3>
             <p className="text-gray-600">
-              We don't get paid unless you see real results. Your success is our success.
+              We guarantee you'll get more customers or you don't pay. Your business growth is our success.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const WhyChooseUs: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-blue-950 mb-4">Fast Delivery</h3>
             <p className="text-gray-600">
-              Get your complete digital presence up and running in just 7 days.
+              Start getting more customers in just 7 days with our proven advertising strategies.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ const WhyChooseUs: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-blue-950 mb-4">Expert Team</h3>
             <p className="text-gray-600">
-              Our team has helped 500+ businesses across South Africa succeed online.
+              Our advertising experts have helped 500+ South African businesses get more customers and grow.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const WhyChooseUs: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-blue-950 mb-4">Local Support</h3>
             <p className="text-gray-600">
-              Based in South Africa, we understand your market and your customers.
+              We understand South African customers and know exactly how to help your business grow locally.
             </p>
           </div>
         </div>
@@ -61,10 +61,10 @@ const WhyChooseUs: React.FC = () => {
         <div className="bg-white rounded-3xl p-12 shadow-xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">
-              Real Results from Real Businesses
+              How We Help Businesses Get More Customers
             </h3>
             <p className="text-xl text-gray-600">
-              Here's what happens when you get all three essentials working together
+              Here's what happens when you work with South Africa's premier advertising agency
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const WhyChooseUs: React.FC = () => {
               </div>
               <h4 className="text-xl font-bold text-blue-950 mb-3">More Website Traffic</h4>
               <p className="text-gray-600">
-                Our clients see an average 87% increase in website visitors within 30 days
+                Businesses get 87% more potential customers visiting their website within 30 days
               </p>
             </div>
 
@@ -85,7 +85,7 @@ const WhyChooseUs: React.FC = () => {
               </div>
               <h4 className="text-xl font-bold text-blue-950 mb-3">Social Engagement</h4>
               <p className="text-gray-600">
-                Social media followers and engagement rates increase by 156% on average
+                Social media accounts grow by 156% with more followers and customer engagement
               </p>
             </div>
 
@@ -95,7 +95,7 @@ const WhyChooseUs: React.FC = () => {
               </div>
               <h4 className="text-xl font-bold text-blue-950 mb-3">Lead Generation</h4>
               <p className="text-gray-600">
-                Qualified leads increase by 243% when all three systems work together
+                Businesses get 243% more qualified customer leads when our advertising strategies work together
               </p>
             </div>
           </div>

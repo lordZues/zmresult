@@ -7,11 +7,11 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Our Services</span>
-          <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            Full-Service <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Digital Marketing Agency</span>
+          <h2 className="text-3xl md:text-5xl font-black text-blue-950 mt-2 mb-6 leading-tight">
+            How We Help You <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Get More Customers</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Professional advertising and marketing services from South Africa's trusted digital marketing agency. Get everything your business needs in one place.
+            Whether you need more customers, want to build your social media following, or grow your business - we're the advertising agency that gets results. Here's how we help South African businesses succeed:
           </p>
         </div>
 
@@ -26,25 +26,25 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">Professional Website</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Professional website design and development services. Your digital storefront that works 24/7 to attract and convert customers through strategic web design and SEO optimization.
+              Get a professional website that attracts customers 24/7. Our website design services help you establish credibility, rank higher on Google, and convert visitors into paying customers. Perfect for businesses looking to grow their online presence.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Mobile-responsive design</span>
+                <span className="text-gray-700">Attracts more customers online</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">SEO optimized</span>
+                <span className="text-gray-700">Ranks higher on Google searches</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Fast loading speed</span>
+                <span className="text-gray-700">Mobile-friendly for all devices</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Lead capture forms</span>
+                <span className="text-gray-700">Converts visitors to customers</span>
               </div>
             </div>
             
@@ -70,25 +70,25 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">Social Media Presence</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Complete social media marketing and management services. Connect with your audience through strategic social media advertising and content marketing campaigns.
+              Want to build your social media following and get more customers from social platforms? Our social media marketing services help you grow your accounts, engage with customers, and turn followers into paying clients across all major platforms.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Content creation & posting</span>
+                <span className="text-gray-700">Grow your follower count fast</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Community management</span>
+                <span className="text-gray-700">Get more customers from social media</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Targeted advertising</span>
+                <span className="text-gray-700">Professional content creation</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Analytics & reporting</span>
+                <span className="text-gray-700">Daily posting & engagement</span>
               </div>
             </div>
             
@@ -114,25 +114,25 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">Customer Access</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Professional lead generation and digital advertising services. We connect you with your ideal clients through targeted marketing campaigns and proven advertising strategies.
+              Need a steady stream of new customers? Our lead generation and advertising services connect you with people actively looking for your products or services. We use proven advertising strategies to bring qualified customers directly to your business.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Lead generation campaigns</span>
+                <span className="text-gray-700">Get qualified customer leads daily</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Customer database building</span>
+                <span className="text-gray-700">Targeted advertising campaigns</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Email marketing</span>
+                <span className="text-gray-700">Build customer database</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Sales funnel optimization</span>
+                <span className="text-gray-700">Turn leads into paying customers</span>
               </div>
             </div>
             
