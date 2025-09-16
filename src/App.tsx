@@ -10,14 +10,20 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
 import Privacy from './components/Privacy';
+import LocalSEO from './components/LocalSEO';
+import LocationContent from './components/LocationContent';
+import GoogleBusinessProfile from './components/GoogleBusinessProfile';
 
 function HomePage() {
   return (
     <>
+      <LocalSEO />
       <NewHero />
       <Services />
       <CompaniesSection />
+      <LocationContent />
       <WhyChooseUs />
+      <GoogleBusinessProfile />
       <DirectorSection />
       <ContactSection />
     </>
