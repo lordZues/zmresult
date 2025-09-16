@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, ArrowRight, CheckCircle, Shield, Award, Zap } from 'lucide-react';
+import { submitToGoogleSheets, submitViaAppsScript, submitViaFormSubmit } from '../utils/googleSheets';
 
 const BookCall: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -30,22 +31,34 @@ const BookCall: React.FC = () => {
     setError('');
     
     try {
-      // Google Sheets API endpoint for customer data capture
-      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/submit-lead`;
-      
-      const headers = {
-        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-        'Content-Type': 'application/json',
+      const leadData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        business: formData.business,
+        challenges: formData.challenges,
+        service: 'Strategy Call',
+        source: 'Book Call Form'
       };
       
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(formData)
-      });
+      // Try multiple methods for maximum reliability
+      let success = false;
       
-      if (!response.ok) {
-        throw new Error('Failed to submit form');
+      // Method 1: Direct Google Sheets API
+      success = await submitToGoogleSheets(leadData);
+      
+      // Method 2: Fallback to Apps Script (if first method fails)
+      if (!success) {
+        success = await submitViaAppsScript(leadData);
+      }
+      
+      // Method 3: Email fallback (if both above fail)
+      if (!success) {
+        success = await submitViaFormSubmit(leadData);
+      }
+      
+      if (!success) {
+        throw new Error('Failed to submit lead data');
       }
       
       setIsSubmitted(true);
