@@ -8,11 +8,11 @@ const Services: React.FC = () => {
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Our Services</span>
           <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">3 SIMPLE STEPS</span><br />
-            To Get More Customers
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">OUR 3-STEP</span><br />
+            Customer-Getting System
           </h2>
-          <p className="text-2xl md:text-3xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-bold">
-            🎯 It's Really This Easy!
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-bold">
+            🎯 It's Really This Easy! (After we listen to your needs)
           </p>
         </div>
 
@@ -25,27 +25,27 @@ const Services: React.FC = () => {
               <Globe size={32} className="text-white" />
             </div>
             
-            <h3 className="text-4xl font-bold text-blue-950 mb-4">STEP 1: Build Your Website</h3>
-            <p className="text-gray-700 text-xl mb-6 leading-relaxed font-bold">
-              We make you a beautiful website so people can find you on Google and want to buy from you!
+            <h3 className="text-3xl font-bold text-blue-950 mb-4">STEP 1: Create Your Professional Website</h3>
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              We design and build a conversion-focused website that showcases your business professionally and turns visitors into paying customers.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Attracts more customers online</span>
+                <span className="text-gray-700">Professional design that builds trust</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Ranks higher on Google searches</span>
+                <span className="text-gray-700">SEO optimized for Google visibility</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Mobile-friendly for all devices</span>
+                <span className="text-gray-700">Mobile-responsive design</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Converts visitors to customers</span>
+                <span className="text-gray-700">Conversion-optimized for sales</span>
               </div>
             </div>
             
@@ -56,8 +56,8 @@ const Services: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <span className="text-3xl font-black text-blue-950">Only R2,500</span>
-              <p className="text-gray-600">Complete website solution</p>
+              <span className="text-3xl font-black text-blue-950">Estimated from R2,500</span>
+              <p className="text-gray-600">Final pricing after consultation</p>
             </div>
           </div>
 
@@ -69,27 +69,27 @@ const Services: React.FC = () => {
               <Users size={32} className="text-white" />
             </div>
             
-            <h3 className="text-4xl font-bold text-blue-950 mb-4">STEP 2: Grow Social Media</h3>
-            <p className="text-gray-700 text-xl mb-6 leading-relaxed font-bold">
-              We post cool stuff on Facebook and Instagram so LOTS of people follow you and want to buy from you!
+            <h3 className="text-3xl font-bold text-blue-950 mb-4">STEP 2: Strategic Social Media Growth</h3>
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              We create and manage engaging content across your social platforms to build your brand, grow your following, and attract ideal customers.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Grow your follower count fast</span>
+                <span className="text-gray-700">Strategic content creation</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Get more customers from social media</span>
+                <span className="text-gray-700">Targeted audience growth</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Professional content creation</span>
+                <span className="text-gray-700">Brand consistency across platforms</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Daily posting & engagement</span>
+                <span className="text-gray-700">Customer engagement & community building</span>
               </div>
             </div>
             
@@ -100,8 +100,8 @@ const Services: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <span className="text-3xl font-black text-blue-950">R2,000/week</span>
-              <p className="text-gray-600">Complete with content creation & more</p>
+              <span className="text-3xl font-black text-blue-950">Estimated from R2,000/week</span>
+              <p className="text-gray-600">Pricing customized to your needs</p>
             </div>
           </div>
 
@@ -113,27 +113,27 @@ const Services: React.FC = () => {
               <Target size={32} className="text-white" />
             </div>
             
-            <h3 className="text-4xl font-bold text-blue-950 mb-4">STEP 3: Send You Customers</h3>
-            <p className="text-gray-700 text-xl mb-6 leading-relaxed font-bold">
-              We find people who want to buy what you sell and send them straight to you! Like magic! 🪄
+            <h3 className="text-3xl font-bold text-blue-950 mb-4">STEP 3: Customer Acquisition System</h3>
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              We implement targeted marketing strategies and lead generation systems that consistently bring you qualified prospects ready to buy.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Get qualified customer leads daily</span>
+                <span className="text-gray-700">Targeted lead generation campaigns</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Targeted advertising campaigns</span>
+                <span className="text-gray-700">Customer relationship management</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Build customer database</span>
+                <span className="text-gray-700">Sales funnel optimization</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Turn leads into paying customers</span>
+                <span className="text-gray-700">Performance tracking & optimization</span>
               </div>
             </div>
             
@@ -144,8 +144,8 @@ const Services: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <span className="text-3xl font-black text-blue-950">R3,000/month</span>
-              <p className="text-gray-600">Complete lead generation</p>
+              <span className="text-3xl font-black text-blue-950">Estimated from R3,000/month</span>
+              <p className="text-gray-600">Investment based on your goals</p>
             </div>
           </div>
         </div>
@@ -161,27 +161,33 @@ const Services: React.FC = () => {
             </div>
             
             <h3 className="text-5xl md:text-6xl font-black mb-6">
-              🎉 GET ALL 3 FOR <span className="text-orange-400">R9,500/month</span>
+              🎉 COMPLETE PACKAGE <span className="text-orange-400">Estimated from R9,500/month</span>
             </h3>
-            <p className="text-2xl text-gray-200 mb-8 max-w-3xl mx-auto font-bold">
-              Save R1,500 every month! That's like getting a free pizza every week! 🍕
+            <p className="text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+              Get all three services working together for maximum impact. Final pricing determined after we understand your specific business needs and goals.
+            </p>
+            <div className="bg-red-500/20 border border-red-300 rounded-xl p-4 mb-8">
+              <p className="text-white font-bold">
+                ⚡ LIMITED AVAILABILITY: We only partner with a select number of businesses each month to ensure maximum results for each client.
+              </p>
+            </div>
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Globe size={24} className="text-orange-400 mx-auto mb-3" />
                 <p className="font-semibold">Professional Website</p>
-                <p className="text-gray-300 text-sm">From R2,500</p>
+                <p className="text-gray-300 text-sm">Est. from R2,500</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Users size={24} className="text-orange-400 mx-auto mb-3" />
                 <p className="font-semibold">Social Media Management</p>
-                <p className="text-gray-300 text-sm">From R2,000/week</p>
+                <p className="text-gray-300 text-sm">Est. from R2,000/week</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <Target size={24} className="text-orange-400 mx-auto mb-3" />
                 <p className="font-semibold">Lead Generation</p>
-                <p className="text-gray-300 text-sm">From R3,000/month</p>
+                <p className="text-gray-300 text-sm">Est. from R3,000/month</p>
               </div>
             </div>
             
@@ -190,12 +196,12 @@ const Services: React.FC = () => {
               className="inline-flex items-center bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl text-xl font-bold transition-all transform hover:scale-105 shadow-2xl"
             >
               <span className="mr-3">🎯</span>
-              Get Complete Package
+              Schedule Free Consultation
               <ArrowRight className="ml-3 h-6 w-6" />
             </a>
             
             <p className="mt-6 text-gray-300">
-              💰 Save money every month • 🚀 Launch in 7 days • 📞 Free consultation included
+              💰 Custom pricing after consultation • 🚀 Tailored strategy • 📞 Free assessment call
             </p>
           </div>
         </div>

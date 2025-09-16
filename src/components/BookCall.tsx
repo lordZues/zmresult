@@ -96,10 +96,17 @@ const BookCall: React.FC = () => {
               Free Strategy Session
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">10X Your Leads?</span>
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Grow Your Business?</span><br />
+              <span className="text-2xl md:text-3xl">Let's See if We're a Perfect Fit.</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Book your free 30-minute strategy call and discover exactly how we'll get you 37+ qualified leads in the next 9 days.
+              Book your free 30-minute consultation where we'll listen to your business needs and outline a potential strategy tailored just for you.
+            </p>
+            <div className="bg-red-500/20 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
+              <p className="text-white font-bold">
+                ⚡ LIMITED SPOTS: Our consultation spots are limited each week to ensure quality. Secure yours now!
+              </p>
+            </div>
             </p>
           </div>
           
@@ -114,7 +121,7 @@ const BookCall: React.FC = () => {
                 </div>
                 
                 <p className="text-gray-200 mb-10 text-lg">
-                  During this <span className="text-orange-400 font-bold">30-minute power session</span>, we'll discuss:
+                  During this <span className="text-orange-400 font-bold">30-minute consultation</span>, we'll:
                 </p>
                 
                 <ul className="space-y-6 mb-10">
@@ -123,8 +130,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Your current business challenges and goals</p>
-                      <p className="text-gray-300 text-sm">We'll identify what's blocking your growth</p>
+                      <p className="font-semibold text-lg">Listen to your business story and challenges</p>
+                      <p className="text-gray-300 text-sm">Understanding where you are and where you want to go</p>
                     </div>
                   </li>
                   
@@ -133,8 +140,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">A customized strategy to generate more qualified leads</p>
-                      <p className="text-gray-300 text-sm">Tailored specifically for your business</p>
+                      <p className="font-semibold text-lg">Outline a potential custom strategy</p>
+                      <p className="text-gray-300 text-sm">Website creation, social media growth, customer acquisition</p>
                     </div>
                   </li>
                   
@@ -143,8 +150,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Actionable steps you can implement right away</p>
-                      <p className="text-gray-300 text-sm">Walk away with immediate value</p>
+                      <p className="font-semibold text-lg">Discuss estimated investment and timeline</p>
+                      <p className="text-gray-300 text-sm">Transparent pricing based on your specific needs</p>
                     </div>
                   </li>
                   
@@ -153,8 +160,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Whether we're a good fit to work together</p>
-                      <p className="text-gray-300 text-sm">No pressure, just honest assessment</p>
+                      <p className="font-semibold text-lg">Determine if we're the right fit for each other</p>
+                      <p className="text-gray-300 text-sm">Mutual assessment with no pressure or obligation</p>
                     </div>
                   </li>
                 </ul>

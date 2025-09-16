@@ -104,14 +104,20 @@ Best regards`);
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm text-orange-300 px-6 py-3 rounded-full font-bold text-sm tracking-wider uppercase mb-6 border border-orange-400/30">
               <Phone className="w-5 h-5 mr-2" />
-              Get Started Today
+              Free Business Consultation
             </div>
             <h2 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">WANT MORE CUSTOMERS?</span><br />
-              <span className="text-white">CALL US RIGHT NOW!</span>
+              <span className="text-white">LET'S TALK STRATEGY.</span>
             </h2>
-            <p className="text-3xl text-white max-w-3xl mx-auto leading-relaxed font-bold">
-              📞 We'll answer the phone and help you get more customers TODAY!
+            <p className="text-2xl text-white max-w-4xl mx-auto leading-relaxed font-bold">
+              📞 We listen to your business needs first, then determine if we're the perfect fit to help you grow.
+            </p>
+            <div className="bg-red-500/20 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
+              <p className="text-white font-bold">
+                ⚡ FOMO ALERT: Our calendar fills up fast! Book your free consultation now before spots run out.
+              </p>
+            </div>
             </p>
           </div>
 
@@ -145,7 +151,7 @@ Best regards`);
                 
                 <p className="text-white mb-10 text-2xl font-bold">
                   We'll talk for 30 minutes and help you get more customers - FOR FREE!
-                </p>
+                  <h3 className="text-3xl md:text-4xl font-black">YOUR FREE 30-MINUTE BUSINESS GROWTH CONSULTATION!</h3>
                 
                 <ul className="space-y-6 mb-10">
                   <li className="flex items-start">
@@ -153,8 +159,8 @@ Best regards`);
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Your current digital presence</p>
-                      <p className="text-gray-300 text-sm">What's working and what's not</p>
+                      <p className="font-semibold text-lg">We listen to your business story</p>
+                      <p className="text-gray-300 text-sm">Understanding your challenges, goals, and vision</p>
                     </div>
                   </li>
                   
@@ -163,8 +169,8 @@ Best regards`);
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Custom strategy for your business</p>
-                      <p className="text-gray-300 text-sm">Tailored to your industry and goals</p>
+                      <p className="font-semibold text-lg">We outline a potential custom strategy</p>
+                      <p className="text-gray-300 text-sm">Website, social media, and customer acquisition plan</p>
                     </div>
                   </li>
                   
@@ -173,8 +179,8 @@ Best regards`);
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Pricing and timeline</p>
-                      <p className="text-gray-300 text-sm">Transparent, no hidden costs</p>
+                      <p className="font-semibold text-lg">We discuss estimated investment and timeline</p>
+                      <p className="text-gray-300 text-sm">Transparent pricing based on your specific needs</p>
                     </div>
                   </li>
                   
@@ -183,8 +189,8 @@ Best regards`);
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Next steps to get started</p>
-                      <p className="text-gray-300 text-sm">If we're a good fit to work together</p>
+                      <p className="font-semibold text-lg">We both decide if we're the perfect fit</p>
+                      <p className="text-gray-300 text-sm">Mutual assessment - no pressure, just honest evaluation</p>
                     </div>
                   </li>
                 </ul>
@@ -200,8 +206,8 @@ Best regards`);
                   </p>
                 </div>
                 
-                {/* Trust Badges */}
-                <div className="grid grid-cols-3 gap-4">
+                <p className="text-gray-200 mb-10 text-lg font-bold">
+                  We'll listen to your business challenges and goals, then outline a potential strategy. This is also where we both determine if we're the right fit to work together.
                   <div className="text-center">
                     <Clock className="w-8 h-8 text-blue-400 mx-auto mb-2" />
                     <p className="text-xs text-gray-300">Fast Response</p>

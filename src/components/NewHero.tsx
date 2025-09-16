@@ -13,49 +13,58 @@ const NewHero: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
-            <span className="text-white">We Get You</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 animate-pulse">MORE CUSTOMERS</span>
+            <span className="text-white">We Build Your</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 animate-pulse">Online Powerhouse</span>
             <br />
-            <span className="text-2xl md:text-3xl lg:text-4xl text-orange-300 font-bold">It's That Simple!</span>
+            <span className="text-2xl md:text-3xl lg:text-4xl text-orange-300 font-bold">Get More Customers. Let's Talk.</span>
           </h1>
           
-          <p className="text-2xl md:text-3xl text-white mb-12 leading-relaxed max-w-4xl mx-auto font-bold">
-            📞 <span className="text-yellow-400">More Phone Calls</span><br />
-            💰 <span className="text-green-400">More Money</span><br />
-            🚀 <span className="text-blue-400">Bigger Business</span>
+          <p className="text-xl md:text-2xl text-white mb-12 leading-relaxed max-w-4xl mx-auto font-bold">
+            🎯 <span className="text-yellow-400">Professional Website Creation</span><br />
+            📱 <span className="text-green-400">Social Media Growth Strategy</span><br />
+            💰 <span className="text-blue-400">Customer Acquisition System</span>
           </p>
           
           <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 mb-12 border-4 border-orange-400">
             <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
-              🎯 HERE'S WHAT WE DO:
+              🎯 WE LISTEN FIRST. THEN WE BUILD YOUR CUSTOMER-GETTING MACHINE:
             </h2>
+            <p className="text-lg text-white mb-6 font-bold">
+              We start with a consultation to understand YOUR business, then create a custom strategy that's the perfect fit.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="bg-blue-500 rounded-2xl p-6">
                 <div className="text-6xl mb-4">🌐</div>
-                <h3 className="text-2xl font-bold text-white mb-2">Build Your Website</h3>
-                <p className="text-white text-lg">So people can find you online</p>
+                <h3 className="text-2xl font-bold text-white mb-2">Create Your Website</h3>
+                <p className="text-white text-lg">Professional, conversion-focused design that turns visitors into customers</p>
               </div>
               <div className="bg-purple-500 rounded-2xl p-6">
                 <div className="text-6xl mb-4">📱</div>
-                <h3 className="text-2xl font-bold text-white mb-2">Grow Social Media</h3>
-                <p className="text-white text-lg">Get lots of followers</p>
+                <h3 className="text-2xl font-bold text-white mb-2">Grow Your Social Media</h3>
+                <p className="text-white text-lg">Strategic content and engagement that builds your brand and attracts customers</p>
               </div>
               <div className="bg-orange-500 rounded-2xl p-6">
                 <div className="text-6xl mb-4">👥</div>
-                <h3 className="text-2xl font-bold text-white mb-2">Send You Customers</h3>
-                <p className="text-white text-lg">People who want to buy from you</p>
+                <h3 className="text-2xl font-bold text-white mb-2">Deliver Qualified Customers</h3>
+                <p className="text-white text-lg">Targeted lead generation that brings you customers ready to buy</p>
               </div>
             </div>
           </div>
           
           <div className="bg-green-500 rounded-3xl p-8 mb-12 border-4 border-yellow-400">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-              💸 HOW MUCH DOES IT COST?
+              💸 ESTIMATED INVESTMENT?
             </h2>
             <p className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Starting at R2,500
+              Estimated Starting at R2,500
             </p>
-            <p className="text-xl text-white">
-              (That's like R83 per day to get more customers!)
+            <p className="text-xl text-white mb-4">
+              (Final pricing determined after we understand your specific needs)
+            </p>
+            <div className="bg-red-500/20 border border-red-300 rounded-xl p-4">
+              <p className="text-white font-bold">
+                ⚡ FOMO ALERT: Limited spots available for our free consultation calls each week. Don't miss out on growing your business!
+              </p>
+            </div>
             </p>
           </div>
           
