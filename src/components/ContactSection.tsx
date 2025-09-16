@@ -199,10 +199,10 @@ Best regards`);
                 <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 p-6 rounded-2xl mb-8">
                   <div className="flex items-center mb-3">
                     <Shield className="w-6 h-6 text-green-400 mr-3" />
-                    <p className="text-lg font-bold text-green-400">Our Promise</p>
+                    <p className="text-lg font-bold text-green-400">Money Back Guarantee</p>
                   </div>
                   <p className="text-gray-200">
-                    If we can't help your business, we'll refer you to someone who can. <span className="text-white font-semibold">No charge, no obligation.</span>
+                    If it doesn't work, you get your money back. <span className="text-white font-semibold">100% guaranteed.</span>
                   </p>
                 </div>
                 

@@ -51,7 +51,7 @@ const Services: React.FC = () => {
             
             <div className="bg-orange-100 border-l-4 border-orange-500 p-4 mb-6">
               <p className="text-orange-800 font-semibold">
-                ✅ ZM Results can help with that
+                ✅ Money Back Guarantee if it doesn't work
               </p>
             </div>
             
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
             
             <div className="bg-orange-100 border-l-4 border-orange-500 p-4 mb-6">
               <p className="text-orange-800 font-semibold">
-                ✅ ZM Results can help with that
+                ✅ Money Back Guarantee if it doesn't work
               </p>
             </div>
             
@@ -139,7 +139,7 @@ const Services: React.FC = () => {
             
             <div className="bg-orange-100 border-l-4 border-orange-500 p-4 mb-6">
               <p className="text-orange-800 font-semibold">
-                ✅ ZM Results can help with that
+                ✅ Money Back Guarantee if it doesn't work
               </p>
             </div>
             

@@ -170,10 +170,10 @@ const BookCall: React.FC = () => {
                 <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 p-6 rounded-2xl mb-8">
                   <div className="flex items-center mb-3">
                     <Shield className="w-6 h-6 text-green-400 mr-3" />
-                    <p className="text-lg font-bold text-green-400">Our Iron-Clad Guarantee</p>
+                    <p className="text-lg font-bold text-green-400">Money Back Guarantee</p>
                   </div>
                   <p className="text-gray-200">
-                    If you don't get <span className="text-white font-semibold">massive value</span> from this call, we'll send you a <span className="text-green-400 font-bold">$50 gift card</span> as a thank you for your time.
+                    If our services don't work for your business, <span className="text-white font-semibold">you get your money back</span>. <span className="text-green-400 font-bold">100% guaranteed.</span>
                   </p>
                 </div>
                 
