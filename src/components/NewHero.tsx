@@ -92,8 +92,8 @@ const NewHero: React.FC = () => {
               ⚡ PROMISE TO YOU:
             </h2>
             <p className="text-2xl md:text-3xl font-bold text-white">
-              If we don't get you more customers,<br />
-              <span className="text-yellow-300">YOU DON'T PAY!</span>
+              If it doesn't work,<br />
+              <span className="text-yellow-300">MONEY BACK GUARANTEE!</span>
             </p>
           </div>
           
