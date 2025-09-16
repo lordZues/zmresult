@@ -29,21 +29,30 @@ const ContactSection: React.FC = () => {
     setError('');
     
     try {
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbxwBb2KDvXP_toBahYcOu3WGnnIlIXfAxBeAZTeH3zaMGGnoNLd8D6KDTXY9yfpAEcM/exec';
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/submit-lead`;
       
-      const formDataToSend = new FormData();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('business', formData.service);
-      formDataToSend.append('challenges', formData.message);
-      formDataToSend.append('action', 'addLead');
+      const headers = {
+        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        'Content-Type': 'application/json',
+      };
       
-      await fetch(scriptUrl, {
+      const leadData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        business: formData.service,
+        challenges: formData.message
+      };
+      
+      const response = await fetch(apiUrl, {
         method: 'POST',
-        body: formDataToSend,
-        mode: 'no-cors'
+        headers,
+        body: JSON.stringify(leadData)
       });
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
       
       setIsSubmitted(true);
       setFormData({

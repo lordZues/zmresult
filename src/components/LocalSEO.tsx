@@ -19,10 +19,10 @@ interface LocalSEOProps {
 
 const LocalSEO: React.FC<LocalSEOProps> = ({
   businessName = "ZM Results",
-  address = "Cape Town",
-  city = "Cape Town",
-  province = "Western Cape",
-  postalCode = "8000",
+  address = "45 Bale Avenue, Montclair",
+  city = "Durban",
+  province = "KwaZulu-Natal", 
+  postalCode = "4061",
   country = "South Africa",
   phone = "+27736957783",
   email = "zusakhe@zmresultss.org",
@@ -145,8 +145,8 @@ const LocalSEO: React.FC<LocalSEOProps> = ({
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "-33.9249",
-      "longitude": "18.4241"
+      "latitude": "-29.8587",
+      "longitude": "30.9796"
     },
     "sameAs": [
       "https://www.facebook.com/zmresults",

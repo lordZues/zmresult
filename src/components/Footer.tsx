@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <NAP variant="footer" />
             <p className="text-gray-300 mt-6 mb-6 max-w-md">
-              South Africa's premier advertising agency helping businesses get more customers through professional digital marketing, social media marketing, website design, and lead generation services.
+              South Africa's top-ranked marketing agency based in Durban, helping businesses nationwide dominate their markets through proven digital marketing strategies, social media dominance, professional websites, and explosive lead generation.
             </p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" className="bg-blue-900 hover:bg-orange-500 h-10 w-10 rounded-full flex items-center justify-center transition-colors">
@@ -49,25 +49,29 @@ const Footer: React.FC = () => {
         <div className="border-t border-blue-900 mt-8 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-gray-400">
             <div>
-              <h5 className="font-semibold text-white mb-2">Cape Town</h5>
+              <h5 className="font-semibold text-white mb-2">Durban (HQ)</h5>
+              <p>Top Marketing Agency</p>
               <p>Digital Marketing Agency</p>
               <p>Social Media Marketing</p>
               <p>Lead Generation</p>
             </div>
             <div>
               <h5 className="font-semibold text-white mb-2">Johannesburg</h5>
+              <p>Marketing Dominance</p>
               <p>Advertising Services</p>
               <p>Website Design</p>
               <p>Business Growth</p>
             </div>
             <div>
-              <h5 className="font-semibold text-white mb-2">Durban</h5>
+              <h5 className="font-semibold text-white mb-2">Cape Town</h5>
+              <p>Market Leadership</p>
               <p>Customer Acquisition</p>
               <p>Online Marketing</p>
               <p>SEO Services</p>
             </div>
             <div>
               <h5 className="font-semibold text-white mb-2">Pretoria</h5>
+              <p>Growth Specialists</p>
               <p>Marketing Consulting</p>
               <p>Digital Advertising</p>
               <p>Brand Building</p>

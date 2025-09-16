@@ -30,26 +30,24 @@ const BookCall: React.FC = () => {
     setError('');
     
     try {
-      // Updated Google Apps Script Web App URL
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbxwBb2KDvXP_toBahYcOu3WGnnIlIXfAxBeAZTeH3zaMGGnoNLd8D6KDTXY9yfpAEcM/exec';
+      // Google Sheets API endpoint for customer data capture
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/submit-lead`;
       
-      // Create form data for Google Apps Script
-      const formDataToSend = new FormData();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('business', formData.business);
-      formDataToSend.append('challenges', formData.challenges);
-      formDataToSend.append('action', 'addLead');
+      const headers = {
+        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        'Content-Type': 'application/json',
+      };
       
-      const response = await fetch(scriptUrl, {
+      const response = await fetch(apiUrl, {
         method: 'POST',
-        body: formDataToSend,
-        mode: 'no-cors' // Required for Google Apps Script
+        headers,
+        body: JSON.stringify(formData)
       });
       
-      // Since we're using no-cors mode, we can't read the response
-      // But if we get here without an error, it likely succeeded
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+      
       setIsSubmitted(true);
       
       // Reset form

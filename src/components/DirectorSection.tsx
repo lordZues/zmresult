@@ -33,23 +33,23 @@ const DirectorSection: React.FC = () => {
                 <p className="text-xl text-orange-400 font-bold mb-8">Director & Founder</p>
                 
                 <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                  "I founded ZM Results because I saw too many good businesses struggling to get customers. My mission is simple: help South African businesses get more customers, build their social media presence, and grow their revenue through proven advertising strategies that actually work."
+                  "I founded ZM Results in Durban because I saw too many good businesses struggling to get customers. From our Montclair headquarters, we've built South Africa's top-ranked marketing agency. My mission is simple: help businesses nationwide dominate their markets and achieve explosive growth through proven strategies that actually work."
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                   <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
                     <Users size={24} className="text-orange-400 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">50+</div>
+                    <div className="text-2xl font-bold">500+</div>
                     <div className="text-gray-300 text-sm">Companies Helped</div>
                   </div>
                   <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
                     <Target size={24} className="text-green-400 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">5+</div>
+                    <div className="text-2xl font-bold">8+</div>
                     <div className="text-gray-300 text-sm">Years Experience</div>
                   </div>
                   <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
                     <Award size={24} className="text-blue-400 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">98%</div>
+                    <div className="text-2xl font-bold">#1</div>
                     <div className="text-gray-300 text-sm">Success Rate</div>
                   </div>
                 </div>

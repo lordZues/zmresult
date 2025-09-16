@@ -4,27 +4,27 @@ import { MapPin, Users, Award, TrendingUp } from 'lucide-react';
 const LocationContent: React.FC = () => {
   const locations = [
     {
-      city: "Cape Town",
-      province: "Western Cape", 
-      description: "Serving businesses in the Mother City with comprehensive digital marketing solutions",
-      highlights: ["Tourism businesses", "Tech startups", "Wine industry", "Creative agencies"]
+      city: "Durban",
+      province: "KwaZulu-Natal", 
+      description: "Based in Durban's vibrant business district, we're South Africa's top-ranked marketing agency serving the coastal region",
+      highlights: ["Port logistics", "Tourism", "Manufacturing", "Healthcare", "Education", "Retail"]
     },
     {
       city: "Johannesburg", 
       province: "Gauteng",
-      description: "Supporting Joburg's business hub with customer acquisition and growth strategies",
+      description: "Dominating Johannesburg's competitive market with data-driven marketing strategies that deliver results",
       highlights: ["Financial services", "Mining companies", "Manufacturing", "Corporate services"]
     },
     {
-      city: "Durban",
-      province: "KwaZulu-Natal", 
-      description: "Helping Durban businesses grow through targeted marketing and lead generation",
-      highlights: ["Port logistics", "Tourism", "Manufacturing", "Agriculture"]
+      city: "Cape Town",
+      province: "Western Cape", 
+      description: "Expanding our top-tier marketing services to Cape Town's thriving business ecosystem",
+      highlights: ["Tourism businesses", "Tech startups", "Wine industry", "Creative agencies"]
     },
     {
       city: "Pretoria",
       province: "Gauteng",
-      description: "Empowering the capital's businesses with professional digital marketing services", 
+      description: "Leading Pretoria's digital transformation with cutting-edge marketing solutions", 
       highlights: ["Government contractors", "Education", "Healthcare", "Professional services"]
     }
   ];

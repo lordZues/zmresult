@@ -15,11 +15,11 @@ const NewHero: React.FC = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
             Need More Customers? <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">We'll Get Them For You</span>
             <br />
-            <span className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-normal">South Africa's #1 Advertising Agency for Business Growth</span>
+            <span className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-normal">South Africa's Top-Ranked Marketing Agency - Durban Based, Nationwide Service</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-200 mb-16 leading-relaxed max-w-4xl mx-auto">
-            Struggling to get customers? Want to grow your social media? Need more leads? <span className="text-orange-400 font-semibold">ZM Results</span> is South Africa's premier advertising agency that helps businesses like yours get more customers, build their social media presence, and grow their revenue.
+            Struggling to get customers? Want to grow your social media? Need more leads? <span className="text-orange-400 font-semibold">ZM Results</span> is South Africa's top-ranked marketing agency based in Durban, helping businesses nationwide get more customers, dominate their markets, and achieve explosive growth.
           </p>
           
           {/* Three Core Services */}
