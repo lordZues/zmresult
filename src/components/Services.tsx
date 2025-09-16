@@ -7,11 +7,12 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Our Services</span>
-          <h2 className="text-3xl md:text-5xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            How We Help You <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Get More Customers</span>
+          <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">3 SIMPLE STEPS</span><br />
+            To Get More Customers
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Whether you need more customers, want to build your social media following, or grow your business - we're the advertising agency that gets results. Here's how we help South African businesses succeed:
+          <p className="text-2xl md:text-3xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-bold">
+            🎯 It's Really This Easy!
           </p>
         </div>
 
@@ -24,9 +25,9 @@ const Services: React.FC = () => {
               <Globe size={32} className="text-white" />
             </div>
             
-            <h3 className="text-3xl font-bold text-blue-950 mb-4">Professional Website</h3>
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Get a professional website that attracts customers 24/7. Our website design services help you establish credibility, rank higher on Google, and convert visitors into paying customers. Perfect for businesses looking to grow their online presence.
+            <h3 className="text-4xl font-bold text-blue-950 mb-4">STEP 1: Build Your Website</h3>
+            <p className="text-gray-700 text-xl mb-6 leading-relaxed font-bold">
+              We make you a beautiful website so people can find you on Google and want to buy from you!
             </p>
             
             <div className="space-y-3 mb-8">
@@ -55,7 +56,7 @@ const Services: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <span className="text-2xl font-black text-blue-950">From R2,500</span>
+              <span className="text-3xl font-black text-blue-950">Only R2,500</span>
               <p className="text-gray-600">Complete website solution</p>
             </div>
           </div>
@@ -68,9 +69,9 @@ const Services: React.FC = () => {
               <Users size={32} className="text-white" />
             </div>
             
-            <h3 className="text-3xl font-bold text-blue-950 mb-4">Social Media Presence</h3>
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Want to build your social media following and get more customers from social platforms? Our social media marketing services help you grow your accounts, engage with customers, and turn followers into paying clients across all major platforms.
+            <h3 className="text-4xl font-bold text-blue-950 mb-4">STEP 2: Grow Social Media</h3>
+            <p className="text-gray-700 text-xl mb-6 leading-relaxed font-bold">
+              We post cool stuff on Facebook and Instagram so LOTS of people follow you and want to buy from you!
             </p>
             
             <div className="space-y-3 mb-8">
@@ -99,7 +100,7 @@ const Services: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <span className="text-2xl font-black text-blue-950">From R2,000/week</span>
+              <span className="text-3xl font-black text-blue-950">R2,000/week</span>
               <p className="text-gray-600">Complete with content creation & more</p>
             </div>
           </div>
@@ -112,9 +113,9 @@ const Services: React.FC = () => {
               <Target size={32} className="text-white" />
             </div>
             
-            <h3 className="text-3xl font-bold text-blue-950 mb-4">Customer Access</h3>
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Need a steady stream of new customers? Our lead generation and advertising services connect you with people actively looking for your products or services. We use proven advertising strategies to bring qualified customers directly to your business.
+            <h3 className="text-4xl font-bold text-blue-950 mb-4">STEP 3: Send You Customers</h3>
+            <p className="text-gray-700 text-xl mb-6 leading-relaxed font-bold">
+              We find people who want to buy what you sell and send them straight to you! Like magic! 🪄
             </p>
             
             <div className="space-y-3 mb-8">
@@ -143,7 +144,7 @@ const Services: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <span className="text-2xl font-black text-blue-950">From R3,000/month</span>
+              <span className="text-3xl font-black text-blue-950">R3,000/month</span>
               <p className="text-gray-600">Complete lead generation</p>
             </div>
           </div>
@@ -159,11 +160,11 @@ const Services: React.FC = () => {
               Complete Business Package
             </div>
             
-            <h3 className="text-4xl md:text-5xl font-black mb-6">
-              Get All Three from <span className="text-orange-400">R9,500/month</span>
+            <h3 className="text-5xl md:text-6xl font-black mb-6">
+              🎉 GET ALL 3 FOR <span className="text-orange-400">R9,500/month</span>
             </h3>
-            <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-              Instead of paying R11,000+ separately, get our complete digital solution package and save money every month.
+            <p className="text-2xl text-gray-200 mb-8 max-w-3xl mx-auto font-bold">
+              Save R1,500 every month! That's like getting a free pizza every week! 🍕
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">

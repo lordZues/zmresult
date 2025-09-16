@@ -107,10 +107,11 @@ Best regards`);
               Get Started Today
             </div>
             <h2 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Get More Customers?</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">WANT MORE CUSTOMERS?</span><br />
+              <span className="text-white">CALL US RIGHT NOW!</span>
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Stop struggling to find customers. Let South Africa's premier advertising agency help you get more customers, grow your social media, and expand your business. Contact us now for a free consultation.
+            <p className="text-3xl text-white max-w-3xl mx-auto leading-relaxed font-bold">
+              📞 We'll answer the phone and help you get more customers TODAY!
             </p>
           </div>
 
@@ -118,10 +119,10 @@ Best regards`);
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
             <a 
               href="mailto:zusakhe@zmresultss.org?subject=URGENT%3A%20Need%20Complete%20Digital%20Solution&body=Hi%20Zusakhe%2C%0A%0AI%20need%20help%20with%20my%20business%27s%20digital%20presence.%20I%27m%20interested%20in%3A%0A-%20Professional%20Website%0A-%20Social%20Media%20Management%0A-%20Lead%20Generation%0A%0APlease%20contact%20me%20as%20soon%20as%20possible%20to%20discuss%20how%20ZM%20Results%20can%20help.%0A%0ABest%20regards"
-              className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center"
+              className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-12 py-6 rounded-2xl text-2xl font-black transition-all transform hover:scale-110 shadow-2xl flex items-center justify-center border-4 border-yellow-400 animate-pulse"
             >
-              <Mail className="mr-3 h-6 w-6" />
-              Email Us Now
+              <Mail className="mr-4 h-8 w-8" />
+              📧 EMAIL US NOW!
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </a>
             
@@ -129,10 +130,10 @@ Best regards`);
               href={`https://wa.me/27736957783?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center"
+              className="group bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-12 py-6 rounded-2xl text-2xl font-black transition-all transform hover:scale-110 shadow-2xl flex items-center justify-center border-4 border-yellow-400 animate-pulse"
             >
-              <MessageCircle className="mr-3 h-6 w-6" />
-              WhatsApp: +27 73 695 7783
+              <MessageCircle className="mr-4 h-8 w-8" />
+              📱 WHATSAPP: +27 73 695 7783
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -140,10 +141,10 @@ Best regards`);
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden border border-white/20">
             <div className="md:flex">
               <div className="md:w-1/2 bg-gradient-to-br from-blue-900/50 to-blue-800/50 backdrop-blur-sm text-white p-12 flex flex-col justify-center border-r border-white/20">
-                <h3 className="text-3xl md:text-4xl font-black mb-8">Get Your Free Consultation</h3>
+                <h3 className="text-4xl md:text-5xl font-black mb-8">🆓 FREE HELP!</h3>
                 
-                <p className="text-gray-200 mb-10 text-lg">
-                  During this <span className="text-orange-400 font-bold">free 30-minute consultation</span>, we'll discuss:
+                <p className="text-white mb-10 text-2xl font-bold">
+                  We'll talk for 30 minutes and help you get more customers - FOR FREE!
                 </p>
                 
                 <ul className="space-y-6 mb-10">

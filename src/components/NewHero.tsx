@@ -12,85 +12,93 @@ const NewHero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-            Need More Customers? <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">We'll Get Them For You</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+            <span className="text-white">We Get You</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 animate-pulse">MORE CUSTOMERS</span>
             <br />
-            <span className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-normal">South Africa's Top-Ranked Marketing Agency - Durban Based, Nationwide Service</span>
+            <span className="text-2xl md:text-3xl lg:text-4xl text-orange-300 font-bold">It's That Simple!</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-200 mb-16 leading-relaxed max-w-4xl mx-auto">
-            Struggling to get customers? Want to grow your social media? Need more leads? <span className="text-orange-400 font-semibold">ZM Results</span> is South Africa's top-ranked marketing agency based in Durban, helping businesses nationwide get more customers, dominate their markets, and achieve explosive growth.
+          <p className="text-2xl md:text-3xl text-white mb-12 leading-relaxed max-w-4xl mx-auto font-bold">
+            📞 <span className="text-yellow-400">More Phone Calls</span><br />
+            💰 <span className="text-green-400">More Money</span><br />
+            🚀 <span className="text-blue-400">Bigger Business</span>
           </p>
           
-          {/* Three Core Services */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-4 rounded-2xl inline-block mb-6 shadow-lg">
-                <Globe size={32} className="text-white" />
+          <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 mb-12 border-4 border-orange-400">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+              🎯 HERE'S WHAT WE DO:
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="bg-blue-500 rounded-2xl p-6">
+                <div className="text-6xl mb-4">🌐</div>
+                <h3 className="text-2xl font-bold text-white mb-2">Build Your Website</h3>
+                <p className="text-white text-lg">So people can find you online</p>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Professional Website</h3>
-              <p className="text-gray-300 mb-4">Every company nowadays must have a website.</p>
-              <div className="flex items-center text-orange-400 font-semibold">
-                <CheckCircle size={20} className="mr-2" />
-                ZM Results can help with that
+              <div className="bg-purple-500 rounded-2xl p-6">
+                <div className="text-6xl mb-4">📱</div>
+                <h3 className="text-2xl font-bold text-white mb-2">Grow Social Media</h3>
+                <p className="text-white text-lg">Get lots of followers</p>
               </div>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="bg-gradient-to-r from-purple-500 to-purple-600 p-4 rounded-2xl inline-block mb-6 shadow-lg">
-                <Users size={32} className="text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Social Media Presence</h3>
-              <p className="text-gray-300 mb-4">Every company must have a social media presence.</p>
-              <div className="flex items-center text-orange-400 font-semibold">
-                <CheckCircle size={20} className="mr-2" />
-                ZM Results can help with that
-              </div>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-4 rounded-2xl inline-block mb-6 shadow-lg">
-                <Target size={32} className="text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Customer Access</h3>
-              <p className="text-gray-300 mb-4">Every company must have customers or access to customers.</p>
-              <div className="flex items-center text-orange-400 font-semibold">
-                <CheckCircle size={20} className="mr-2" />
-                ZM Results can help with that
+              <div className="bg-orange-500 rounded-2xl p-6">
+                <div className="text-6xl mb-4">👥</div>
+                <h3 className="text-2xl font-bold text-white mb-2">Send You Customers</h3>
+                <p className="text-white text-lg">People who want to buy from you</p>
               </div>
             </div>
           </div>
           
+          <div className="bg-green-500 rounded-3xl p-8 mb-12 border-4 border-yellow-400">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+              💸 HOW MUCH DOES IT COST?
+            </h2>
+            <p className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Starting at R2,500
+            </p>
+            <p className="text-xl text-white">
+              (That's like R83 per day to get more customers!)
+            </p>
+          </div>
+          
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+          <div className="flex flex-col sm:flex-row justify-center gap-8 mb-16">
             <a 
               href="#services" 
-              className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl text-xl font-bold transition-all transform hover:scale-105 hover:shadow-2xl flex items-center justify-center border-2 border-orange-400 shadow-lg"
+              className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 rounded-2xl text-2xl md:text-3xl font-black transition-all transform hover:scale-110 hover:shadow-2xl flex items-center justify-center border-4 border-yellow-400 shadow-lg animate-pulse"
             >
-              <span className="mr-3">🚀</span>
-              Get All Three Now
+              <span className="mr-4 text-4xl">🚀</span>
+              YES! GET ME MORE CUSTOMERS
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </a>
             
             <a 
               href="#contact" 
-              className="border-2 border-white/30 text-white hover:bg-white hover:text-blue-950 px-10 py-5 rounded-xl text-xl font-bold transition-all backdrop-blur-sm bg-white/10"
+              className="border-4 border-white text-white hover:bg-white hover:text-blue-950 px-12 py-6 rounded-2xl text-2xl md:text-3xl font-black transition-all backdrop-blur-sm bg-white/20"
             >
-              <span className="mr-3">📞</span>
-              Talk to an Expert
+              <span className="mr-4 text-4xl">📞</span>
+              CALL ME NOW
             </a>
           </div>
           
+          <div className="bg-red-500 rounded-3xl p-8 mb-8 border-4 border-white">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+              ⚡ PROMISE TO YOU:
+            </h2>
+            <p className="text-2xl md:text-3xl font-bold text-white">
+              If we don't get you more customers,<br />
+              <span className="text-yellow-300">YOU DON'T PAY!</span>
+            </p>
+          </div>
+          
           {/* Trust Indicators */}
-          <div className="mt-16 pt-8 border-t border-white/20">
-            <p className="text-gray-300 mb-4">Trusted by 500+ Business Owners Across South Africa</p>
+          <div className="mt-8 pt-8">
+            <p className="text-2xl text-yellow-300 mb-6 font-bold">500+ Happy Business Owners ⭐⭐⭐⭐⭐</p>
             <div className="flex justify-center items-center gap-2">
               {[1,2,3,4,5].map((star) => (
-                <svg key={star} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                <svg key={star} className="w-10 h-10 text-yellow-400 fill-current" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               ))}
-              <span className="ml-3 text-gray-300 font-medium">4.9/5 from 200+ reviews</span>
+              <span className="ml-4 text-white font-bold text-xl">Everyone Loves Us!</span>
             </div>
           </div>
         </div>
