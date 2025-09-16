@@ -150,7 +150,8 @@ Best regards`);
                 
                 <p className="text-white mb-10 text-2xl font-bold">
                   We'll talk for 30 minutes and help you get more customers - FOR FREE!
-                  <h3 className="text-3xl md:text-4xl font-black">YOUR FREE 30-MINUTE BUSINESS GROWTH CONSULTATION!</h3>
+                </p>
+                <h3 className="text-3xl md:text-4xl font-black">YOUR FREE 30-MINUTE BUSINESS GROWTH CONSULTATION!</h3>
                 
                 <ul className="space-y-6 mb-10">
                   <li className="flex items-start">
@@ -207,6 +208,8 @@ Best regards`);
                 
                 <p className="text-gray-200 mb-10 text-lg font-bold">
                   We'll listen to your business challenges and goals, then outline a potential strategy. This is also where we both determine if we're the right fit to work together.
+                </p>
+                <div className="flex justify-around">
                   <div className="text-center">
                     <Clock className="w-8 h-8 text-blue-400 mx-auto mb-2" />
                     <p className="text-xs text-gray-300">Fast Response</p>
