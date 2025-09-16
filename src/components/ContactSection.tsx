@@ -118,7 +118,6 @@ Best regards`);
                 ⚡ FOMO ALERT: Our calendar fills up fast! Book your free consultation now before spots run out.
               </p>
             </div>
-            </p>
           </div>
 
           {/* Quick Contact Buttons */}

@@ -171,7 +171,6 @@ const Services: React.FC = () => {
                 ⚡ LIMITED AVAILABILITY: We only partner with a select number of businesses each month to ensure maximum results for each client.
               </p>
             </div>
-            </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
