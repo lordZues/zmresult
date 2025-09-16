@@ -64,7 +64,6 @@ const NewHero: React.FC = () => {
               <p className="text-white font-bold">
                 ⚡ FOMO ALERT: Limited spots available for our free consultation calls each week. Don't miss out on growing your business!
               </p>
-            </div>
           </div>
           
           {/* CTA Buttons */}
