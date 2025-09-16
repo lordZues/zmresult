@@ -65,7 +65,6 @@ const NewHero: React.FC = () => {
                 ⚡ FOMO ALERT: Limited spots available for our free consultation calls each week. Don't miss out on growing your business!
               </p>
             </div>
-            </p>
           </div>
           
           {/* CTA Buttons */}
