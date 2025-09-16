@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visitor Query Form</title>
+</head>
+<body>
+  <h1>Submit your query</h1>
+  <form id="visitor-query-form">
+    <label>Name: <input type="text" name="visitorName" /></label><br/>
+    <label>Email: <input type="email" name="visitorEmail" /></label><br/>
+    <label>Query: <textarea name="visitorQuery" required></textarea></label><br/>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="response-message"></div>
+  <script>
+    document.getElementById('visitor-query-form').onsubmit = async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        visitorName: form.visitorName.value,
+        visitorEmail: form.visitorEmail.value,
+        visitorQuery: form.visitorQuery.value
+      };
+      const res = await fetch('/submit-query', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      document.getElementById('response-message').innerText = await res.text();
+      form.reset();
+    };
+  </script>
+</body>
+</html>
