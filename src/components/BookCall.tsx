@@ -107,7 +107,6 @@ const BookCall: React.FC = () => {
                 ⚡ LIMITED SPOTS: Our consultation spots are limited each week to ensure quality. Secure yours now!
               </p>
             </div>
-            </p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden border border-white/20">

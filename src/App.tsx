@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
 import Privacy from './components/Privacy';
 import LocalSEO from './components/LocalSEO';
-import LocationContent from './components/LocationContent';
 import GoogleBusinessProfile from './components/GoogleBusinessProfile';
 
 function HomePage() {
@@ -19,7 +18,6 @@ function HomePage() {
       <LocalSEO />
       <NewHero />
       <Services />
-      <LocationContent />
       <About />
       <GoogleBusinessProfile />
       <DirectorSection />
