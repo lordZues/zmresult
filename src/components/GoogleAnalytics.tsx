@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const GoogleAnalytics: React.FC = () => {
   useEffect(() => {
     // Google Analytics 4 tracking code
-    const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with your actual GA4 Measurement ID
+    const GA_MEASUREMENT_ID = 'G-0Q3E05Z2T0';
     
     // Load Google Analytics script
     const script1 = document.createElement('script');
