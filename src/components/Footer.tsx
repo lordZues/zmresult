@@ -1,17 +1,15 @@
 import React from 'react';
-import { Instagram, Linkedin, Facebook } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import NAP from './NAP';
+import { Mail, Phone, Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-950 text-white py-12">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <NAP variant="footer" />
-            <p className="text-gray-300 mt-6 mb-6 max-w-md">
-              South Africa's top-ranked marketing agency based in Durban, helping businesses nationwide dominate their markets through proven digital marketing strategies, social media dominance, professional websites, and explosive lead generation.
+            <h3 className="text-2xl font-bold mb-4">ZM Results</h3>
+            <p className="text-gray-300 mb-6 max-w-md">
+              Helping business owners get more qualified leads and sales without wasting money on ads that don't work or relying on referrals that dry up.
             </p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" className="bg-blue-900 hover:bg-orange-500 h-10 w-10 rounded-full flex items-center justify-center transition-colors">
@@ -30,52 +28,39 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-gray-300 hover:text-orange-400 transition-colors">Services</a>
+                <a href="#results" className="text-gray-300 hover:text-orange-400 transition-colors">Results</a>
               </li>
               <li>
-                <a href="#why-choose-us" className="text-gray-300 hover:text-orange-400 transition-colors">Why Choose Us</a>
+                <a href="#process" className="text-gray-300 hover:text-orange-400 transition-colors">Our Process</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-orange-400 transition-colors">Contact</a>
+                <a href="#testimonials" className="text-gray-300 hover:text-orange-400 transition-colors">Testimonials</a>
               </li>
               <li>
-                <Link to="/privacy" className="text-gray-300 hover:text-orange-400 transition-colors">Privacy Policy</Link>
+                <a href="#about" className="text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+              </li>
+              <li>
+                <a href="#book-call" className="text-gray-300 hover:text-orange-400 transition-colors">Book a Call</a>
               </li>
             </ul>
           </div>
-        </div>
-        
-        {/* Local SEO Footer */}
-        <div className="border-t border-blue-900 mt-8 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-gray-400">
-            <div>
-              <h5 className="font-semibold text-white mb-2">Durban (HQ)</h5>
-              <p>Top Marketing Agency</p>
-              <p>Digital Marketing Agency</p>
-              <p>Social Media Marketing</p>
-              <p>Lead Generation</p>
-            </div>
-            <div>
-              <h5 className="font-semibold text-white mb-2">Johannesburg</h5>
-              <p>Marketing Dominance</p>
-              <p>Advertising Services</p>
-              <p>Website Design</p>
-              <p>Business Growth</p>
-            </div>
-            <div>
-              <h5 className="font-semibold text-white mb-2">Cape Town</h5>
-              <p>Market Leadership</p>
-              <p>Customer Acquisition</p>
-              <p>Online Marketing</p>
-              <p>SEO Services</p>
-            </div>
-            <div>
-              <h5 className="font-semibold text-white mb-2">Pretoria</h5>
-              <p>Growth Specialists</p>
-              <p>Marketing Consulting</p>
-              <p>Digital Advertising</p>
-              <p>Brand Building</p>
-            </div>
+          
+          <div>
+            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
+            <ul className="space-y-4">
+              <li className="flex items-center">
+                <Mail size={20} className="text-orange-400 mr-3" />
+                <a href="mailto:hello@zmresults.com" className="text-gray-300 hover:text-white">
+                  hello@zmresults.com
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Phone size={20} className="text-orange-400 mr-3" />
+                <a href="tel:+15551234567" className="text-gray-300 hover:text-white">
+                  (555) 123-4567
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         
@@ -85,9 +70,9 @@ const Footer: React.FC = () => {
           </p>
           
           <div className="flex space-x-6">
-            <Link to="/privacy" className="text-gray-400 hover:text-orange-400 text-sm">
+            <a href="#" className="text-gray-400 hover:text-orange-400 text-sm">
               Privacy Policy
-            </Link>
+            </a>
             <a href="#" className="text-gray-400 hover:text-orange-400 text-sm">
               Terms of Service
             </a>

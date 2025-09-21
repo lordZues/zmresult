@@ -33,41 +33,41 @@ const Process: React.FC = () => {
     <section id="process" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <span className="text-orange-500 font-semibold tracking-wider uppercase">How It Works</span>
+          <span className="text-orange-500 font-semibold tracking-wider uppercase">Our Process</span>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mt-2 mb-4">
-            Here's Exactly What We Do
+            How We Deliver Results
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            No complicated funnels. No confusing tech stuff. Just a simple system that works every single time.
+            Our proven 4-step system has helped businesses just like yours achieve remarkable growth without the guesswork.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Step 
             number={1}
-            title="We Talk"
-            description="First, we hop on a call to understand your business. What's working? What isn't? Who's your ideal client? This isn't a sales pitch - we genuinely want to understand your situation."
+            title="Strategy Session"
+            description="We start with a deep-dive call to understand your business goals, current challenges, and ideal client profile. This gives us the foundation to build your custom growth plan."
             icon={<MessageSquare size={24} />}
           />
           
           <Step 
             number={2}
-            title="We Plan"
-            description="Based on what you told us, we create a custom strategy for YOUR business. Not some cookie-cutter template, but something built specifically for your industry and goals."
+            title="Custom Growth Plan"
+            description="Based on our analysis, we develop a tailored strategy designed specifically for your business model and target market. No cookie-cutter approaches here."
             icon={<LineChart size={24} />}
           />
           
           <Step 
             number={3}
-            title="We Build"
-            description="Here's where the magic happens. We set up your lead generation system, create your content, and get everything running smoothly. You don't have to lift a finger."
+            title="Implementation"
+            description="We handle the heavy lifting by implementing your growth strategy, optimizing your lead generation, and setting up your conversion system."
             icon={<Target size={24} />}
           />
           
           <Step 
             number={4}
-            title="We Grow"
-            description="As leads start coming in, we keep tweaking and improving. More leads, better quality, higher conversion rates. We don't stop until you're completely happy."
+            title="Scale & Optimize"
+            description="As leads and sales come in, we continuously refine the process, identify new opportunities, and scale what's working to accelerate your growth."
             icon={<PieChart size={24} />}
           />
         </div>
@@ -77,7 +77,7 @@ const Process: React.FC = () => {
             href="#book-call" 
             className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-medium transition-all"
           >
-            Let's Get Started <ChevronRight size={20} />
+            Book Your Strategy Session <ChevronRight size={20} />
           </a>
         </div>
       </div>
