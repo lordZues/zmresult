@@ -5,7 +5,7 @@ import NewHero from './components/NewHero';
 import Services from './components/Services';
 import About from './components/About';
 import DirectorSection from './components/DirectorSection';
-import ContactSection from './components/ContactSection';
+import BookCall from './components/BookCall';
 import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
 import Privacy from './components/Privacy';
@@ -23,7 +23,7 @@ function HomePage() {
       <About />
       <GoogleBusinessProfile />
       <DirectorSection />
-      <ContactSection />
+      <BookCall />
     </>
   );
 }
