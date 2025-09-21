@@ -31,9 +31,6 @@ function HomePage() {
       <NewHero />
       <SEOContent />
       <Services />
-      <About />
-      <GoogleBusinessProfile />
-      <DirectorSection />
       <BlogSection />
       <BookCall />
     </>
