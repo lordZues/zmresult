@@ -1,8 +1,7 @@
-      <section className="py-12">
+import React from 'react';
 import { Star, MapPin, Phone, Mail, Award, TrendingUp, Users, Target } from 'lucide-react';
 
 const SEOContent: React.FC = () => {
-      }
   return (
     <div className="bg-white">
       {/* Hero SEO Section */}
@@ -119,4 +118,8 @@ const SEOContent: React.FC = () => {
           </div>
         </div>
       </section>
-  )
+    </div>
+  );
+};
+
+export default SEOContent;
