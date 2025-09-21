@@ -8,8 +8,10 @@ import Testimonials from './components/Testimonials';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import BookCall from './components/BookCall';
+import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
+import Privacy from './components/Privacy';
 
 function HomePage() {
   return (
@@ -20,6 +22,7 @@ function HomePage() {
       <Testimonials />
       <About />
       <FAQ />
+      <FinalCTA />
       <BookCall />
     </>
   );
@@ -56,6 +59,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog/client-acquisition-system" element={<BlogPost />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
       <Footer />

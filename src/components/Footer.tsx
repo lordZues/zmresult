@@ -1,11 +1,12 @@
 import React from 'react';
-import { Mail, Phone, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-950 text-white py-12">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">ZM Results</h3>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -42,23 +43,8 @@ const Footer: React.FC = () => {
               <li>
                 <a href="#book-call" className="text-gray-300 hover:text-orange-400 transition-colors">Book a Call</a>
               </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <Mail size={20} className="text-orange-400 mr-3" />
-                <a href="mailto:hello@zmresults.com" className="text-gray-300 hover:text-white">
-                  hello@zmresults.com
-                </a>
-              </li>
-              <li className="flex items-center">
-                <Phone size={20} className="text-orange-400 mr-3" />
-                <a href="tel:+15551234567" className="text-gray-300 hover:text-white">
-                  (555) 123-4567
-                </a>
+              <li>
+                <Link to="/privacy" className="text-gray-300 hover:text-orange-400 transition-colors">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -70,9 +56,9 @@ const Footer: React.FC = () => {
           </p>
           
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-orange-400 text-sm">
+            <Link to="/privacy" className="text-gray-400 hover:text-orange-400 text-sm">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="text-gray-400 hover:text-orange-400 text-sm">
               Terms of Service
             </a>

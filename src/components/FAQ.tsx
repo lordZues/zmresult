@@ -31,28 +31,28 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "How is this different from other marketing agencies?",
-      answer: "Unlike traditional agencies that focus on vanity metrics or charge high fees regardless of performance, we're focused solely on generating qualified leads that convert into sales. We also offer a results guarantee - if we don't deliver, you don't pay."
+      question: "Okay, but how is this different from every other agency?",
+      answer: "Simple - we don't get paid unless you get results. Most agencies charge you upfront and then hope for the best. We only make money when you make money. Plus, we focus on getting you actual leads, not just 'brand awareness' or other fluff metrics."
     },
     {
-      question: "Do I need a big budget to work with you?",
-      answer: "No. We've designed our approach to work without relying on expensive paid advertising. Our system focuses on organic strategies that attract your ideal clients without the high costs associated with traditional marketing."
+      question: "Do I need a huge budget for this to work?",
+      answer: "Nope. Our system doesn't rely on expensive ads. We focus on organic strategies that attract your ideal clients without burning through your marketing budget. You'll spend less and get better results."
     },
     {
-      question: "How long until I see results?",
-      answer: "Many clients start seeing initial results within the first 7-14 days of implementation. However, the system continues to improve over time as we optimize based on data. For most businesses, the 30-60 day mark is where we see significant momentum."
+      question: "How fast will I actually see results?",
+      answer: "Most of our clients start seeing leads within the first 7-14 days. But here's the thing - we're not promising overnight miracles. We build sustainable systems that keep working long-term, not quick fixes that fall apart."
     },
     {
-      question: "Will this work for my specific industry?",
-      answer: "We've successfully implemented our strategies across multiple industries including professional services, SaaS, consulting, coaching, real estate, financial services, and more. During our strategy call, we'll discuss your specific business model and determine if we're a good fit."
+      question: "Will this work for my specific business?",
+      answer: "We've done this for service businesses, consultants, coaches, agencies, and more. The principles work across industries, but we customize everything for your specific situation. That's why we start with a strategy call - to make sure we're a good fit."
     },
     {
-      question: "Do I have to do cold outreach or cold calling?",
-      answer: "Absolutely not. Our entire approach is built around attracting qualified leads to you, rather than you chasing after them. No cold calling, no DM spamming, no pushy sales tactics required."
+      question: "Do I have to do cold calling or spam people?",
+      answer: "Absolutely not. We hate that stuff as much as you do. Our entire approach is about attracting people who already want what you're selling. No cold calls, no spammy DMs, no pushy tactics."
     },
     {
       question: "What happens after I book a call?",
-      answer: "You'll have a 30-minute strategy session where we'll discuss your business goals, current challenges, and determine if our approach is right for you. If we're a good fit, we'll outline the next steps for getting started."
+      answer: "We'll have a 30-minute conversation about your business. No pressure, no hard sell. We'll share some ideas that could help you right away, and if we think we can help you long-term, we'll talk about next steps."
     }
   ];
 
@@ -60,12 +60,12 @@ const FAQ: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <span className="text-orange-500 font-semibold tracking-wider uppercase">Common Questions</span>
+          <span className="text-orange-500 font-semibold tracking-wider uppercase">Questions</span>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mt-2 mb-4">
-            Frequently Asked Questions
+            Let's Address the Elephant in the Room
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Get answers to the most common questions about our approach and results.
+            You're probably thinking "Yeah right, another agency making big promises." We get it. Here are the questions everyone asks.
           </p>
         </div>
         
@@ -81,13 +81,13 @@ const FAQ: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-700 mb-6">
-            Still have questions? We're here to help.
+            Still have questions? Let's talk about it.
           </p>
           <a 
             href="#book-call" 
             className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-4 rounded-md text-lg font-medium transition-all"
           >
-            Schedule a Free Consultation
+            Book a Quick Call
           </a>
         </div>
       </div>
