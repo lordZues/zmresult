@@ -10,11 +10,14 @@ import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
 import { SocialMediaConversionPost, WebsiteConversionPost, LocalSEOPost } from './components/AdditionalBlogPosts';
+import MarketingTrendsPost from './components/BlogPosts/MarketingTrendsPost';
+import LeadGenerationGuidePost from './components/BlogPosts/LeadGenerationGuidePost';
 import Privacy from './components/Privacy';
 import LocalSEO from './components/LocalSEO';
 import GoogleBusinessProfile from './components/GoogleBusinessProfile';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import SEOPages from './components/SEOPages';
+import SEOContent from './components/SEOContent';
 
 function HomePage() {
   return (
@@ -22,6 +25,7 @@ function HomePage() {
       <GoogleAnalytics />
       <LocalSEO />
       <NewHero />
+      <SEOContent />
       <Services />
       <About />
       <GoogleBusinessProfile />
@@ -66,6 +70,8 @@ function App() {
           <Route path="/blog/social-media-conversion-strategy" element={<SocialMediaConversionPost />} />
           <Route path="/blog/website-conversion-mistakes" element={<WebsiteConversionPost />} />
           <Route path="/blog/local-seo-domination-guide" element={<LocalSEOPost />} />
+          <Route path="/blog/digital-marketing-trends-south-africa-2024" element={<MarketingTrendsPost />} />
+          <Route path="/blog/complete-lead-generation-guide-south-africa" element={<LeadGenerationGuidePost />} />
           <Route path="/location/:city" element={<SEOPages />} />
           <Route path="/durban-marketing-agency" element={<SEOPages />} />
           <Route path="/johannesburg-marketing-agency" element={<SEOPages />} />

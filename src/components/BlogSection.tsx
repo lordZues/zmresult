@@ -52,6 +52,22 @@ const BlogSection: React.FC = () => {
       category: "Lead Generation"
     },
     {
+      title: "Top 10 Digital Marketing Trends Dominating South Africa in 2024",
+      excerpt: "The South African digital marketing landscape is evolving rapidly. Here are the trends that successful businesses are using to dominate their markets.",
+      slug: "digital-marketing-trends-south-africa-2024",
+      date: "December 15, 2024",
+      readTime: "12 min",
+      category: "Digital Marketing"
+    },
+    {
+      title: "The Complete Lead Generation Guide for South African Businesses 2024",
+      excerpt: "Everything you need to know about generating qualified leads in South Africa. The exact strategies that are working for successful businesses right now.",
+      slug: "complete-lead-generation-guide-south-africa",
+      date: "December 15, 2024",
+      readTime: "15 min",
+      category: "Lead Generation"
+    },
+    {
       title: "Why Your Social Media Isn't Converting (And How to Fix It)",
       excerpt: "You're posting content, getting likes, but no sales. Here's the missing piece that turns social media followers into paying customers.",
       slug: "social-media-conversion-strategy",
