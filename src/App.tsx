@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import NewHero from './components/NewHero';
 import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
+import About from './components/About';
 import CompaniesSection from './components/CompaniesSection';
 import DirectorSection from './components/DirectorSection';
 import ContactSection from './components/ContactSection';
@@ -22,7 +22,7 @@ function HomePage() {
       <Services />
       <CompaniesSection />
       <LocationContent />
-      <WhyChooseUs />
+      <About />
       <GoogleBusinessProfile />
       <DirectorSection />
       <ContactSection />
