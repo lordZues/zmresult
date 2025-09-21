@@ -20,7 +20,7 @@ const DirectorSection: React.FC = () => {
             <div className="md:flex">
               <div className="md:w-1/3">
                 <img 
-                  src="/5879759277483215502.jpg" 
+                  src="/5877404059152009299.jpg" 
                   alt="Zusakhe Mazibu - Director" 
                   className="w-full h-64 md:h-full object-cover"
                 />
