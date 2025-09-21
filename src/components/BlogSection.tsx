@@ -41,6 +41,7 @@ const BlogCard: React.FC<BlogPostProps> = ({ title, excerpt, slug, date, readTim
   </article>
 );
 
+const BlogSection: React.FC = () => {
   const blogPosts: BlogPostProps[] = [
     {
       title: "Still struggling to get clients? Here's what no one's telling you.",
