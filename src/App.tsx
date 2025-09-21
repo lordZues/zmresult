@@ -18,6 +18,10 @@ import GoogleBusinessProfile from './components/GoogleBusinessProfile';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import SEOPages from './components/SEOPages';
 import SEOContent from './components/SEOContent';
+import WebDesignPage from './components/ServicePages/WebDesignPage';
+import SocialMediaPage from './components/ServicePages/SocialMediaPage';
+import GoogleAdsPage from './components/ServicePages/GoogleAdsPage';
+import ContentMarketingPage from './components/ServicePages/ContentMarketingPage';
 
 function HomePage() {
   return (
@@ -72,6 +76,10 @@ function App() {
           <Route path="/blog/local-seo-domination-guide" element={<LocalSEOPost />} />
           <Route path="/blog/digital-marketing-trends-south-africa-2024" element={<MarketingTrendsPost />} />
           <Route path="/blog/complete-lead-generation-guide-south-africa" element={<LeadGenerationGuidePost />} />
+          <Route path="/web-design-services-south-africa" element={<WebDesignPage />} />
+          <Route path="/social-media-marketing-services-south-africa" element={<SocialMediaPage />} />
+          <Route path="/google-ads-management-south-africa" element={<GoogleAdsPage />} />
+          <Route path="/content-marketing-services-south-africa" element={<ContentMarketingPage />} />
           <Route path="/location/:city" element={<SEOPages />} />
           <Route path="/durban-marketing-agency" element={<SEOPages />} />
           <Route path="/johannesburg-marketing-agency" element={<SEOPages />} />

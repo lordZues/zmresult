@@ -1,5 +1,6 @@
 import React from 'react';
 import { Globe, Users, Target, ArrowRight, CheckCircle, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   return (
@@ -59,6 +60,15 @@ const Services: React.FC = () => {
               <span className="text-3xl font-black text-blue-950">Estimated from R2,500</span>
               <p className="text-gray-600">Final pricing after consultation</p>
             </div>
+            
+            <div className="mt-6 text-center">
+              <Link 
+                to="/web-design-services-south-africa"
+                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                Learn More About Web Design <ArrowRight size={16} className="ml-1" />
+              </Link>
+            </div>
           </div>
 
           {/* Service 2: Social Media */}
@@ -103,6 +113,15 @@ const Services: React.FC = () => {
               <span className="text-3xl font-black text-blue-950">Estimated from R2,000/week</span>
               <p className="text-gray-600">Pricing customized to your needs</p>
             </div>
+            
+            <div className="mt-6 text-center">
+              <Link 
+                to="/social-media-marketing-services-south-africa"
+                className="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold"
+              >
+                Learn More About Social Media <ArrowRight size={16} className="ml-1" />
+              </Link>
+            </div>
           </div>
 
           {/* Service 3: Customer Access */}
@@ -146,6 +165,15 @@ const Services: React.FC = () => {
             <div className="text-center">
               <span className="text-3xl font-black text-blue-950">Estimated from R3,000/month</span>
               <p className="text-gray-600">Investment based on your goals</p>
+            </div>
+            
+            <div className="mt-6 text-center">
+              <Link 
+                to="/google-ads-management-south-africa"
+                className="inline-flex items-center text-orange-600 hover:text-orange-800 font-semibold"
+              >
+                Learn More About Google Ads <ArrowRight size={16} className="ml-1" />
+              </Link>
             </div>
           </div>
         </div>
@@ -202,6 +230,23 @@ const Services: React.FC = () => {
             <p className="mt-6 text-gray-300">
               💰 Custom pricing after consultation • 🚀 Tailored strategy • 📞 Free assessment call
             </p>
+            
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Link 
+                to="/content-marketing-services-south-africa"
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white/20 transition-all"
+              >
+                <p className="font-semibold text-white">Content Marketing</p>
+                <p className="text-gray-300 text-sm">Blog writing & SEO content</p>
+              </Link>
+              <Link 
+                to="/google-ads-management-south-africa"
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white/20 transition-all"
+              >
+                <p className="font-semibold text-white">Google Ads Management</p>
+                <p className="text-gray-300 text-sm">PPC advertising & optimization</p>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
