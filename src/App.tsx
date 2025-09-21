@@ -6,21 +6,27 @@ import Services from './components/Services';
 import About from './components/About';
 import DirectorSection from './components/DirectorSection';
 import BookCall from './components/BookCall';
+import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
+import { SocialMediaConversionPost, WebsiteConversionPost, LocalSEOPost } from './components/AdditionalBlogPosts';
 import Privacy from './components/Privacy';
 import LocalSEO from './components/LocalSEO';
 import GoogleBusinessProfile from './components/GoogleBusinessProfile';
+import GoogleAnalytics from './components/GoogleAnalytics';
+import SEOPages from './components/SEOPages';
 
 function HomePage() {
   return (
     <>
+      <GoogleAnalytics />
       <LocalSEO />
       <NewHero />
       <Services />
       <About />
       <GoogleBusinessProfile />
       <DirectorSection />
+      <BlogSection />
       <BookCall />
     </>
   );
@@ -57,6 +63,14 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog/client-acquisition-system" element={<BlogPost />} />
+          <Route path="/blog/social-media-conversion-strategy" element={<SocialMediaConversionPost />} />
+          <Route path="/blog/website-conversion-mistakes" element={<WebsiteConversionPost />} />
+          <Route path="/blog/local-seo-domination-guide" element={<LocalSEOPost />} />
+          <Route path="/location/:city" element={<SEOPages />} />
+          <Route path="/durban-marketing-agency" element={<SEOPages />} />
+          <Route path="/johannesburg-marketing-agency" element={<SEOPages />} />
+          <Route path="/cape-town-marketing-agency" element={<SEOPages />} />
+          <Route path="/pretoria-marketing-agency" element={<SEOPages />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
