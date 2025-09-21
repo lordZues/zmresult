@@ -20,7 +20,7 @@ const DirectorSection: React.FC = () => {
             <div className="md:flex">
               <div className="md:w-1/3">
                 <img 
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  src="/5879759277483215502.jpg" 
                   alt="Zusakhe Mazibu - Director" 
                   className="w-full h-64 md:h-full object-cover"
                 />
@@ -31,9 +31,10 @@ const DirectorSection: React.FC = () => {
                 <p className="text-xl text-orange-500 font-semibold mb-6">Founder & Director</p>
                 
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  With years of experience in digital marketing and business growth, Zusakhe founded ZM Results 
-                  to help South African businesses thrive in the digital age. His passion for delivering real 
-                  results has helped hundreds of businesses transform their customer acquisition strategies.
+                  Zusakhe Mazibu is the visionary founder and director of ZM Results, South Africa's premier 
+                  digital marketing and advertising agency. With a proven track record of helping over 500 
+                  businesses generate more than R50 million in revenue, Zusakhe has established himself as 
+                  a leading authority in customer acquisition and business growth strategies across South Africa.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -49,8 +50,8 @@ const DirectorSection: React.FC = () => {
                     <div className="bg-orange-100 text-orange-600 p-3 rounded-full inline-block mb-3">
                       <Award size={24} />
                     </div>
-                    <p className="font-semibold text-blue-950">98%</p>
-                    <p className="text-gray-600 text-sm">Success Rate</p>
+                    <p className="font-semibold text-blue-950">4.9/5</p>
+                    <p className="text-gray-600 text-sm">Client Rating</p>
                   </div>
                   
                   <div className="text-center">
