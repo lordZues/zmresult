@@ -93,6 +93,12 @@ const Footer: React.FC = () => {
             </a>
           </div>
         </div>
+        
+        <div className="border-t border-blue-800 mt-8 pt-6 text-center">
+          <p className="text-gray-400 text-sm">
+            Created and Maintained by <span className="text-orange-400 font-semibold">ZM RESULTS</span>
+          </p>
+        </div>
       </div>
     </footer>
   );
