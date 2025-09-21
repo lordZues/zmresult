@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, ArrowRight, CheckCircle, Shield, Award, Zap } from 'lucide-react';
+import { Calendar, ArrowRight, CheckCircle, Shield, Award, Zap, MessageCircle } from 'lucide-react';
 import { submitToGoogleSheets, submitViaAppsScript, submitViaFormSubmit } from '../utils/googleSheets';
 
 const BookCall: React.FC = () => {
@@ -334,6 +334,17 @@ const BookCall: React.FC = () => {
                     <p className="text-orange-400 font-bold text-xl">
                       🎯 Looking forward to helping you 10X your business!
                     </p>
+                    <div className="mt-6">
+                      <a 
+                        href="https://wa.me/27736957783" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-bold transition-all"
+                      >
+                        <MessageCircle className="mr-2 h-5 w-5" />
+                        WhatsApp Us Instead
+                      </a>
+                    </div>
                   </div>
                 )}
               </div>

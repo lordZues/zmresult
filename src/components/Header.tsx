@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight, Award } from 'lucide-react';
+import { Menu, X, ChevronRight, Award, MessageCircle } from 'lucide-react';
 import NAP from './NAP';
 
 const Header: React.FC = () => {
@@ -62,6 +62,14 @@ const Header: React.FC = () => {
                 <span className="mr-2">🚀</span>
                 Get Started <ChevronRight className="ml-1 h-4 w-4" />
               </a>
+              <a 
+                href="https://wa.me/27736957783" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-xl transition-all flex items-center font-bold shadow-lg transform hover:scale-105"
+              >
+                <MessageCircle className="h-5 w-5" />
+              </a>
             </nav>
             
             {/* Mobile menu button */}
@@ -107,6 +115,16 @@ const Header: React.FC = () => {
             >
               🚀 
               Get Started
+            </a>
+            <a 
+              href="https://wa.me/27736957783" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-xl transition-all text-center font-bold shadow-lg flex items-center justify-center"
+              onClick={() => setIsOpen(false)}
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              WhatsApp Us
             </a>
           </div>
         </div>

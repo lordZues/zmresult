@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Globe, Users, Target, CheckCircle } from 'lucide-react';
+import { ArrowRight, Globe, Users, Target, CheckCircle, MessageCircle } from 'lucide-react';
 
 const NewHero: React.FC = () => {
   return (
@@ -47,6 +47,16 @@ const NewHero: React.FC = () => {
             >
               <span className="mr-3">📞</span>
               CALL ME NOW
+            </a>
+            
+            <a 
+              href="https://wa.me/27736957783" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-xl font-bold transition-all flex items-center justify-center shadow-lg transform hover:scale-105"
+            >
+              <MessageCircle className="mr-3 h-6 w-6" />
+              WhatsApp Me
             </a>
           </div>
           
