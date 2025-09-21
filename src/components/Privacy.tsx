@@ -75,7 +75,7 @@ const Privacy: React.FC = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-blue-950 mb-4">7. Contact Us</h2>
             <p>
-              If you have any questions about this Privacy Policy or our practices, please contact us at privacy@zmresults.org.
+              If you have any questions about this Privacy Policy or our practices, please contact us at privacy@zmresultss.org.
             </p>
           </section>
         </div>

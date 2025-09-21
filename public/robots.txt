@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zmresults.org/sitemap.xml
+
+# Encourage crawling of key pages
+User-agent: Googlebot
+Allow: /
+Allow: /#services
+Allow: /#contact
+Allow: /#why-choose-us
+
+User-agent: Bingbot
+Allow: /
+
+# Local SEO crawling
+User-agent: *
+Allow: /cape-town-digital-marketing
+Allow: /johannesburg-advertising-agency
+Allow: /durban-social-media-marketing
+Allow: /pretoria-lead-generation
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /.env
+Disallow: /src/
+Disallow: /node_modules/
+
+# Crawl directives for better local SEO
+Crawl-delay: 1
+
+# Additional sitemap references
+Sitemap: https://zmresults.org/sitemap.xml

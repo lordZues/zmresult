@@ -1,29 +1,31 @@
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Results from './components/Results';
-import Process from './components/Process';
-import Testimonials from './components/Testimonials';
-import About from './components/About';
-import FAQ from './components/FAQ';
-import BookCall from './components/BookCall';
-import FinalCTA from './components/FinalCTA';
+import NewHero from './components/NewHero';
+import Services from './components/Services';
+import WhyChooseUs from './components/WhyChooseUs';
+import CompaniesSection from './components/CompaniesSection';
+import DirectorSection from './components/DirectorSection';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import BlogPost from './components/BlogPost';
 import Privacy from './components/Privacy';
+import LocalSEO from './components/LocalSEO';
+import LocationContent from './components/LocationContent';
+import GoogleBusinessProfile from './components/GoogleBusinessProfile';
 
 function HomePage() {
   return (
     <>
-      <Hero />
-      <Results />
-      <Process />
-      <Testimonials />
-      <About />
-      <FAQ />
-      <FinalCTA />
-      <BookCall />
+      <LocalSEO />
+      <NewHero />
+      <Services />
+      <CompaniesSection />
+      <LocationContent />
+      <WhyChooseUs />
+      <GoogleBusinessProfile />
+      <DirectorSection />
+      <ContactSection />
     </>
   );
 }

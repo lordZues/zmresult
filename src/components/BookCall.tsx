@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, ArrowRight, CheckCircle, Shield, Award, Zap } from 'lucide-react';
+import { submitToGoogleSheets, submitViaAppsScript, submitViaFormSubmit } from '../utils/googleSheets';
 
 const BookCall: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -30,26 +31,36 @@ const BookCall: React.FC = () => {
     setError('');
     
     try {
-      // Updated Google Apps Script Web App URL
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbxwBb2KDvXP_toBahYcOu3WGnnIlIXfAxBeAZTeH3zaMGGnoNLd8D6KDTXY9yfpAEcM/exec';
+      const leadData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        business: formData.business,
+        challenges: formData.challenges,
+        service: 'Strategy Call',
+        source: 'Book Call Form'
+      };
       
-      // Create form data for Google Apps Script
-      const formDataToSend = new FormData();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('business', formData.business);
-      formDataToSend.append('challenges', formData.challenges);
-      formDataToSend.append('action', 'addLead');
+      // Try multiple methods for maximum reliability
+      let success = false;
       
-      const response = await fetch(scriptUrl, {
-        method: 'POST',
-        body: formDataToSend,
-        mode: 'no-cors' // Required for Google Apps Script
-      });
+      // Method 1: Direct Google Sheets API
+      success = await submitToGoogleSheets(leadData);
       
-      // Since we're using no-cors mode, we can't read the response
-      // But if we get here without an error, it likely succeeded
+      // Method 2: Fallback to Apps Script (if first method fails)
+      if (!success) {
+        success = await submitViaAppsScript(leadData);
+      }
+      
+      // Method 3: Email fallback (if both above fail)
+      if (!success) {
+        success = await submitViaFormSubmit(leadData);
+      }
+      
+      if (!success) {
+        throw new Error('Failed to submit lead data');
+      }
+      
       setIsSubmitted(true);
       
       // Reset form
@@ -85,10 +96,17 @@ const BookCall: React.FC = () => {
               Free Strategy Session
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">10X Your Leads?</span>
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Grow Your Business?</span><br />
+              <span className="text-2xl md:text-3xl">Let's See if We're a Perfect Fit.</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Book your free 30-minute strategy call and discover exactly how we'll get you 37+ qualified leads in the next 9 days.
+              Book your free 30-minute consultation where we'll listen to your business needs and outline a potential strategy tailored just for you.
+            </p>
+            <div className="bg-red-500/20 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
+              <p className="text-white font-bold">
+                ⚡ LIMITED SPOTS: Our consultation spots are limited each week to ensure quality. Secure yours now!
+              </p>
+            </div>
             </p>
           </div>
           
@@ -103,7 +121,7 @@ const BookCall: React.FC = () => {
                 </div>
                 
                 <p className="text-gray-200 mb-10 text-lg">
-                  During this <span className="text-orange-400 font-bold">30-minute power session</span>, we'll discuss:
+                  During this <span className="text-orange-400 font-bold">30-minute consultation</span>, we'll:
                 </p>
                 
                 <ul className="space-y-6 mb-10">
@@ -112,8 +130,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Your current business challenges and goals</p>
-                      <p className="text-gray-300 text-sm">We'll identify what's blocking your growth</p>
+                      <p className="font-semibold text-lg">Listen to your business story and challenges</p>
+                      <p className="text-gray-300 text-sm">Understanding where you are and where you want to go</p>
                     </div>
                   </li>
                   
@@ -122,8 +140,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">A customized strategy to generate more qualified leads</p>
-                      <p className="text-gray-300 text-sm">Tailored specifically for your business</p>
+                      <p className="font-semibold text-lg">Outline a potential custom strategy</p>
+                      <p className="text-gray-300 text-sm">Website creation, social media growth, customer acquisition</p>
                     </div>
                   </li>
                   
@@ -132,8 +150,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Actionable steps you can implement right away</p>
-                      <p className="text-gray-300 text-sm">Walk away with immediate value</p>
+                      <p className="font-semibold text-lg">Discuss estimated investment and timeline</p>
+                      <p className="text-gray-300 text-sm">Transparent pricing based on your specific needs</p>
                     </div>
                   </li>
                   
@@ -142,8 +160,8 @@ const BookCall: React.FC = () => {
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-lg">Whether we're a good fit to work together</p>
-                      <p className="text-gray-300 text-sm">No pressure, just honest assessment</p>
+                      <p className="font-semibold text-lg">Determine if we're the right fit for each other</p>
+                      <p className="text-gray-300 text-sm">Mutual assessment with no pressure or obligation</p>
                     </div>
                   </li>
                 </ul>
@@ -152,10 +170,10 @@ const BookCall: React.FC = () => {
                 <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 p-6 rounded-2xl mb-8">
                   <div className="flex items-center mb-3">
                     <Shield className="w-6 h-6 text-green-400 mr-3" />
-                    <p className="text-lg font-bold text-green-400">Our Iron-Clad Guarantee</p>
+                    <p className="text-lg font-bold text-green-400">Money Back Guarantee</p>
                   </div>
                   <p className="text-gray-200">
-                    If you don't get <span className="text-white font-semibold">massive value</span> from this call, we'll send you a <span className="text-green-400 font-bold">$50 gift card</span> as a thank you for your time.
+                    If our services don't work for your business, <span className="text-white font-semibold">you get your money back</span>. <span className="text-green-400 font-bold">100% guaranteed.</span>
                   </p>
                 </div>
                 
