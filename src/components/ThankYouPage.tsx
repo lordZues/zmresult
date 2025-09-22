@@ -116,3 +116,5 @@ const ThankYouPage: React.FC = () => {
 };
 
 export default ThankYouPage;
+  )
+}
