@@ -88,37 +88,37 @@ const BookCall: React.FC = () => {
   };
   
   return (
-    <section id="book-call" className="py-24 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 relative overflow-hidden">
+    <section id="book-call" className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.05%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-      <div className="absolute top-20 right-20 w-96 h-96 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-pulse delay-1000"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23000000%22 fill-opacity=%220.02%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+      <div className="absolute top-20 right-20 w-96 h-96 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-25 animate-pulse delay-1000"></div>
       
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto relative z-10">
           {/* Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm text-orange-300 px-6 py-3 rounded-full font-bold text-sm tracking-wider uppercase mb-6 border border-orange-400/30">
+            <div className="inline-flex items-center bg-orange-100 text-orange-600 px-6 py-3 rounded-full font-bold text-sm tracking-wider uppercase mb-6 border border-orange-300">
               <Calendar className="w-5 h-5 mr-2" />
               Free Strategy Session
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Grow Your Business?</span><br />
+            <h2 className="text-4xl md:text-6xl font-black text-blue-950 mb-6 leading-tight">
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Grow Your Business?</span><br />
               <span className="text-2xl md:text-3xl">Let's See if We're a Perfect Fit.</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Book your free 30-minute consultation where we'll listen to your business needs and outline a potential strategy tailored just for you.
             </p>
-            <div className="bg-red-500/20 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
-              <p className="text-white font-bold">
+            <div className="bg-red-100 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
+              <p className="text-red-700 font-bold">
                 ⚡ LIMITED SPOTS: Our consultation spots are limited each week to ensure quality. Secure yours now!
               </p>
             </div>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden border border-white/20">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
             <div className="md:flex">
-              <div className="md:w-1/2 bg-gradient-to-br from-blue-900/50 to-blue-800/50 backdrop-blur-sm text-white p-12 flex flex-col justify-center border-r border-white/20">
+              <div className="md:w-1/2 bg-gradient-to-br from-blue-950 to-blue-900 text-white p-12 flex flex-col justify-center border-r border-gray-200">
                 <div className="flex items-center mb-8">
                   <div className="bg-orange-500 p-3 rounded-2xl mr-4 shadow-lg">
                     <Calendar size={28} className="text-white" />
@@ -173,7 +173,7 @@ const BookCall: React.FC = () => {
                 </ul>
                 
                 {/* Guarantee Box */}
-                <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 p-6 rounded-2xl mb-8">
+                <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-400/30 p-6 rounded-2xl mb-8">
                   <div className="flex items-center mb-3">
                     <Shield className="w-6 h-6 text-green-400 mr-3" />
                     <p className="text-lg font-bold text-green-400">Money Back Guarantee</p>
@@ -200,21 +200,21 @@ const BookCall: React.FC = () => {
                 </div>
               </div>
               
-              <div className="md:w-1/2 p-12 bg-white/5 backdrop-blur-sm">
+              <div className="md:w-1/2 p-12 bg-gray-50">
                 {!isSubmitted ? (
                   <form onSubmit={handleSubmit} className="space-y-8">
-                    <h3 className="text-3xl font-black text-white mb-8 text-center">
-                      Get Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Customized Strategy</span>
+                    <h3 className="text-3xl font-black text-blue-950 mb-8 text-center">
+                      Get Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Customized Strategy</span>
                     </h3>
                     
                     {error && (
-                      <div className="bg-red-500/20 border border-red-400/30 text-red-300 px-6 py-4 rounded-xl backdrop-blur-sm">
+                      <div className="bg-red-100 border border-red-300 text-red-700 px-6 py-4 rounded-xl">
                         {error}
                       </div>
                     )}
                     
                     <div>
-                      <label htmlFor="name" className="block text-white font-bold mb-3 text-lg">
+                      <label htmlFor="name" className="block text-blue-950 font-bold mb-3 text-lg">
                         Your Name
                       </label>
                       <input
@@ -223,7 +223,7 @@ const BookCall: React.FC = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300 text-lg"
+                        className="w-full px-6 py-4 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-500 text-lg"
                         placeholder="John Smith"
                         required
                         disabled={isSubmitting}
@@ -231,7 +231,7 @@ const BookCall: React.FC = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-white font-bold mb-3 text-lg">
+                      <label htmlFor="email" className="block text-blue-950 font-bold mb-3 text-lg">
                         Email Address
                       </label>
                       <input
@@ -240,7 +240,7 @@ const BookCall: React.FC = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300 text-lg"
+                        className="w-full px-6 py-4 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-500 text-lg"
                         placeholder="john@example.com"
                         required
                         disabled={isSubmitting}
@@ -248,7 +248,7 @@ const BookCall: React.FC = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="phone" className="block text-white font-bold mb-3 text-lg">
+                      <label htmlFor="phone" className="block text-blue-950 font-bold mb-3 text-lg">
                         Phone Number
                       </label>
                       <input
@@ -257,7 +257,7 @@ const BookCall: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300 text-lg"
+                        className="w-full px-6 py-4 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-500 text-lg"
                         placeholder="(555) 123-4567"
                         required
                         disabled={isSubmitting}
@@ -265,7 +265,7 @@ const BookCall: React.FC = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="business" className="block text-white font-bold mb-3 text-lg">
+                      <label htmlFor="business" className="block text-blue-950 font-bold mb-3 text-lg">
                         Business Type
                       </label>
                       <select
@@ -273,7 +273,7 @@ const BookCall: React.FC = () => {
                         name="business"
                         value={formData.business}
                         onChange={handleChange}
-                        className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white text-lg"
+                        className="w-full px-6 py-4 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 text-lg"
                         required
                         disabled={isSubmitting}
                       >
@@ -288,7 +288,7 @@ const BookCall: React.FC = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="challenges" className="block text-white font-bold mb-3 text-lg">
+                      <label htmlFor="challenges" className="block text-blue-950 font-bold mb-3 text-lg">
                         Biggest Business Challenge
                       </label>
                       <textarea
@@ -296,7 +296,7 @@ const BookCall: React.FC = () => {
                         name="challenges"
                         value={formData.challenges}
                         onChange={handleChange}
-                        className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-white placeholder-gray-300 text-lg resize-none"
+                        className="w-full px-6 py-4 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-500 text-lg resize-none"
                         placeholder="What's your biggest challenge with lead generation?"
                         rows={4}
                         required
@@ -323,22 +323,22 @@ const BookCall: React.FC = () => {
                       )}
                     </button>
                     
-                    <p className="text-gray-300 text-center font-medium">
+                    <p className="text-gray-600 text-center font-medium">
                       🔒 We respect your privacy. Your information will never be shared.
                     </p>
                   </form>
                 ) : (
                   <div className="text-center py-12">
                     <div className="inline-flex items-center justify-center w-20 h-20 bg-green-500 rounded-full mb-8 shadow-2xl">
-                      <CheckCircle size={32} className="text-green-600" />
+                      <CheckCircle size={32} className="text-white" />
                     </div>
-                    <h3 className="text-3xl font-black text-white mb-6">
+                    <h3 className="text-3xl font-black text-blue-950 mb-6">
                       Thank You for Scheduling!
                     </h3>
-                    <p className="text-gray-200 mb-8 text-lg leading-relaxed">
+                    <p className="text-gray-700 mb-8 text-lg leading-relaxed">
                       We've received your information and will be in touch shortly to confirm your strategy call. Check your email for more details.
                     </p>
-                    <p className="text-orange-400 font-bold text-xl">
+                    <p className="text-orange-600 font-bold text-xl">
                       🎯 Looking forward to helping you 10X your business!
                     </p>
                     <div className="mt-6">
@@ -360,14 +360,14 @@ const BookCall: React.FC = () => {
           
           {/* Bottom Trust Indicators */}
           <div className="mt-12 text-center">
-            <p className="text-gray-300 mb-4">Join 500+ business owners who've transformed their lead generation</p>
+            <p className="text-gray-600 mb-4">Join 500+ business owners who've transformed their lead generation</p>
             <div className="flex justify-center items-center gap-2">
               {[1,2,3,4,5].map((star) => (
                 <svg key={star} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               ))}
-              <span className="ml-3 text-gray-300 font-bold">4.9/5 from 200+ reviews</span>
+              <span className="ml-3 text-gray-600 font-bold">4.9/5 from 200+ reviews</span>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const ThankYouPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-32 pb-20 min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800">
+    <div className="pt-32 pb-20 min-h-screen bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Success Icon */}
@@ -19,41 +19,42 @@ const ThankYouPage: React.FC = () => {
           
           {/* Main Message */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-blue-950 mb-6">
             Thank You!
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
             We've received your information and will be in touch within 24 hours to discuss your business growth strategy.
           </p>
           
           {/* What Happens Next */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 mb-12 text-left">
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">What Happens Next?</h2>
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 mb-12 text-left">
+            <h2 className="text-2xl font-bold text-blue-950 mb-6 text-center">What Happens Next?</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
-                <h3 className="text-lg font-bold text-white mb-2">We Review Your Info</h3>
-                <p className="text-gray-300 text-sm">Our team analyzes your business needs and challenges</p>
+                <h3 className="text-lg font-bold text-blue-950 mb-2">We Review Your Info</h3>
+                <p className="text-gray-600 text-sm">Our team analyzes your business needs and challenges</p>
               </div>
               
               <div className="text-center">
                 <div className="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
-                <h3 className="text-lg font-bold text-white mb-2">We Call You</h3>
-                <p className="text-gray-300 text-sm">Expect a call within 24 hours to schedule your consultation</p>
+                <h3 className="text-lg font-bold text-blue-950 mb-2">We Call You</h3>
+                <p className="text-gray-600 text-sm">Expect a call within 24 hours to schedule your consultation</p>
               </div>
               
               <div className="text-center">
                 <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
-                <h3 className="text-lg font-bold text-white mb-2">Strategy Session</h3>
-                <p className="text-gray-300 text-sm">30-minute consultation to create your custom growth plan</p>
+                <h3 className="text-lg font-bold text-blue-950 mb-2">Strategy Session</h3>
+                <p className="text-gray-600 text-sm">30-minute consultation to create your custom growth plan</p>
               </div>
             </div>
           </div>
           
           {/* Contact Options */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12">
-            <h2 className="text-2xl font-bold text-white mb-6">Need to Reach Us Immediately?</h2>
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 mb-12">
+            <h2 className="text-2xl font-bold text-blue-950 mb-6">Need to Reach Us Immediately?</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a 
@@ -89,20 +90,20 @@ const ThankYouPage: React.FC = () => {
           
           {/* Additional Resources */}
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-white mb-6">While You Wait...</h2>
-            <p className="text-gray-300 mb-6">Check out our latest insights on growing your business</p>
+            <h2 className="text-2xl font-bold text-blue-950 mb-6">While You Wait...</h2>
+            <p className="text-gray-600 mb-6">Check out our latest insights on growing your business</p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/blog/digital-marketing-trends-south-africa-2024"
-                className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg transition-all flex items-center justify-center"
+                className="bg-blue-950 hover:bg-blue-900 text-white px-6 py-3 rounded-lg transition-all flex items-center justify-center"
               >
                 Read Our Latest Blog <ArrowRight size={16} className="ml-2" />
               </Link>
               
               <Link 
                 to="/"
-                className="border border-white/30 hover:bg-white hover:text-blue-950 text-white px-6 py-3 rounded-lg transition-all"
+                className="border border-blue-950 hover:bg-blue-950 hover:text-white text-blue-950 px-6 py-3 rounded-lg transition-all"
               >
                 Back to Home
               </Link>

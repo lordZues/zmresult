@@ -66,7 +66,7 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-white min-h-screen">
       <Header />
       <main>
         <Routes>
