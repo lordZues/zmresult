@@ -31,28 +31,36 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "Okay, but how is this different from every other agency?",
-      answer: "Simple - we don't get paid unless you get results. Most agencies charge you upfront and then hope for the best. We only make money when you make money. Plus, we focus on getting you actual leads, not just 'brand awareness' or other fluff metrics."
+      question: "How much does digital marketing cost in South Africa?",
+      answer: "Our digital marketing services start from R2,500 for basic websites, R2,000/month for social media management, and R3,000/month for lead generation. We provide custom pricing based on your specific business needs and goals. All packages come with our money-back guarantee."
     },
     {
-      question: "Do I need a huge budget for this to work?",
-      answer: "Nope. Our system doesn't rely on expensive ads. We focus on organic strategies that attract your ideal clients without burning through your marketing budget. You'll spend less and get better results."
+      question: "What makes ZM Results different from other marketing agencies?",
+      answer: "We're the only agency in South Africa that offers a 100% money-back guarantee. We focus on actual results - leads, sales, and revenue - not vanity metrics. Plus, we're based locally and understand the South African market better than international agencies."
     },
     {
-      question: "How fast will I actually see results?",
-      answer: "Most of our clients start seeing leads within the first 7-14 days. But here's the thing - we're not promising overnight miracles. We build sustainable systems that keep working long-term, not quick fixes that fall apart."
+      question: "How quickly will I see results from digital marketing?",
+      answer: "Most clients see initial results within 2-4 weeks. Website traffic typically increases within the first month, social media engagement grows within 2-3 weeks, and lead generation campaigns usually start producing qualified leads within 7-14 days."
     },
     {
-      question: "Will this work for my specific business?",
-      answer: "We've done this for service businesses, consultants, coaches, agencies, and more. The principles work across industries, but we customize everything for your specific situation. That's why we start with a strategy call - to make sure we're a good fit."
+      question: "Do you work with businesses outside of Durban?",
+      answer: "Absolutely! While we're based in Durban, we serve businesses across all of South Africa including Cape Town, Johannesburg, Pretoria, and other major cities. All our services can be delivered remotely with regular video calls and updates."
     },
     {
-      question: "Do I have to do cold calling or spam people?",
-      answer: "Absolutely not. We hate that stuff as much as you do. Our entire approach is about attracting people who already want what you're selling. No cold calls, no spammy DMs, no pushy tactics."
+      question: "What's included in your social media marketing service?",
+      answer: "Our social media packages include content creation, posting schedule management, community engagement, hashtag research, performance analytics, and monthly strategy reviews. We handle Facebook, Instagram, LinkedIn, and other platforms based on your target audience."
     },
     {
-      question: "What happens after I book a call?",
-      answer: "We'll have a 30-minute conversation about your business. No pressure, no hard sell. We'll share some ideas that could help you right away, and if we think we can help you long-term, we'll talk about next steps."
+      question: "Can you guarantee my website will rank #1 on Google?",
+      answer: "No ethical SEO company can guarantee #1 rankings, and you should be wary of anyone who promises this. However, we can guarantee improved search visibility, increased organic traffic, and better local search presence. Our SEO strategies are proven to deliver long-term results."
+    },
+    {
+      question: "Do you offer website maintenance and support?",
+      answer: "Yes! All our website packages include ongoing maintenance, security updates, and technical support. We also offer dedicated maintenance packages for existing websites that need regular updates, backups, and performance optimization."
+    },
+    {
+      question: "What if I'm not happy with the results?",
+      answer: "We offer a 100% money-back guarantee. If our services don't deliver the results we promised within the agreed timeframe, you get your money back. No questions asked. This is our commitment to your success."
     }
   ];
 

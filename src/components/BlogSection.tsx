@@ -44,28 +44,28 @@ const BlogCard: React.FC<BlogPostProps> = ({ title, excerpt, slug, date, readTim
 const BlogSection: React.FC = () => {
   const blogPosts: BlogPostProps[] = [
     {
-      title: "Still struggling to get clients? Here's what no one's telling you.",
-      excerpt: "Every founder hits that breaking point. Here's the real solution.",
-      slug: "client-acquisition-system",
-      date: "March 14, 2024",
-      readTime: "5 min",
-      category: "Lead Generation"
+      title: "Top 12 Digital Marketing Trends That Will Dominate South Africa in 2025",
+      excerpt: "The game-changing trends that will separate winners from losers in 2025.",
+      slug: "digital-marketing-trends-2025",
+      date: "January 15, 2025",
+      readTime: "15 min",
+      category: "Marketing Trends"
     },
     {
-      title: "Top 10 Digital Marketing Trends Dominating South Africa in 2024",
-      excerpt: "The trends that successful businesses are using to dominate their markets.",
-      slug: "digital-marketing-trends-south-africa-2024",
-      date: "December 15, 2024",
+      title: "The Complete AI Marketing Guide for South African Businesses 2025",
+      excerpt: "How to leverage AI to dominate your market and scale 10x faster.",
+      slug: "ai-marketing-guide-2025",
+      date: "January 20, 2025",
+      readTime: "18 min",
+      category: "AI Marketing"
+    },
+    {
+      title: "Social Media Marketing Strategy That Actually Works in South Africa 2025",
+      excerpt: "Turn followers into paying customers with this proven framework.",
+      slug: "social-media-strategy-2025",
+      date: "January 25, 2025",
       readTime: "12 min",
-      category: "Digital Marketing"
-    },
-    {
-      title: "Why Your Social Media Isn't Converting (And How to Fix It)",
-      excerpt: "The missing piece that turns social media followers into paying customers.",
-      slug: "social-media-conversion-strategy",
-      date: "March 10, 2024",
-      readTime: "7 min",
-      category: "Social Media"
+      category: "Social Media Strategy"
     }
   ];
 

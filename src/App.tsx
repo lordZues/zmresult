@@ -12,6 +12,9 @@ import BlogPost from './components/BlogPost';
 import { SocialMediaConversionPost, WebsiteConversionPost, LocalSEOPost } from './components/AdditionalBlogPosts';
 import MarketingTrendsPost from './components/BlogPosts/MarketingTrendsPost';
 import LeadGenerationGuidePost from './components/BlogPosts/LeadGenerationGuidePost';
+import DigitalMarketingTrends2025 from './components/BlogPosts/DigitalMarketingTrends2025';
+import AIMarketingGuide2025 from './components/BlogPosts/AIMarketingGuide2025';
+import SocialMediaStrategy2025 from './components/BlogPosts/SocialMediaStrategy2025';
 import Privacy from './components/Privacy';
 import LocalSEO from './components/LocalSEO';
 import GoogleBusinessProfile from './components/GoogleBusinessProfile';
@@ -77,6 +80,9 @@ function App() {
           <Route path="/blog/local-seo-domination-guide" element={<LocalSEOPost />} />
           <Route path="/blog/digital-marketing-trends-south-africa-2024" element={<MarketingTrendsPost />} />
           <Route path="/blog/complete-lead-generation-guide-south-africa" element={<LeadGenerationGuidePost />} />
+          <Route path="/blog/digital-marketing-trends-2025" element={<DigitalMarketingTrends2025 />} />
+          <Route path="/blog/ai-marketing-guide-2025" element={<AIMarketingGuide2025 />} />
+          <Route path="/blog/social-media-strategy-2025" element={<SocialMediaStrategy2025 />} />
           <Route path="/web-design-services-south-africa" element={<WebDesignPage />} />
           <Route path="/social-media-marketing-services-south-africa" element={<SocialMediaPage />} />
           <Route path="/google-ads-management-south-africa" element={<GoogleAdsPage />} />
