@@ -18,7 +18,6 @@ const ThankYouPage: React.FC = () => {
           </div>
           
           {/* Main Message */}
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           <h1 className="text-4xl md:text-6xl font-bold text-blue-950 mb-6">
             Thank You!
           </h1>
