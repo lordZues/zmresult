@@ -30,10 +30,13 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-gray-300 hover:text-orange-400 transition-colors">Services</a>
+                <Link to="/services" className="text-gray-300 hover:text-orange-400 transition-colors">Services</Link>
               </li>
               <li>
-                <a href="#why-choose-us" className="text-gray-300 hover:text-orange-400 transition-colors">Why Choose Us</a>
+                <Link to="/about" className="text-gray-300 hover:text-orange-400 transition-colors">About Us</Link>
+              </li>
+              <li>
+                <Link to="/why-choose-us" className="text-gray-300 hover:text-orange-400 transition-colors">Why Choose Us</Link>
               </li>
               <li>
                 <a href="#contact" className="text-gray-300 hover:text-orange-400 transition-colors">Contact</a>

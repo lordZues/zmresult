@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, ChevronRight, Award, MessageCircle } from 'lucide-react';
 import NAP from './NAP';
 
@@ -52,8 +53,9 @@ const Header: React.FC = () => {
             
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center space-x-6">
-              <a href="#services" className="text-gray-700 hover:text-orange-500 transition-colors font-semibold">Services</a>
-              <a href="#why-choose-us" className="text-gray-700 hover:text-orange-500 transition-colors font-semibold">Why Us</a>
+              <Link to="/services" className="text-gray-700 hover:text-orange-500 transition-colors font-semibold">Services</Link>
+              <Link to="/about" className="text-gray-700 hover:text-orange-500 transition-colors font-semibold">About Us</Link>
+              <Link to="/why-choose-us" className="text-gray-700 hover:text-orange-500 transition-colors font-semibold">Why Us</Link>
               <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors font-semibold">Contact</a>
               <a 
                 href="#contact" 
@@ -87,20 +89,27 @@ const Header: React.FC = () => {
           isOpen ? 'max-h-screen opacity-100 bg-white/95 backdrop-blur-lg shadow-2xl' : 'max-h-0 opacity-0'
         }`}>
           <div className="container mx-auto px-4 py-4 space-y-4">
-            <a 
-              href="#services" 
+            <Link 
+              to="/services" 
               className="block text-gray-700 hover:text-orange-500 transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >
               Services
-            </a>
-            <a 
-              href="#why-choose-us" 
+            </Link>
+            <Link 
+              to="/about" 
+              className="block text-gray-700 hover:text-orange-500 transition-colors py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              About Us
+            </Link>
+            <Link 
+              to="/why-choose-us" 
               className="block text-gray-700 hover:text-orange-500 transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >
               Why Us
-            </a>
+            </Link>
             <a 
               href="#contact" 
               className="block text-gray-700 hover:text-orange-500 transition-colors py-2"
