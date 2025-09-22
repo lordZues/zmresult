@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Calendar, ArrowRight, CheckCircle, Shield, Award, Zap, MessageCircle } from 'lucide-react';
 import { submitToGoogleSheets, submitViaAppsScript, submitViaFormSubmit } from '../utils/googleSheets';
 
 const BookCall: React.FC = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -63,6 +65,11 @@ const BookCall: React.FC = () => {
       
       setIsSubmitted(true);
       
+     // Redirect to thank you page after 2 seconds
+     setTimeout(() => {
+       navigate('/thank-you');
+     }, 2000);
+     
       // Reset form
       setFormData({
         name: '',

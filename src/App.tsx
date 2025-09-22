@@ -22,6 +22,7 @@ import WebDesignPage from './components/ServicePages/WebDesignPage';
 import SocialMediaPage from './components/ServicePages/SocialMediaPage';
 import GoogleAdsPage from './components/ServicePages/GoogleAdsPage';
 import ContentMarketingPage from './components/ServicePages/ContentMarketingPage';
+import ThankYouPage from './components/ThankYouPage';
 
 function HomePage() {
   return (
@@ -77,6 +78,7 @@ function App() {
           <Route path="/social-media-marketing-services-south-africa" element={<SocialMediaPage />} />
           <Route path="/google-ads-management-south-africa" element={<GoogleAdsPage />} />
           <Route path="/content-marketing-services-south-africa" element={<ContentMarketingPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/location/:city" element={<SEOPages />} />
           <Route path="/durban-marketing-agency" element={<SEOPages />} />
           <Route path="/johannesburg-marketing-agency" element={<SEOPages />} />
