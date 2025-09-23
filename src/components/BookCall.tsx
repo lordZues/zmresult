@@ -32,6 +32,15 @@ const BookCall: React.FC = () => {
     setIsSubmitting(true);
     setError('');
     
+      // Google Analytics event tracking
+      if (typeof window.gtag !== 'undefined') {
+        window.gtag('event', 'form_submit', {
+          event_category: 'engagement',
+          event_label: 'strategy_call_booking',
+          value: 1
+        });
+      }
+      
     try {
       const leadData = {
         name: formData.name,
