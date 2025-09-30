@@ -44,28 +44,36 @@ const BlogCard: React.FC<BlogPostProps> = ({ title, excerpt, slug, date, readTim
 const BlogSection: React.FC = () => {
   const blogPosts: BlogPostProps[] = [
     {
-      title: "Top 12 Digital Marketing Trends That Will Dominate South Africa in 2025",
-      excerpt: "The game-changing trends that will separate winners from losers in 2025.",
-      slug: "digital-marketing-trends-2025",
-      date: "January 15, 2025",
-      readTime: "15 min",
-      category: "Marketing Trends"
-    },
-    {
-      title: "The Complete AI Marketing Guide for South African Businesses 2025",
-      excerpt: "How to leverage AI to dominate your market and scale 10x faster.",
-      slug: "ai-marketing-guide-2025",
-      date: "January 20, 2025",
-      readTime: "18 min",
-      category: "AI Marketing"
-    },
-    {
-      title: "Social Media Marketing Strategy That Actually Works in South Africa 2025",
-      excerpt: "Turn followers into paying customers with this proven framework.",
-      slug: "social-media-strategy-2025",
-      date: "January 25, 2025",
+      title: "How to Get 50+ Qualified Leads in 30 Days (South Africa 2025)",
+      excerpt: "The exact lead generation system that SA businesses are using to generate 50+ qualified leads every month. No cold calling required.",
+      slug: "get-50-qualified-leads-30-days-south-africa-2025",
+      date: "February 3, 2025",
       readTime: "12 min",
-      category: "Social Media Strategy"
+      category: "Lead Generation"
+    },
+    {
+      title: "Why 90% of South African Websites Don't Convert (And How to Fix Yours)",
+      excerpt: "The shocking truth about website conversion rates in SA and the simple fixes that can double your sales overnight.",
+      slug: "why-sa-websites-dont-convert-how-to-fix-2025",
+      date: "February 10, 2025",
+      readTime: "10 min",
+      category: "Web Design"
+    },
+    {
+      title: "The R100k Social Media Strategy Every SA Business Needs in 2025",
+      excerpt: "The exact social media strategy that's generating R100k+ in revenue for South African businesses.",
+      slug: "100k-social-media-strategy-sa-business-2025",
+      date: "February 17, 2025",
+      readTime: "14 min",
+      category: "Social Media"
+    },
+    {
+      title: "Google Ads vs Facebook Ads: Which Works Better for SA Businesses?",
+      excerpt: "The definitive comparison based on real data from 200+ SA campaigns. Which platform delivers better ROI?",
+      slug: "google-ads-vs-facebook-ads-sa-businesses-2025",
+      date: "February 24, 2025",
+      readTime: "11 min",
+      category: "Paid Advertising"
     }
   ];
 
@@ -83,9 +91,22 @@ const BlogSection: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {blogPosts.map((post, index) => (
             <BlogCard key={index} {...post} />
           ))}
+        </div>
+        
+        <div className="text-center">
+          <p className="text-gray-600 mb-4">
+            New blog posts published every Monday for better Google rankings
+          </p>
+          <div className="flex justify-center items-center gap-2">
+            {[1,2,3,4,5].map((star) => (
+              <Star key={star} size={20} className="text-yellow-400 fill-yellow-400" />
+            ))}
+            <span className="ml-3 text-gray-600 font-medium">Rated #1 Marketing Blog SA</span>
+          </div>
         </div>
       </div>
     </section>

@@ -15,6 +15,10 @@ import LeadGenerationGuidePost from './components/BlogPosts/LeadGenerationGuideP
 import DigitalMarketingTrends2025 from './components/BlogPosts/DigitalMarketingTrends2025';
 import AIMarketingGuide2025 from './components/BlogPosts/AIMarketingGuide2025';
 import SocialMediaStrategy2025 from './components/BlogPosts/SocialMediaStrategy2025';
+import Week1LeadGeneration from './components/BlogPosts/Week1LeadGeneration';
+import Week2WebsiteConversion from './components/BlogPosts/Week2WebsiteConversion';
+import Week3SocialMediaStrategy from './components/BlogPosts/Week3SocialMediaStrategy';
+import Week4GoogleVsFacebook from './components/BlogPosts/Week4GoogleVsFacebook';
 import Privacy from './components/Privacy';
 import LocalSEO from './components/LocalSEO';
 import GoogleBusinessProfile from './components/GoogleBusinessProfile';
@@ -112,6 +116,10 @@ function App() {
           <Route path="/blog/digital-marketing-trends-2025" element={<DigitalMarketingTrends2025 />} />
           <Route path="/blog/ai-marketing-guide-2025" element={<AIMarketingGuide2025 />} />
           <Route path="/blog/social-media-strategy-2025" element={<SocialMediaStrategy2025 />} />
+          <Route path="/blog/get-50-qualified-leads-30-days-south-africa-2025" element={<Week1LeadGeneration />} />
+          <Route path="/blog/why-sa-websites-dont-convert-how-to-fix-2025" element={<Week2WebsiteConversion />} />
+          <Route path="/blog/100k-social-media-strategy-sa-business-2025" element={<Week3SocialMediaStrategy />} />
+          <Route path="/blog/google-ads-vs-facebook-ads-sa-businesses-2025" element={<Week4GoogleVsFacebook />} />
           <Route path="/web-design-services-south-africa" element={<WebDesignPage />} />
           <Route path="/social-media-marketing-services-south-africa" element={<SocialMediaPage />} />
           <Route path="/google-ads-management-south-africa" element={<GoogleAdsPage />} />
