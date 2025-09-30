@@ -27,7 +27,6 @@ const LocalSEO: React.FC<LocalSEOProps> = ({
   phone = "+27736957783",
   email = "zusakhe@zmresultss.org",
   website = "https://zmresults.org",
-  description = "South Africa's premier advertising agency helping businesses get more customers through professional digital marketing, social media marketing, website design, and lead generation services.",
   description = "South Africa's #1 digital marketing agency 2025 and best marketing company SA helping businesses get more customers through professional digital marketing, social media marketing, website design, and lead generation services with money-back guarantee.",
   priceRange = "R2500-R15000",
   openingHours = [
