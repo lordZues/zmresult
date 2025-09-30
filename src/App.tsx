@@ -31,6 +31,16 @@ import AboutPage from './components/pages/AboutPage';
 import WhyChooseUsPage from './components/pages/WhyChooseUsPage';
 
 function HomePage() {
+  useEffect(() => {
+    // Enhanced SEO for homepage
+    document.title = "ZM Results | #1 Digital Marketing Agency South Africa 2025 | 500+ Businesses Helped";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'South Africa\'s #1 digital marketing agency with 500+ successful clients. Get more customers with proven website design, social media marketing & lead generation. Money-back guarantee. Free consultation.');
+    }
+  }, []);
+
   return (
     <>
       <GoogleAnalytics />
@@ -65,6 +75,25 @@ function App() {
     };
     
     document.addEventListener('click', handleAnchorClick);
+    
+    // Add structured data for better SEO
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ZM Results",
+      "url": "https://zmresults.org",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zmresults.org/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+    
     return () => document.removeEventListener('click', handleAnchorClick);
   }, []);
 

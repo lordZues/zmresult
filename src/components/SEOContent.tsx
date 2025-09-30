@@ -9,18 +9,18 @@ const SEOContent: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              South Africa's Premier Digital Marketing & Advertising Agency
+              South Africa's #1 Digital Marketing & Advertising Agency 2025
             </h1>
             <p className="text-xl mb-8">
-              ZM Results is the top-rated marketing agency in South Africa, helping businesses across 
-              Cape Town, Johannesburg, Durban, and Pretoria dominate their markets through proven 
-              digital marketing strategies, professional website design, and explosive lead generation.
+              ZM Results is South Africa's #1 digital marketing agency with 500+ successful clients and a money-back guarantee. 
+              We help businesses across Cape Town, Johannesburg, Durban, and Pretoria get more customers through proven 
+              digital marketing strategies, professional website design, social media marketing, and guaranteed lead generation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <span className="bg-orange-500 px-4 py-2 rounded-full">Marketing Agency South Africa</span>
-              <span className="bg-blue-600 px-4 py-2 rounded-full">Digital Marketing Company</span>
-              <span className="bg-green-600 px-4 py-2 rounded-full">Advertising Agency Durban</span>
-              <span className="bg-purple-600 px-4 py-2 rounded-full">Lead Generation Specialists</span>
+              <span className="bg-orange-500 px-4 py-2 rounded-full">#1 Marketing Agency South Africa</span>
+              <span className="bg-blue-600 px-4 py-2 rounded-full">500+ Successful Clients</span>
+              <span className="bg-green-600 px-4 py-2 rounded-full">Money Back Guarantee</span>
+              <span className="bg-purple-600 px-4 py-2 rounded-full">Free Consultation</span>
             </div>
           </div>
         </div>
@@ -31,10 +31,10 @@ const SEOContent: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-4">
-              Digital Marketing Services Across South Africa
+              Award-Winning Digital Marketing Services Across South Africa
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              We help South African businesses grow through proven digital marketing strategies.
+              We help South African businesses get more customers and increase revenue through proven digital marketing strategies with guaranteed results.
             </p>
           </div>
           

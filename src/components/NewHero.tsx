@@ -11,9 +11,9 @@ const NewHero: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            <span className="text-blue-950">We Build Your</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Online Powerhouse</span>
+            <span className="text-blue-950">South Africa's #1</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Digital Marketing Agency</span>
             <br />
-            <span className="text-xl md:text-2xl text-orange-600 font-bold">Get More Customers. Let's Talk.</span>
+            <span className="text-xl md:text-2xl text-orange-600 font-bold">500+ Businesses Helped • Money Back Guarantee</span>
           </h1>
           
           <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto font-bold">
