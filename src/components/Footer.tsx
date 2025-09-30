@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <NAP variant="footer" />
             <p className="text-gray-300 mt-6 mb-6 max-w-md">
-              South Africa's top-ranked marketing agency based in Durban, helping businesses nationwide dominate their markets through proven digital marketing strategies, social media dominance, professional websites, and explosive lead generation.
+              South Africa's #1 digital marketing agency 2025 and best marketing company SA based in Durban, helping businesses nationwide dominate their markets through proven digital marketing strategies, social media marketing, professional website design, and guaranteed lead generation services.
             </p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" className="bg-blue-900 hover:bg-orange-500 h-10 w-10 rounded-full flex items-center justify-center transition-colors">

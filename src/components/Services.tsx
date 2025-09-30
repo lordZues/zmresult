@@ -9,11 +9,11 @@ const Services: React.FC = () => {
         <div className="text-center mb-20">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Our Services</span>
           <h2 className="text-4xl md:text-6xl font-black text-blue-950 mt-2 mb-6 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">OUR 3-STEP</span><br />
-            Customer-Getting System
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">BEST MARKETING COMPANY SA</span><br />
+            3-Step Customer-Getting System 2025
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-bold">
-            🎯 It's Really This Easy! (After we listen to your needs)
+            🎯 #1 Digital Marketing Agency South Africa Process (After we listen to your needs)
           </p>
         </div>
 
@@ -28,37 +28,37 @@ const Services: React.FC = () => {
             
             <h3 className="text-3xl font-bold text-blue-950 mb-4">STEP 1: Create Your Professional Website</h3>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              We design and build a conversion-focused website that showcases your business professionally and turns visitors into paying customers.
+              As the best marketing company SA, we design and build a conversion-focused website that showcases your business professionally and turns visitors into paying customers with guaranteed results.
             </p>
             
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Professional design that builds trust</span>
+                <span className="text-gray-700">Professional website design South Africa that builds trust</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">SEO optimized for Google visibility</span>
+                <span className="text-gray-700">SEO optimized for Google visibility South Africa 2025</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Mobile-responsive design</span>
+                <span className="text-gray-700">Mobile-responsive website design SA</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={20} className="text-green-600 mr-3" />
-                <span className="text-gray-700">Conversion-optimized for sales</span>
+                <span className="text-gray-700">Conversion-optimized for sales South Africa</span>
               </div>
             </div>
             
             <div className="bg-orange-100 border-l-4 border-orange-500 p-4 mb-6">
               <p className="text-orange-800 font-semibold">
-                ✅ Money Back Guarantee if it doesn't work
+                ✅ Money Back Guarantee - Best Marketing Company SA Promise
               </p>
             </div>
             
             <div className="text-center">
-              <span className="text-3xl font-black text-blue-950">Estimated from R2,500</span>
-              <p className="text-gray-600">Final pricing after consultation</p>
+              <span className="text-3xl font-black text-blue-950">Website Design from R2,500</span>
+              <p className="text-gray-600">Professional website design South Africa - Final pricing after consultation</p>
             </div>
             
             <div className="mt-6 text-center">

@@ -116,11 +116,11 @@ const BookCall: React.FC = () => {
               <span className="text-2xl md:text-3xl">Let's See if We're a Perfect Fit.</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Book your free 30-minute consultation where we'll listen to your business needs and outline a potential strategy tailored just for you.
+              Book your free 30-minute consultation with South Africa's #1 digital marketing agency 2025 where we'll listen to your business needs and outline a potential strategy tailored just for you.
             </p>
             <div className="bg-red-100 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
               <p className="text-red-700 font-bold">
-                ⚡ LIMITED SPOTS: Our consultation spots are limited each week to ensure quality. Secure yours now!
+                ⚡ LIMITED SPOTS: Best marketing company SA consultation spots are limited each week to ensure quality. Secure yours with #1 digital marketing agency South Africa now!
               </p>
             </div>
           </div>

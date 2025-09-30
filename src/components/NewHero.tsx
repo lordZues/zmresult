@@ -11,15 +11,16 @@ const NewHero: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            <span className="text-blue-950">South Africa's #1</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Digital Marketing Agency</span>
+            <span className="text-blue-950">South Africa's #1</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Digital Marketing Agency 2025</span>
             <br />
-            <span className="text-xl md:text-2xl text-orange-600 font-bold">500+ Businesses Helped • Money Back Guarantee</span>
+            <span className="text-xl md:text-2xl text-orange-600 font-bold">Best Marketing Company SA • 500+ Businesses Helped • Money Back Guarantee</span>
           </h1>
           
           <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto font-bold">
             🎯 <span className="text-orange-600">Professional Website Creation</span><br />
             📱 <span className="text-green-600">Social Media Growth Strategy</span><br />
-            💰 <span className="text-blue-600">Customer Acquisition System</span>
+            💰 <span className="text-blue-600">Customer Acquisition System</span><br />
+            🏆 <span className="text-purple-600">Award-Winning Digital Marketing Agency South Africa</span>
           </p>
           
           <div className="bg-green-500 rounded-2xl p-6 mb-8 shadow-lg">

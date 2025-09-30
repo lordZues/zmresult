@@ -75,10 +75,10 @@ const BlogSection: React.FC = () => {
         <div className="text-center mb-16">
           <span className="text-orange-500 font-semibold tracking-wider uppercase">Blog</span>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mt-2 mb-6">
-            Marketing Insights
+            Digital Marketing Insights 2025 | Best Marketing Company SA Blog
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Proven strategies and real results from digital marketing.
+            Proven digital marketing strategies and real results from South Africa's #1 marketing agency 2025. Expert insights from the best marketing company SA.
           </p>
         </div>
         
