@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, ArrowRight, User } from 'lucide-react';
+import { Calendar, ArrowRight, User, Star } from 'lucide-react';
 
 interface BlogPostProps {
   title: string;
@@ -90,7 +90,6 @@ const BlogSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {blogPosts.map((post, index) => (
             <BlogCard key={index} {...post} />
