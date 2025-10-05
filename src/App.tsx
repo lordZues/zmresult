@@ -34,6 +34,9 @@ const ThankYouPage = lazy(() => import('./components/ThankYouPage'));
 const ServicesPage = lazy(() => import('./components/pages/ServicesPage'));
 const AboutPage = lazy(() => import('./components/pages/AboutPage'));
 const WhyChooseUsPage = lazy(() => import('./components/pages/WhyChooseUsPage'));
+const BlogListingPage = lazy(() => import('./components/pages/BlogListingPage'));
+const Day1DigitalMarketingTrends = lazy(() => import('./components/BlogPosts/Daily/Day1'));
+const Day2GoogleAdsGuide = lazy(() => import('./components/BlogPosts/Daily/Day2'));
 
 function HomePage() {
   useEffect(() => {
@@ -122,6 +125,9 @@ function App() {
             <Route path="/blog/why-sa-websites-dont-convert-how-to-fix-2025" element={<Week2WebsiteConversion />} />
             <Route path="/blog/100k-social-media-strategy-sa-business-2025" element={<Week3SocialMediaStrategy />} />
             <Route path="/blog/google-ads-vs-facebook-ads-sa-businesses-2025" element={<Week4GoogleVsFacebook />} />
+            <Route path="/blog" element={<BlogListingPage />} />
+            <Route path="/blog/digital-marketing-trends-south-africa-2025" element={<Day1DigitalMarketingTrends />} />
+            <Route path="/blog/google-ads-south-africa-guide-2025" element={<Day2GoogleAdsGuide />} />
             <Route path="/web-design-services-south-africa" element={<WebDesignPage />} />
             <Route path="/social-media-marketing-services-south-africa" element={<SocialMediaPage />} />
             <Route path="/google-ads-management-south-africa" element={<GoogleAdsPage />} />
