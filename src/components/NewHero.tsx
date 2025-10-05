@@ -1,26 +1,25 @@
 import React from 'react';
 import { ArrowRight, Globe, Users, Target, CheckCircle, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NewHero: React.FC = () => {
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white text-gray-900 relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23000000%22 fill-opacity=%220.03%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
-      
+
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             <span className="text-blue-950">South Africa's #1</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Digital Marketing Agency 2025</span>
             <br />
             <span className="text-xl md:text-2xl text-orange-600 font-bold">Best Marketing Company SA • 500+ Businesses Helped • Money Back Guarantee</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto font-bold">
-            🎯 <span className="text-orange-600">Professional Website Creation</span><br />
-            📱 <span className="text-green-600">Social Media Growth Strategy</span><br />
-            💰 <span className="text-blue-600">Customer Acquisition System</span><br />
-            🏆 <span className="text-purple-600">Award-Winning Digital Marketing Agency South Africa</span>
+            🎯 <Link to="/web-design-services-south-africa" className="text-orange-600 hover:underline">Professional Website Creation</Link><br />
+            📱 <Link to="/social-media-marketing-services-south-africa" className="text-green-600 hover:underline">Social Media Growth Strategy</Link><br />
+            💰 <Link to="/blog/get-50-qualified-leads-30-days-south-africa-2025" className="text-blue-600 hover:underline">Customer Acquisition System</Link><br />
+            🏆 <Link to="/about" className="text-purple-600 hover:underline">Award-Winning Digital Marketing Agency South Africa</Link>
           </p>
           
           <div className="bg-green-500 rounded-2xl p-6 mb-8 shadow-lg">
