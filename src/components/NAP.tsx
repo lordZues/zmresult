@@ -14,7 +14,7 @@ const NAP: React.FC<NAPProps> = ({
 }) => {
   const businessInfo = {
     name: "ZM Results",
-    address: "45 Bale Avenue, Montclair, Durban, KwaZulu-Natal, South Africa",
+    address: "Offices in Durban",
     phone: "+27 73 695 7783",
     email: "zusakhe@zmresultss.org",
     hours: "Mon-Fri: 8AM-5PM, Sat: 9AM-1PM"
@@ -45,9 +45,7 @@ const NAP: React.FC<NAPProps> = ({
       <div className={`flex items-center ${baseClasses[variant]}`}>
         {showIcons && <MapPin size={16} className="mr-2 flex-shrink-0" />}
         <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-          <span itemProp="streetAddress">45 Bale Avenue, Montclair</span>,{' '}
-          <span itemProp="addressLocality">Durban</span>,{' '}
-          <span itemProp="addressRegion">KwaZulu-Natal</span>,{' '}
+          <span itemProp="addressLocality">Offices in Durban</span>,{' '}
           <span itemProp="addressCountry">South Africa</span>
         </span>
       </div>
