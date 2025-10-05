@@ -10,6 +10,8 @@ import GoogleAnalytics from './components/GoogleAnalytics';
 import LocalSEO from './components/LocalSEO';
 import SEOContent from './components/SEOContent';
 import InternalLinks from './components/InternalLinks';
+import SEOKeywords from './components/SEOKeywords';
+import SEOFAQSection from './components/SEOFAQSection';
 
 const BlogPost = lazy(() => import('./components/BlogPost'));
 const SocialMediaConversionPost = lazy(() => import('./components/AdditionalBlogPosts').then(m => ({ default: m.SocialMediaConversionPost })));
@@ -52,10 +54,12 @@ function HomePage() {
     <>
       <GoogleAnalytics />
       <LocalSEO />
+      <SEOKeywords />
       <NewHero />
       <SEOContent />
       <Services />
       <InternalLinks intent="service" />
+      <SEOFAQSection />
       <BlogSection />
       <BookCall />
     </>
