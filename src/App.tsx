@@ -103,10 +103,10 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans bg-gradient-to-b from-[#050812] via-[#0a0e27] to-[#050812] min-h-screen">
+    <div className="font-sans bg-slate-950 min-h-screen">
       <Header />
       <main>
-        <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-[#0a0e27]"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-500 neon-box-cyan"></div></div>}>
+        <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-slate-950"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-500"></div></div>}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/blog/client-acquisition-system" element={<BlogPost />} />
