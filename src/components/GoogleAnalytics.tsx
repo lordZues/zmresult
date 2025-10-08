@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-const GoogleAnalytics: React.FC = () => {
+const GoogleAnalytics = () => {
   useEffect(() => {
     // Google Analytics 4 tracking code
     const GA_MEASUREMENT_ID = 'G-0Q3E05Z2T0';
@@ -44,49 +44,5 @@ const GoogleAnalytics: React.FC = () => {
   
   return null; // This component doesn't render anything
 };
-
-// Custom hook for tracking events
-export const useGoogleAnalytics = () => {
-  const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
-    if (typeof window.gtag !== 'undefined') {
-      window.gtag('event', eventName, parameters);
-    }
-  };
-  
-  const trackFormSubmission = (formName: string) => {
-    trackEvent('form_submit', {
-      form_name: formName,
-      page_location: window.location.href
-    });
-  };
-  
-  const trackButtonClick = (buttonName: string) => {
-    trackEvent('click', {
-      button_name: buttonName,
-      page_location: window.location.href
-    });
-  };
-  
-  const trackPhoneCall = () => {
-    trackEvent('phone_call', {
-      page_location: window.location.href
-    });
-  };
-  
-  return {
-    trackEvent,
-    trackFormSubmission,
-    trackButtonClick,
-    trackPhoneCall
-  };
-};
-
-// Extend Window interface for TypeScript
-declare global {
-  interface Window {
-    gtag: (...args: unknown[]) => void;
-    dataLayer: unknown[];
-  }
-}
 
 export default GoogleAnalytics;
