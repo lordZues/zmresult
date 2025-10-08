@@ -89,7 +89,6 @@ const BookCall: React.FC = () => {
       });
       
     } catch (err) {
-      console.error('Form submission error:', err);
       setError('There was an issue submitting your form. Please try again or contact us directly.');
     } finally {
       setIsSubmitting(false);
@@ -161,7 +160,7 @@ const BookCall: React.FC = () => {
                   </li>
                   
                   <li className="flex items-start">
-                    <div className="bg-purple-500 p-2 rounded-full mr-4 mt-1 shadow-lg">
+                    <div className="bg-cyan-500 p-2 rounded-full mr-4 mt-1 shadow-lg">
                       <CheckCircle size={16} className="text-white" />
                     </div>
                     <div>
