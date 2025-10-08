@@ -15,6 +15,18 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
+    quote: "ZM Results completely transformed our online presence. Within 3 months, our website traffic increased by 350% and we're now getting consistent quality leads. The team's expertise in digital marketing is unmatched!",
+    name: "Brendan Brewer",
+    position: "Owner",
+    company: "RBBR Tradesman Group SA",
+    image: "/5990149136810364309.jpg",
+    stats: [
+      { label: "Website Traffic", value: "+350%" },
+      { label: "Lead Quality", value: "Excellent" },
+      { label: "Project Duration", value: "3 Months" }
+    ]
+  },
+  {
     quote: "I was skeptical at first, but after implementing their system, we generated 42 qualified leads in just two weeks. Our sales team is now fully booked with calls.",
     name: "Michael Johnson",
     position: "CEO",
