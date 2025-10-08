@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Weekly Blog Schedule for SEO Rankings
 export const weeklyBlogSchedule = [

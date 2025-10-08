@@ -120,7 +120,7 @@ async function getSheetNames(accessToken: string) {
   }
   
   const data = await response.json();
-  return data.sheets.map((sheet: any) => sheet.properties.title);
+  return data.sheets.map((sheet: { properties: { title: string } }) => sheet.properties.title);
 }
 
 Deno.serve(async (req: Request) => {

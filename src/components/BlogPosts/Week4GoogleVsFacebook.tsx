@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Search, Users, Target, TrendingUp, CheckCircle, DollarSign } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 
 const Week4GoogleVsFacebook: React.FC = () => {
   useEffect(() => {

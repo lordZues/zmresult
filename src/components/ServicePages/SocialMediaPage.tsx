@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Users, TrendingUp, MessageSquare, Camera, CheckCircle, Star, Award, Target } from 'lucide-react';
+import { ArrowLeft, Users, TrendingUp, MessageSquare, Camera, CheckCircle, Award, Target } from 'lucide-react';
 
 const SocialMediaPage: React.FC = () => {
   useEffect(() => {

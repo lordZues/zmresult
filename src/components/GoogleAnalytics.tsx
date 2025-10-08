@@ -47,7 +47,7 @@ const GoogleAnalytics: React.FC = () => {
 
 // Custom hook for tracking events
 export const useGoogleAnalytics = () => {
-  const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
+  const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
     if (typeof window.gtag !== 'undefined') {
       window.gtag('event', eventName, parameters);
     }
@@ -84,8 +84,8 @@ export const useGoogleAnalytics = () => {
 // Extend Window interface for TypeScript
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
-    dataLayer: any[];
+    gtag: (...args: unknown[]) => void;
+    dataLayer: unknown[];
   }
 }
 

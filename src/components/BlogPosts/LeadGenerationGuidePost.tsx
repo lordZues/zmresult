@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Target, Users, TrendingUp, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 
 const LeadGenerationGuidePost: React.FC = () => {
   useEffect(() => {

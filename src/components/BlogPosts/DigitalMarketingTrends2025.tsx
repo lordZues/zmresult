@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, TrendingUp, Users, Target, Smartphone, Brain, Video } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 
 const DigitalMarketingTrends2025: React.FC = () => {
   useEffect(() => {

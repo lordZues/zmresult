@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Award, Target, Star } from 'lucide-react';
+import { Award, Target, Star } from 'lucide-react';
 
 const DirectorSection: React.FC = () => {
   return (

@@ -4,10 +4,10 @@ import { TrendingUp, Users, Target, DollarSign, BarChart3, Zap, Award, CheckCirc
 interface InfographicProps {
   type: 'stats' | 'process' | 'comparison' | 'timeline';
   title: string;
-  data?: any;
+  data?: unknown;
 }
 
-export const StatsInfographic: React.FC<{ title: string; stats: Array<{label: string; value: string; icon: any; color: string}> }> = ({ title, stats }) => {
+export const StatsInfographic: React.FC<{ title: string; stats: Array<{label: string; value: string; icon: React.ComponentType<{ className?: string }>; color: string}> }> = ({ title, stats }) => {
   return (
     <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 my-12">
       <h3 className="text-3xl font-bold text-white mb-8 text-center">{title}</h3>
@@ -29,7 +29,7 @@ export const StatsInfographic: React.FC<{ title: string; stats: Array<{label: st
   );
 };
 
-export const ProcessInfographic: React.FC<{ title: string; steps: Array<{title: string; description: string; icon: any}> }> = ({ title, steps }) => {
+export const ProcessInfographic: React.FC<{ title: string; steps: Array<{title: string; description: string; icon: React.ComponentType<{ className?: string }>}> }> = ({ title, steps }) => {
   return (
     <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 my-12">
       <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">{title}</h3>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Edit, Video, FileText, Megaphone, CheckCircle, Star, Award, TrendingUp } from 'lucide-react';
+import { ArrowLeft, Edit, Video, FileText, Megaphone, CheckCircle, Award, TrendingUp } from 'lucide-react';
 
 const ContentMarketingPage: React.FC = () => {
   useEffect(() => {

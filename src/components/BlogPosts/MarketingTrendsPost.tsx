@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, TrendingUp, Users, Target, Smartphone } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 
 const MarketingTrendsPost: React.FC = () => {
   useEffect(() => {

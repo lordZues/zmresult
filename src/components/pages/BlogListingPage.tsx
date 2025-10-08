@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, ArrowRight, Search, TrendingUp } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, TrendingUp } from 'lucide-react';
 
 interface BlogPostPreview {
   title: string;

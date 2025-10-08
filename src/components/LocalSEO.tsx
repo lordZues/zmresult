@@ -45,7 +45,8 @@ const LocalSEO: React.FC<LocalSEOProps> = ({
   ],
   founder = "Zusakhe Mazibu"
 }) => {
-  const structuredData = {
+  React.useEffect(() => {
+    const structuredData = {
     "@context": "https://schema.org",
     "@type": "AdvertisingAgency",
     "name": businessName,
@@ -153,9 +154,8 @@ const LocalSEO: React.FC<LocalSEOProps> = ({
       "https://www.linkedin.com/company/zmresults", 
       "https://www.instagram.com/zmresults"
     ]
-  };
+    };
 
-  React.useEffect(() => {
     // Add structured data to head
     const script = document.createElement('script');
     script.type = 'application/ld+json';
@@ -171,7 +171,7 @@ const LocalSEO: React.FC<LocalSEOProps> = ({
         }
       });
     };
-  }, []);
+  }, [businessName, address, city, province, postalCode, country, phone, email, website, description, priceRange, openingHours, services, founder]);
 
   return null; // This component only adds structured data
 };

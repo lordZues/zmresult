@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, MapPin, Phone, Mail, Award, TrendingUp, Users, Target } from 'lucide-react';
+import { MapPin, Phone, Mail, TrendingUp, Users, Target } from 'lucide-react';
 
 const SEOContent: React.FC = () => {
   return (

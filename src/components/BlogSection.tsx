@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, ArrowRight, User, Star } from 'lucide-react';
+import { Calendar, ArrowRight, Star } from 'lucide-react';
 
 interface BlogPostProps {
   title: string;
