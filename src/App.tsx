@@ -39,6 +39,9 @@ const WhyChooseUsPage = lazy(() => import('./components/pages/WhyChooseUsPage'))
 const BlogListingPage = lazy(() => import('./components/pages/BlogListingPage'));
 const Day1DigitalMarketingTrends = lazy(() => import('./components/BlogPosts/Daily/Day1'));
 const Day2GoogleAdsGuide = lazy(() => import('./components/BlogPosts/Daily/Day2'));
+const MarketingServicesLanding = lazy(() => import('./components/MarketingServicesLanding'));
+const WebDevelopmentTrends2025 = lazy(() => import('./components/BlogPosts/WebDevelopmentTrends2025'));
+const LocationSEO = lazy(() => import('./components/LocationSEO'));
 
 function HomePage() {
   useEffect(() => {
@@ -132,6 +135,8 @@ function App() {
             <Route path="/blog" element={<BlogListingPage />} />
             <Route path="/blog/digital-marketing-trends-south-africa-2025" element={<Day1DigitalMarketingTrends />} />
             <Route path="/blog/google-ads-south-africa-guide-2025" element={<Day2GoogleAdsGuide />} />
+            <Route path="/blog/website-development-trends-2025-south-africa" element={<WebDevelopmentTrends2025 />} />
+            <Route path="/professional-marketing-services-affordable-website-creation" element={<MarketingServicesLanding />} />
             <Route path="/web-design-services-south-africa" element={<WebDesignPage />} />
             <Route path="/social-media-marketing-services-south-africa" element={<SocialMediaPage />} />
             <Route path="/google-ads-management-south-africa" element={<GoogleAdsPage />} />
@@ -141,10 +146,10 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
             <Route path="/location/:city" element={<SEOPages />} />
-            <Route path="/durban-marketing-agency" element={<SEOPages />} />
-            <Route path="/johannesburg-marketing-agency" element={<SEOPages />} />
-            <Route path="/cape-town-marketing-agency" element={<SEOPages />} />
-            <Route path="/pretoria-marketing-agency" element={<SEOPages />} />
+            <Route path="/durban-marketing-agency" element={<LocationSEO />} />
+            <Route path="/johannesburg-marketing-agency" element={<LocationSEO />} />
+            <Route path="/cape-town-marketing-agency" element={<LocationSEO />} />
+            <Route path="/pretoria-marketing-agency" element={<LocationSEO />} />
             <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </Suspense>
