@@ -1,185 +1,108 @@
 import React from 'react';
-import { Globe, Users, Target, ArrowRight, CheckCircle } from 'lucide-react';
+import { Globe, Users, Target, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="relative py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
-      <div className="absolute inset-0 subtle-grid opacity-30"></div>
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
-
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="text-center mb-20">
-          <span className="text-cyan-400 font-semibold tracking-wider uppercase">Our Services</span>
-          <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6 leading-tight">
-            <span className="gradient-text">Best Marketing Company SA</span><br />
-            <span className="text-white">3-Step Customer-Getting System</span>
+    <section id="services" className="relative py-20 bg-gray-50">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black mb-4 text-gray-900">
+            How It Works
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Proven process that drives real business results
+          <p className="text-xl text-gray-600">
+            Three simple steps to grow your business
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
-          <div className="glass-card rounded-2xl p-8 relative overflow-hidden group hover-lift">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-cyan-500/10 rounded-full blur-2xl"></div>
-
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-4 rounded-xl inline-block mb-6 subtle-shadow">
-              <Globe size={32} className="text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Step 1 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 hover:shadow-xl transition-shadow">
+            <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+              <Globe className="w-8 h-8 text-blue-600" />
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-4">STEP 1: Professional Website</h3>
-            <p className="text-slate-300 text-base mb-6 leading-relaxed">
-              We design and build a conversion-focused website that showcases your business professionally and turns visitors into paying customers.
+            <div className="text-blue-600 font-bold text-sm mb-2">STEP 1</div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Build Your Website</h3>
+            <p className="text-gray-600 mb-6">
+              Professional website that turns visitors into customers. Mobile-friendly, SEO-optimized, conversion-focused.
             </p>
 
-            <div className="space-y-3 mb-8">
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-cyan-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Professional design that builds trust</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-cyan-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">SEO optimized for Google visibility</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-cyan-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Mobile-responsive design</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-cyan-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Conversion-optimized</span>
-              </div>
+            <div className="mb-6">
+              <div className="text-3xl font-black text-gray-900">R2,500</div>
+              <div className="text-sm text-gray-500">Starting price</div>
             </div>
 
-            <div className="bg-cyan-500/10 border-l-4 border-cyan-500 p-4 mb-6 rounded">
-              <p className="text-cyan-300 font-semibold text-sm">
-                Money Back Guarantee
-              </p>
-            </div>
-
-            <div className="text-center mb-6">
-              <span className="text-2xl font-bold text-white">From R2,500</span>
-              <p className="text-slate-400 text-sm mt-1">Final pricing after consultation</p>
-            </div>
-
-            <div className="text-center">
-              <Link
-                to="/web-design-services-south-africa"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-medium transition-all text-sm"
-              >
-                Learn More <ArrowRight size={16} className="ml-1" />
-              </Link>
-            </div>
+            <Link
+              to="/web-design-services-south-africa"
+              className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
+            >
+              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
 
-          <div className="glass-card rounded-2xl p-8 relative overflow-hidden group hover-lift">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl"></div>
-
-            <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-xl inline-block mb-6 subtle-shadow">
-              <Users size={32} className="text-white" />
+          {/* Step 2 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-green-600 hover:shadow-xl transition-shadow">
+            <div className="bg-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+              <Users className="w-8 h-8 text-green-600" />
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-4">STEP 2: Social Media Growth</h3>
-            <p className="text-slate-300 text-base mb-6 leading-relaxed">
-              We create and manage engaging content across your social platforms to build your brand, grow your following, and attract ideal customers.
+            <div className="text-green-600 font-bold text-sm mb-2">STEP 2</div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Grow Social Media</h3>
+            <p className="text-gray-600 mb-6">
+              Engaging content that attracts your ideal customers. Build your brand and following on Facebook, Instagram, LinkedIn.
             </p>
 
-            <div className="space-y-3 mb-8">
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Strategic content creation</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Targeted audience growth</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Brand consistency</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Community engagement</span>
-              </div>
+            <div className="mb-6">
+              <div className="text-3xl font-black text-gray-900">R2,000</div>
+              <div className="text-sm text-gray-500">Per week</div>
             </div>
 
-            <div className="bg-blue-500/10 border-l-4 border-blue-500 p-4 mb-6 rounded">
-              <p className="text-blue-300 font-semibold text-sm">
-                Money Back Guarantee
-              </p>
-            </div>
-
-            <div className="text-center mb-6">
-              <span className="text-2xl font-bold text-white">From R2,000/week</span>
-              <p className="text-slate-400 text-sm mt-1">Customized to your needs</p>
-            </div>
-
-            <div className="text-center">
-              <Link
-                to="/social-media-marketing-services-south-africa"
-                className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-all text-sm"
-              >
-                Learn More <ArrowRight size={16} className="ml-1" />
-              </Link>
-            </div>
+            <Link
+              to="/social-media-marketing-services-south-africa"
+              className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold"
+            >
+              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
 
-          <div className="glass-card rounded-2xl p-8 relative overflow-hidden group hover-lift">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 rounded-full blur-2xl"></div>
-
-            <div className="bg-gradient-to-r from-purple-500 to-pink-600 p-4 rounded-xl inline-block mb-6 subtle-shadow">
-              <Target size={32} className="text-white" />
+          {/* Step 3 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-orange-600 hover:shadow-xl transition-shadow">
+            <div className="bg-orange-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+              <Target className="w-8 h-8 text-orange-600" />
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-4">STEP 3: Customer Acquisition</h3>
-            <p className="text-slate-300 text-base mb-6 leading-relaxed">
-              We implement targeted marketing strategies and lead generation systems that consistently bring you qualified prospects ready to buy.
+            <div className="text-orange-600 font-bold text-sm mb-2">STEP 3</div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Get Customers</h3>
+            <p className="text-gray-600 mb-6">
+              Qualified leads ready to buy. We run targeted ads and implement systems that bring you real sales opportunities.
             </p>
 
-            <div className="space-y-3 mb-8">
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-purple-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Targeted lead generation</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-purple-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">CRM management</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-purple-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Sales funnel optimization</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle size={18} className="text-purple-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-300 text-sm">Performance tracking</span>
-              </div>
+            <div className="mb-6">
+              <div className="text-3xl font-black text-gray-900">R3,000</div>
+              <div className="text-sm text-gray-500">Per month</div>
             </div>
 
-            <div className="bg-purple-500/10 border-l-4 border-purple-500 p-4 mb-6 rounded">
-              <p className="text-purple-300 font-semibold text-sm">
-                Money Back Guarantee
-              </p>
-            </div>
-
-            <div className="text-center mb-6">
-              <span className="text-2xl font-bold text-white">From R3,000/month</span>
-              <p className="text-slate-400 text-sm mt-1">Based on your goals</p>
-            </div>
-
-            <div className="text-center">
-              <Link
-                to="/google-ads-management-south-africa"
-                className="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium transition-all text-sm"
-              >
-                Learn More <ArrowRight size={16} className="ml-1" />
-              </Link>
-            </div>
+            <Link
+              to="/google-ads-management-south-africa"
+              className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold"
+            >
+              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
         </div>
-      </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <a
+            href="#book-call"
+            className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
+          >
+            Start Growing Your Business
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
