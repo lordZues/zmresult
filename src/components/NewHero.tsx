@@ -3,7 +3,13 @@ import { ArrowRight, Clock, Shield, CheckCircle } from 'lucide-react';
 
 const NewHero: React.FC = () => {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-white overflow-hidden">
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-100 to-transparent rounded-full blur-3xl opacity-40 animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-orange-100 to-transparent rounded-full blur-3xl opacity-30 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-green-100 to-transparent rounded-full blur-3xl opacity-20 animate-pulse" style={{animationDelay: '2s'}}></div>
+      </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Urgency Banner */}
@@ -17,7 +23,7 @@ const NewHero: React.FC = () => {
           {/* Main Headline - Simple & Direct */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 text-center text-gray-900">
             Get More Customers.<br />
-            <span className="text-blue-600">Guaranteed.</span>
+            <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent animate-gradient">Guaranteed.</span>
           </h1>
 
           {/* Clear Value Prop */}
@@ -27,19 +33,19 @@ const NewHero: React.FC = () => {
 
           {/* Social Proof - Simple */}
           <div className="flex justify-center items-center gap-6 mb-10 flex-wrap">
-            <div className="text-center">
-              <div className="text-3xl font-black text-gray-900">500+</div>
-              <div className="text-sm text-gray-600">Businesses Helped</div>
+            <div className="text-center transform hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl font-black bg-gradient-to-br from-blue-600 to-blue-800 bg-clip-text text-transparent">500+</div>
+              <div className="text-sm text-gray-600 font-semibold">Businesses Helped</div>
             </div>
-            <div className="hidden md:block w-px h-12 bg-gray-300"></div>
-            <div className="text-center">
-              <div className="text-3xl font-black text-gray-900">4.9★</div>
-              <div className="text-sm text-gray-600">Average Rating</div>
+            <div className="hidden md:block w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+            <div className="text-center transform hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl font-black bg-gradient-to-br from-yellow-500 to-orange-500 bg-clip-text text-transparent">4.9★</div>
+              <div className="text-sm text-gray-600 font-semibold">Average Rating</div>
             </div>
-            <div className="hidden md:block w-px h-12 bg-gray-300"></div>
-            <div className="text-center">
-              <div className="text-3xl font-black text-gray-900">100%</div>
-              <div className="text-sm text-gray-600">Money-Back Guarantee</div>
+            <div className="hidden md:block w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+            <div className="text-center transform hover:scale-110 transition-transform duration-300">
+              <div className="text-3xl font-black bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent">100%</div>
+              <div className="text-sm text-gray-600 font-semibold">Money-Back Guarantee</div>
             </div>
           </div>
 
@@ -47,36 +53,47 @@ const NewHero: React.FC = () => {
           <div className="text-center mb-10">
             <a
               href="#book-call"
-              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-lg text-xl font-bold transition-all shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="group inline-flex items-center bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600 text-white px-10 py-5 rounded-2xl text-xl font-bold transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105 relative overflow-hidden"
             >
-              Book Your Free Strategy Call Now
-              <ArrowRight className="ml-3 h-6 w-6" />
+              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+              <span className="relative">Book Your Free Strategy Call Now</span>
+              <ArrowRight className="ml-3 h-6 w-6 relative group-hover:translate-x-1 transition-transform" />
             </a>
-            <p className="text-sm text-gray-500 mt-3">
-              Free 30-minute consultation • No credit card required • No pressure
+            <p className="text-sm text-gray-500 mt-3 flex items-center justify-center gap-2 flex-wrap">
+              <span className="inline-flex items-center gap-1">✓ Free 30-minute consultation</span>
+              <span className="hidden sm:inline">•</span>
+              <span className="inline-flex items-center gap-1">✓ No credit card required</span>
+              <span className="hidden sm:inline">•</span>
+              <span className="inline-flex items-center gap-1">✓ No pressure</span>
             </p>
           </div>
 
           {/* What You Get - Ultra Simple */}
-          <div className="bg-gray-50 rounded-xl p-8 max-w-2xl mx-auto">
+          <div className="bg-white/80 backdrop-blur-sm border-2 border-gray-100 rounded-2xl p-8 max-w-2xl mx-auto shadow-xl hover:shadow-2xl transition-shadow">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">What You Get:</h2>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
+                <div className="bg-green-100 rounded-full p-1 group-hover:scale-110 transition-transform">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                </div>
                 <div>
                   <div className="font-bold text-gray-900">Professional Website</div>
                   <div className="text-gray-600 text-sm">Built to convert visitors into customers</div>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
+                <div className="bg-green-100 rounded-full p-1 group-hover:scale-110 transition-transform">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                </div>
                 <div>
                   <div className="font-bold text-gray-900">Social Media Growth</div>
                   <div className="text-gray-600 text-sm">Content that attracts your ideal customers</div>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
+                <div className="bg-green-100 rounded-full p-1 group-hover:scale-110 transition-transform">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                </div>
                 <div>
                   <div className="font-bold text-gray-900">Qualified Leads</div>
                   <div className="text-gray-600 text-sm">Real customers ready to buy from you</div>
@@ -87,7 +104,7 @@ const NewHero: React.FC = () => {
 
           {/* Guarantee - Creates Trust & Urgency */}
           <div className="mt-10 text-center">
-            <div className="inline-flex items-center gap-3 bg-green-50 border-2 border-green-200 rounded-lg px-6 py-4">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300 rounded-2xl px-6 py-4 shadow-lg hover:shadow-xl transition-shadow">
               <Shield className="w-8 h-8 text-green-600" />
               <div className="text-left">
                 <div className="font-bold text-green-900 text-lg">100% Money-Back Guarantee</div>

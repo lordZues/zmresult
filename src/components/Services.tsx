@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="relative py-20 bg-gray-50">
+    <section id="services" className="relative py-20 bg-gradient-to-b from-white via-gray-50 to-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-4 text-gray-900">
@@ -16,63 +16,68 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Connecting Line */}
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-green-200 to-orange-200 transform -translate-y-1/2 z-0" style={{top: '45%'}}></div>
           {/* Step 1 */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 hover:shadow-xl transition-shadow">
-            <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-8 border-t-4 border-blue-600 hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+            <div className="relative bg-gradient-to-br from-blue-100 to-blue-200 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
               <Globe className="w-8 h-8 text-blue-600" />
             </div>
 
-            <div className="text-blue-600 font-bold text-sm mb-2">STEP 1</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Build Your Website</h3>
+            <div className="relative inline-block px-3 py-1 bg-blue-100 text-blue-700 font-bold text-xs rounded-full mb-3">STEP 1</div>
+            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Build Your Website</h3>
             <p className="text-gray-600 mb-8">
               Professional website that turns visitors into customers. Mobile-friendly, SEO-optimized, conversion-focused.
             </p>
 
             <Link
               to="/web-design-services-south-africa"
-              className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
+              className="relative inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group-hover:translate-x-2 transition-transform"
             >
-              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+              Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
           {/* Step 2 */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-green-600 hover:shadow-xl transition-shadow">
-            <div className="bg-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-8 border-t-4 border-green-600 hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+            <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+            <div className="relative bg-gradient-to-br from-green-100 to-green-200 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
               <Users className="w-8 h-8 text-green-600" />
             </div>
 
-            <div className="text-green-600 font-bold text-sm mb-2">STEP 2</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Grow Social Media</h3>
+            <div className="relative inline-block px-3 py-1 bg-green-100 text-green-700 font-bold text-xs rounded-full mb-3">STEP 2</div>
+            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">Grow Social Media</h3>
             <p className="text-gray-600 mb-8">
               Engaging content that attracts your ideal customers. Build your brand and following on Facebook, Instagram, LinkedIn.
             </p>
 
             <Link
               to="/social-media-marketing-services-south-africa"
-              className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold"
+              className="relative inline-flex items-center text-green-600 hover:text-green-700 font-semibold group-hover:translate-x-2 transition-transform"
             >
-              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+              Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
           {/* Step 3 */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-orange-600 hover:shadow-xl transition-shadow">
-            <div className="bg-orange-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-8 border-t-4 border-orange-600 hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+            <div className="relative bg-gradient-to-br from-orange-100 to-orange-200 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
               <Target className="w-8 h-8 text-orange-600" />
             </div>
 
-            <div className="text-orange-600 font-bold text-sm mb-2">STEP 3</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Get Customers</h3>
+            <div className="relative inline-block px-3 py-1 bg-orange-100 text-orange-700 font-bold text-xs rounded-full mb-3">STEP 3</div>
+            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">Get Customers</h3>
             <p className="text-gray-600 mb-8">
               Qualified leads ready to buy. We run targeted ads and implement systems that bring you real sales opportunities.
             </p>
 
             <Link
               to="/google-ads-management-south-africa"
-              className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold"
+              className="relative inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold group-hover:translate-x-2 transition-transform"
             >
-              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+              Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
@@ -81,10 +86,11 @@ const Services: React.FC = () => {
         <div className="text-center mt-16">
           <a
             href="#book-call"
-            className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
+            className="group inline-flex items-center bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600 text-white px-8 py-4 rounded-2xl text-lg font-bold transition-all shadow-xl hover:shadow-2xl hover:scale-105 relative overflow-hidden"
           >
-            Start Growing Your Business
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
+            <span className="relative">Start Growing Your Business</span>
+            <ArrowRight className="ml-2 h-5 w-5 relative group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>
