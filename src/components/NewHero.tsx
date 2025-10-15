@@ -38,8 +38,8 @@ const NewHero: React.FC = () => {
             </div>
             <div className="hidden md:block w-px h-12 bg-gray-300"></div>
             <div className="text-center">
-              <div className="text-3xl font-black text-gray-900">R2,500</div>
-              <div className="text-sm text-gray-600">Starting Price</div>
+              <div className="text-3xl font-black text-gray-900">100%</div>
+              <div className="text-sm text-gray-600">Money-Back Guarantee</div>
             </div>
           </div>
 

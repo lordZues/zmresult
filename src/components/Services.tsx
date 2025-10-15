@@ -24,14 +24,9 @@ const Services: React.FC = () => {
 
             <div className="text-blue-600 font-bold text-sm mb-2">STEP 1</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Build Your Website</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-8">
               Professional website that turns visitors into customers. Mobile-friendly, SEO-optimized, conversion-focused.
             </p>
-
-            <div className="mb-6">
-              <div className="text-3xl font-black text-gray-900">R2,500</div>
-              <div className="text-sm text-gray-500">Starting price</div>
-            </div>
 
             <Link
               to="/web-design-services-south-africa"
@@ -49,14 +44,9 @@ const Services: React.FC = () => {
 
             <div className="text-green-600 font-bold text-sm mb-2">STEP 2</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Grow Social Media</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-8">
               Engaging content that attracts your ideal customers. Build your brand and following on Facebook, Instagram, LinkedIn.
             </p>
-
-            <div className="mb-6">
-              <div className="text-3xl font-black text-gray-900">R2,000</div>
-              <div className="text-sm text-gray-500">Per week</div>
-            </div>
 
             <Link
               to="/social-media-marketing-services-south-africa"
@@ -74,14 +64,9 @@ const Services: React.FC = () => {
 
             <div className="text-orange-600 font-bold text-sm mb-2">STEP 3</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Get Customers</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-8">
               Qualified leads ready to buy. We run targeted ads and implement systems that bring you real sales opportunities.
             </p>
-
-            <div className="mb-6">
-              <div className="text-3xl font-black text-gray-900">R3,000</div>
-              <div className="text-sm text-gray-500">Per month</div>
-            </div>
 
             <Link
               to="/google-ads-management-south-africa"
