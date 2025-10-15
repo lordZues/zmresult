@@ -28,7 +28,7 @@ const NewHero: React.FC = () => {
 
           {/* Clear Value Prop */}
           <p className="text-xl md:text-2xl text-gray-600 mb-10 text-center max-w-3xl mx-auto font-medium">
-            We build your website, grow your social media, and bring you qualified leads. If it doesn't work, you get your money back.
+            Full-service digital marketing agency: Professional websites + Powerful Google Ads + Social Media advertising that delivers real customers to your business.
           </p>
 
           {/* Social Proof - Simple */}
@@ -77,8 +77,8 @@ const NewHero: React.FC = () => {
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">Professional Website</div>
-                  <div className="text-gray-600 text-sm">Built to convert visitors into customers</div>
+                  <div className="font-bold text-gray-900">Professional Web Design</div>
+                  <div className="text-gray-600 text-sm">Custom websites optimized for conversions and search engines</div>
                 </div>
               </div>
               <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
@@ -86,8 +86,8 @@ const NewHero: React.FC = () => {
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">Social Media Growth</div>
-                  <div className="text-gray-600 text-sm">Content that attracts your ideal customers</div>
+                  <div className="font-bold text-gray-900">Social Media Advertising</div>
+                  <div className="text-gray-600 text-sm">Facebook & Instagram ads that target your ideal customers</div>
                 </div>
               </div>
               <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
@@ -95,8 +95,8 @@ const NewHero: React.FC = () => {
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">Qualified Leads</div>
-                  <div className="text-gray-600 text-sm">Real customers ready to buy from you</div>
+                  <div className="font-bold text-gray-900">Google Ads Management</div>
+                  <div className="text-gray-600 text-sm">Search & Display campaigns that generate qualified leads daily</div>
                 </div>
               </div>
             </div>

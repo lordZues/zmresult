@@ -8,10 +8,10 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-4 text-gray-900">
-            How It Works
+            Our Services
           </h2>
           <p className="text-xl text-gray-600">
-            Three simple steps to grow your business
+            Complete digital marketing solutions under one roof
           </p>
         </div>
 
@@ -25,10 +25,10 @@ const Services: React.FC = () => {
               <Globe className="w-8 h-8 text-blue-600" />
             </div>
 
-            <div className="relative inline-block px-3 py-1 bg-blue-100 text-blue-700 font-bold text-xs rounded-full mb-3">STEP 1</div>
-            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Build Your Website</h3>
+            <div className="relative inline-block px-3 py-1 bg-blue-100 text-blue-700 font-bold text-xs rounded-full mb-3">WEB DESIGN</div>
+            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Professional Websites</h3>
             <p className="text-gray-600 mb-8">
-              Professional website that turns visitors into customers. Mobile-friendly, SEO-optimized, conversion-focused.
+              Custom website design and development. Mobile-responsive, fast-loading, SEO-optimized, and built to convert visitors into paying customers.
             </p>
 
             <Link
@@ -46,10 +46,10 @@ const Services: React.FC = () => {
               <Users className="w-8 h-8 text-green-600" />
             </div>
 
-            <div className="relative inline-block px-3 py-1 bg-green-100 text-green-700 font-bold text-xs rounded-full mb-3">STEP 2</div>
-            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">Grow Social Media</h3>
+            <div className="relative inline-block px-3 py-1 bg-green-100 text-green-700 font-bold text-xs rounded-full mb-3">SOCIAL ADS</div>
+            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">Social Media Advertising</h3>
             <p className="text-gray-600 mb-8">
-              Engaging content that attracts your ideal customers. Build your brand and following on Facebook, Instagram, LinkedIn.
+              Strategic Facebook, Instagram, and LinkedIn ad campaigns. Precise audience targeting, compelling creatives, and data-driven optimization for maximum ROI.
             </p>
 
             <Link
@@ -67,10 +67,10 @@ const Services: React.FC = () => {
               <Target className="w-8 h-8 text-orange-600" />
             </div>
 
-            <div className="relative inline-block px-3 py-1 bg-orange-100 text-orange-700 font-bold text-xs rounded-full mb-3">STEP 3</div>
-            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">Get Customers</h3>
+            <div className="relative inline-block px-3 py-1 bg-orange-100 text-orange-700 font-bold text-xs rounded-full mb-3">GOOGLE ADS</div>
+            <h3 className="relative text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">Google Ads Management</h3>
             <p className="text-gray-600 mb-8">
-              Qualified leads ready to buy. We run targeted ads and implement systems that bring you real sales opportunities.
+              Expert Google Search, Display, and Shopping campaign management. Target high-intent buyers actively searching for your services and products.
             </p>
 
             <Link
