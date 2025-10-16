@@ -34,12 +34,12 @@ const NewHero: React.FC = () => {
           {/* Social Proof - Simple */}
           <div className="flex justify-center items-center gap-6 mb-10 flex-wrap">
             <div className="text-center transform hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl font-black bg-gradient-to-br from-blue-600 to-blue-800 bg-clip-text text-transparent">500+</div>
+              <div className="text-3xl font-black bg-gradient-to-br from-blue-600 to-blue-800 bg-clip-text text-transparent">30+</div>
               <div className="text-sm text-gray-600 font-semibold">Businesses Helped</div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
             <div className="text-center transform hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl font-black bg-gradient-to-br from-yellow-500 to-orange-500 bg-clip-text text-transparent">4.9★</div>
+              <div className="text-3xl font-black bg-gradient-to-br from-yellow-500 to-orange-500 bg-clip-text text-transparent">4.4★</div>
               <div className="text-sm text-gray-600 font-semibold">Average Rating</div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>

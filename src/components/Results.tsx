@@ -101,7 +101,7 @@ const Results: React.FC = () => {
         <div className="bg-gradient-to-r from-blue-950 to-blue-900 rounded-3xl p-12 text-white text-center mb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <div className="text-5xl font-black text-orange-400 mb-2">500+</div>
+              <div className="text-5xl font-black text-orange-400 mb-2">30+</div>
               <div className="text-xl font-semibold">Businesses Helped</div>
             </div>
             <div>
@@ -109,8 +109,8 @@ const Results: React.FC = () => {
               <div className="text-xl font-semibold">Revenue Generated</div>
             </div>
             <div>
-              <div className="text-5xl font-black text-yellow-400 mb-2">98%</div>
-              <div className="text-xl font-semibold">Client Satisfaction</div>
+              <div className="text-5xl font-black text-yellow-400 mb-2">4.4★</div>
+              <div className="text-xl font-semibold">Average Rating</div>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ const Results: React.FC = () => {
             <span className="mr-3">🎯</span>
             I Want These Results Too
           </a>
-          <p className="mt-6 text-gray-600 font-medium">Join 500+ successful business owners</p>
+          <p className="mt-6 text-gray-600 font-medium">Join 30+ successful businesses growing with us</p>
         </div>
       </div>
     </section>

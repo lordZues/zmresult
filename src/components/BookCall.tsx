@@ -116,11 +116,11 @@ const BookCall: React.FC = () => {
               <span className="text-2xl md:text-3xl">Let's See if We're a Perfect Fit.</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Book your free 30-minute consultation with South Africa's #1 digital marketing agency 2025 where we'll listen to your business needs and outline a potential strategy tailored just for you.
+              Book your free 30-minute consultation where we'll listen to your business needs and outline a potential strategy tailored just for you.
             </p>
             <div className="bg-red-100 border border-red-300 rounded-xl p-4 mt-6 max-w-2xl mx-auto">
               <p className="text-red-700 font-bold">
-                ⚡ LIMITED SPOTS: Best marketing company SA consultation spots are limited each week to ensure quality. Secure yours with #1 digital marketing agency South Africa now!
+                ⚡ LIMITED SPOTS: Consultation spots are limited each week to ensure quality service for every client.
               </p>
             </div>
           </div>
@@ -369,14 +369,17 @@ const BookCall: React.FC = () => {
           
           {/* Bottom Trust Indicators */}
           <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-4">Join 500+ business owners who've transformed their lead generation</p>
+            <p className="text-gray-600 mb-4">Join 30+ businesses transforming their digital presence</p>
             <div className="flex justify-center items-center gap-2">
-              {[1,2,3,4,5].map((star) => (
+              {[1,2,3,4].map((star) => (
                 <svg key={star} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               ))}
-              <span className="ml-3 text-gray-600 font-bold">4.9/5 from 200+ reviews</span>
+              <svg className="w-6 h-6 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" opacity="0.4"/>
+              </svg>
+              <span className="ml-3 text-gray-600 font-bold">4.4/5 rating</span>
             </div>
           </div>
         </div>

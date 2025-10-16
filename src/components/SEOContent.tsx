@@ -9,20 +9,20 @@ const SEOContent: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              South Africa's #1 Digital Marketing & Advertising Agency 2025 | Best Marketing Company SA
+              Digital Marketing & Advertising Agency South Africa 2025
             </h1>
             <p className="text-xl mb-8">
-              ZM Results is South Africa's #1 digital marketing agency 2025 and best marketing company SA with 500+ successful clients and a money-back guarantee. 
+              ZM Results is a professional digital marketing agency in South Africa with 30+ successful clients and a money-back guarantee. 
               We help businesses across Cape Town, Johannesburg, Durban, and Pretoria get more customers through proven 
               digital marketing strategies, professional website design, social media marketing, and guaranteed lead generation services.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <span className="bg-orange-500 px-4 py-2 rounded-full">#1 Digital Marketing Agency South Africa 2025</span>
-              <span className="bg-red-500 px-4 py-2 rounded-full">Best Marketing Company SA</span>
-              <span className="bg-blue-600 px-4 py-2 rounded-full">500+ Successful Clients</span>
+              <span className="bg-orange-500 px-4 py-2 rounded-full">Digital Marketing Agency South Africa</span>
+              <span className="bg-red-500 px-4 py-2 rounded-full">Web Design & Development</span>
+              <span className="bg-blue-600 px-4 py-2 rounded-full">30+ Successful Clients</span>
               <span className="bg-green-600 px-4 py-2 rounded-full">Money Back Guarantee</span>
               <span className="bg-purple-600 px-4 py-2 rounded-full">Free Consultation</span>
-              <span className="bg-yellow-600 px-4 py-2 rounded-full">Award-Winning Agency</span>
+              <span className="bg-yellow-600 px-4 py-2 rounded-full">Results-Driven Agency</span>
             </div>
           </div>
         </div>
@@ -33,10 +33,10 @@ const SEOContent: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-4">
-              Award-Winning Digital Marketing Services Across South Africa 2025 | Best Marketing Company SA
+              Professional Digital Marketing Services Across South Africa 2025
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              ZM Results is the best marketing company SA helping South African businesses get more customers and increase revenue through proven digital marketing strategies 2025 with guaranteed results and money-back guarantee.
+              ZM Results helps South African businesses get more customers and increase revenue through proven digital marketing strategies with guaranteed results and money-back guarantee.
             </p>
           </div>
           
@@ -45,7 +45,7 @@ const SEOContent: React.FC = () => {
               <TrendingUp className="w-10 h-10 text-orange-500 mb-3" />
               <h3 className="text-lg font-bold text-blue-950 mb-2">Digital Marketing Agency Services 2025</h3>
               <p className="text-gray-700">
-                Best digital marketing agency SA offering SEO, PPC, content marketing, and social media management for South African businesses 2025.
+                Professional digital marketing agency offering SEO, PPC, content marketing, and social media management for South African businesses.
               </p>
             </div>
             
