@@ -1,17 +1,18 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import NewHero from './components/NewHero';
-import Services from './components/Services';
-import BookCall from './components/BookCall';
-import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 import GoogleAnalytics from './components/GoogleAnalytics';
-import LocalSEO from './components/LocalSEO';
-import SEOContent from './components/SEOContent';
-import InternalLinks from './components/InternalLinks';
-import SEOKeywords from './components/SEOKeywords';
-import SEOFAQSection from './components/SEOFAQSection';
+
+const NewHero = lazy(() => import('./components/NewHero'));
+const Services = lazy(() => import('./components/Services'));
+const BookCall = lazy(() => import('./components/BookCall'));
+const BlogSection = lazy(() => import('./components/BlogSection'));
+const LocalSEO = lazy(() => import('./components/LocalSEO'));
+const SEOContent = lazy(() => import('./components/SEOContent'));
+const InternalLinks = lazy(() => import('./components/InternalLinks'));
+const SEOKeywords = lazy(() => import('./components/SEOKeywords'));
+const SEOFAQSection = lazy(() => import('./components/SEOFAQSection'));
 
 const BlogPost = lazy(() => import('./components/BlogPost'));
 const SocialMediaConversionPost = lazy(() => import('./components/AdditionalBlogPosts').then(m => ({ default: m.SocialMediaConversionPost })));
@@ -45,26 +46,28 @@ const LocationSEO = lazy(() => import('./components/LocationSEO'));
 
 function HomePage() {
   useEffect(() => {
-    document.title = "ZM Results | #1 Digital Marketing Agency South Africa 2025 | 500+ Businesses Helped";
+    document.title = "ZM Results | Digital Marketing Agency South Africa 2025 | 30+ Businesses Helped";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'South Africa\'s #1 digital marketing agency with 500+ successful clients. Get more customers with proven website design, social media marketing & lead generation. Money-back guarantee. Free consultation.');
+      metaDescription.setAttribute('content', 'Professional digital marketing agency in South Africa with 30+ successful clients. Get more customers with proven website design, social media marketing & lead generation. Money-back guarantee. Free consultation.');
     }
   }, []);
 
   return (
     <>
       <GoogleAnalytics />
-      <LocalSEO />
-      <SEOKeywords />
-      <NewHero />
-      <SEOContent />
-      <Services />
-      <InternalLinks intent="service" />
-      <SEOFAQSection />
-      <BlogSection />
-      <BookCall />
+      <Suspense fallback={<div className="h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50" />}>
+        <LocalSEO />
+        <SEOKeywords />
+        <NewHero />
+        <SEOContent />
+        <Services />
+        <InternalLinks intent="service" />
+        <SEOFAQSection />
+        <BlogSection />
+        <BookCall />
+      </Suspense>
     </>
   );
 }
@@ -116,7 +119,14 @@ function App() {
     <div className="font-sans bg-white min-h-screen">
       <Header />
       <main>
-        <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-white"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>}>
+        <Suspense fallback={
+          <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-600 mx-auto mb-4"></div>
+              <p className="text-gray-600 font-semibold">Loading...</p>
+            </div>
+          </div>
+        }>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/blog/client-acquisition-system" element={<BlogPost />} />

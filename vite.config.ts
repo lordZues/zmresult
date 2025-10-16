@@ -11,9 +11,22 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'icons': ['lucide-react'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-vendor';
+            }
+            if (id.includes('lucide-react')) {
+              return 'icons';
+            }
+            return 'vendor';
+          }
+          if (id.includes('BlogPosts')) {
+            return 'blog-posts';
+          }
+          if (id.includes('ServicePages')) {
+            return 'service-pages';
+          }
         },
       },
     },
@@ -23,8 +36,16 @@ export default defineConfig({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        passes: 2,
+      },
+      mangle: true,
+      format: {
+        comments: false,
       },
     },
+    cssCodeSplit: true,
+    sourcemap: false,
+    reportCompressedSize: false,
   },
   server: {
     proxy: {
