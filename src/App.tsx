@@ -43,6 +43,13 @@ const Day2GoogleAdsGuide = lazy(() => import('./components/BlogPosts/Daily/Day2'
 const MarketingServicesLanding = lazy(() => import('./components/MarketingServicesLanding'));
 const WebDevelopmentTrends2025 = lazy(() => import('./components/BlogPosts/WebDevelopmentTrends2025'));
 const LocationSEO = lazy(() => import('./components/LocationSEO'));
+const PortfolioGallery = lazy(() => import('./components/portfolio/PortfolioGallery'));
+const CaseStudyPage = lazy(() => import('./components/portfolio/CaseStudyPage'));
+const LoginPage = lazy(() => import('./components/auth/LoginPage'));
+const ProtectedRoute = lazy(() => import('./components/auth/ProtectedRoute'));
+const PortfolioManagement = lazy(() => import('./components/admin/PortfolioManagement'));
+const PortfolioForm = lazy(() => import('./components/admin/PortfolioForm'));
+const FeaturedPortfolio = lazy(() => import('./components/FeaturedPortfolio'));
 
 function HomePage() {
   useEffect(() => {
@@ -63,6 +70,7 @@ function HomePage() {
         <NewHero />
         <SEOContent />
         <Services />
+        <FeaturedPortfolio />
         <InternalLinks intent="service" />
         <SEOFAQSection />
         <BlogSection />
@@ -161,6 +169,12 @@ function App() {
             <Route path="/cape-town-marketing-agency" element={<LocationSEO />} />
             <Route path="/pretoria-marketing-agency" element={<LocationSEO />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/portfolio" element={<PortfolioGallery />} />
+            <Route path="/portfolio/:slug" element={<CaseStudyPage />} />
+            <Route path="/admin/login" element={<LoginPage />} />
+            <Route path="/admin/portfolio" element={<ProtectedRoute><PortfolioManagement /></ProtectedRoute>} />
+            <Route path="/admin/portfolio/new" element={<ProtectedRoute><PortfolioForm /></ProtectedRoute>} />
+            <Route path="/admin/portfolio/edit/:id" element={<ProtectedRoute><PortfolioForm /></ProtectedRoute>} />
           </Routes>
         </Suspense>
       </main>

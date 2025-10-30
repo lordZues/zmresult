@@ -52,6 +52,7 @@ const Header: React.FC = () => {
 
             <nav className="hidden md:flex items-center space-x-6">
               <Link to="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">Services</Link>
+              <Link to="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">Portfolio</Link>
               <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-semibold">About</Link>
               <a
                 href="#book-call"
@@ -81,6 +82,13 @@ const Header: React.FC = () => {
               onClick={() => setIsOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              to="/portfolio"
+              className="block text-gray-700 hover:text-blue-600 transition-colors py-2.5 px-3 rounded-lg hover:bg-gray-50 font-semibold"
+              onClick={() => setIsOpen(false)}
+            >
+              Portfolio
             </Link>
             <Link
               to="/about"
