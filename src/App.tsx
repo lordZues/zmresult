@@ -64,19 +64,13 @@ function HomePage() {
   return (
     <>
       <GoogleAnalytics />
-      <LocalSEO />
-      <SEOKeywords />
       <Suspense fallback={<div className="h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50" />}>
+        <LocalSEO />
+        <SEOKeywords />
         <NewHero />
-      </Suspense>
-      <Suspense fallback={<div className="py-12" />}>
         <SEOContent />
         <Services />
-      </Suspense>
-      <Suspense fallback={<div className="py-12" />}>
         <FeaturedPortfolio />
-      </Suspense>
-      <Suspense fallback={<div className="py-12" />}>
         <InternalLinks intent="service" />
         <SEOFAQSection />
         <BlogSection />
