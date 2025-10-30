@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { portfolioService } from '../../services/portfolioService';
 import { PortfolioWithDetails } from '../../lib/supabase';
-import { ArrowLeft, Calendar, Briefcase, TrendingUp, Quote, ExternalLink, Eye } from 'lucide-react';
+import { ArrowLeft, Calendar, Briefcase, TrendingUp, Quote, Eye } from 'lucide-react';
 
 const CaseStudyPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
