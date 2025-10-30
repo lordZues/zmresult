@@ -7,23 +7,39 @@ import { TrendingUp, ArrowRight, Briefcase, Eye } from 'lucide-react';
 const FeaturedPortfolio: React.FC = () => {
   const [portfolios, setPortfolios] = useState<PortfolioWithDetails[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (loading) {
+        setLoading(false);
+        setError(true);
+      }
+    }, 3000);
+
     loadFeaturedPortfolios();
+
+    return () => clearTimeout(timeout);
   }, []);
 
   const loadFeaturedPortfolios = async () => {
     try {
       const data = await portfolioService.getFeaturedPortfolios(3);
       setPortfolios(data);
+      setError(false);
     } catch (error) {
       console.error('Error loading featured portfolios:', error);
+      setError(true);
     } finally {
       setLoading(false);
     }
   };
 
-  if (loading || portfolios.length === 0) {
+  if (loading) {
+    return null;
+  }
+
+  if (error || portfolios.length === 0) {
     return null;
   }
 
@@ -57,6 +73,8 @@ const FeaturedPortfolio: React.FC = () => {
                   <img
                     src={portfolio.thumbnail_url}
                     alt={portfolio.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
