@@ -1,0 +1,23 @@
+name: SEO Audit with Lighthouse CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * 0' # Runs weekly on Sundays at 03:00 UTC
+
+jobs:
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Lighthouse CI Action
+        uses: treosh/lighthouse-ci-action@12.6.1
+        with:
+          urls: 'https://your-live-site-url.com'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
