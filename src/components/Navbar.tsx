@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { Rocket, Menu, X } from 'lucide-react';
+import { Building2, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -30,19 +30,16 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'glass-dark shadow-2xl shadow-black/20' : 'bg-transparent'
+          scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-white'
         }`}
       >
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-cyber-cyan blur-md opacity-50 group-hover:opacity-100 transition-opacity rounded-full"></div>
-                <div className="relative w-10 h-10 bg-gradient-to-br from-electric-blue to-cyber-cyan rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                  <Rocket className="w-6 h-6 text-white" />
-                </div>
+            <Link to="/" className="flex items-center gap-2.5 group">
+              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primary-dark transition-colors">
+                <Building2 className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-black gradient-text">Digital Agency</span>
+              <span className="text-xl font-bold text-slate-900">Digital Agency</span>
             </Link>
 
             <div className="hidden lg:flex items-center gap-8">
@@ -52,13 +49,13 @@ export default function Navbar() {
                   to={link.path}
                   className={`relative text-sm font-semibold transition-colors ${
                     isActive(link.path)
-                      ? 'text-electric-blue'
-                      : 'text-slate-300 hover:text-white'
+                      ? 'text-primary'
+                      : 'text-slate-600 hover:text-primary'
                   }`}
                 >
                   {link.label}
                   {isActive(link.path) && (
-                    <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-electric-blue to-cyber-cyan rounded-full"></span>
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"></span>
                   )}
                 </Link>
               ))}
@@ -69,15 +66,15 @@ export default function Navbar() {
                     to="/admin"
                     className={`text-sm font-semibold transition-colors ${
                       isActive('/admin')
-                        ? 'text-electric-blue'
-                        : 'text-slate-300 hover:text-white'
+                        ? 'text-primary'
+                        : 'text-slate-600 hover:text-primary'
                     }`}
                   >
                     Admin
                   </Link>
                   <button
                     onClick={() => signOut()}
-                    className="px-6 py-2.5 glass rounded-xl text-sm font-bold text-white hover:bg-white/10 transition-all hover:scale-105"
+                    className="px-5 py-2.5 bg-slate-100 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-200 transition-all"
                   >
                     Sign Out
                   </button>
@@ -85,7 +82,7 @@ export default function Navbar() {
               ) : (
                 <Link
                   to="/login"
-                  className="px-6 py-2.5 bg-gradient-to-r from-electric-blue to-cyber-cyan rounded-xl text-sm font-bold text-white hover:shadow-lg hover:shadow-electric-blue/50 transition-all hover:scale-105"
+                  className="px-5 py-2.5 bg-primary hover:bg-primary-dark rounded-lg text-sm font-semibold text-white transition-all shadow-md hover:shadow-lg"
                 >
                   Login
                 </Link>
@@ -94,12 +91,12 @@ export default function Navbar() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 glass rounded-xl hover:bg-white/10 transition-all"
+              className="lg:hidden p-2 hover:bg-slate-100 rounded-lg transition-all"
             >
               {mobileMenuOpen ? (
-                <X className="w-6 h-6 text-white" />
+                <X className="w-6 h-6 text-slate-700" />
               ) : (
-                <Menu className="w-6 h-6 text-white" />
+                <Menu className="w-6 h-6 text-slate-700" />
               )}
             </button>
           </div>
@@ -109,20 +106,20 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 lg:hidden">
           <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/20 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           ></div>
-          <div className="absolute top-20 left-0 right-0 mx-6 glass-dark rounded-2xl p-6 shadow-2xl animate-slide-up">
-            <div className="flex flex-col gap-4">
+          <div className="absolute top-20 left-0 right-0 mx-6 bg-white rounded-xl shadow-2xl border border-slate-200 p-6">
+            <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
+                  className={`px-4 py-3 rounded-lg text-sm font-semibold transition-all ${
                     isActive(link.path)
-                      ? 'bg-gradient-to-r from-electric-blue/20 to-cyber-cyan/20 text-electric-blue'
-                      : 'text-slate-300 hover:bg-white/5 hover:text-white'
+                      ? 'bg-blue-50 text-primary'
+                      : 'text-slate-700 hover:bg-slate-50'
                   }`}
                 >
                   {link.label}
@@ -134,10 +131,10 @@ export default function Navbar() {
                   <Link
                     to="/admin"
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
+                    className={`px-4 py-3 rounded-lg text-sm font-semibold transition-all ${
                       isActive('/admin')
-                        ? 'bg-gradient-to-r from-electric-blue/20 to-cyber-cyan/20 text-electric-blue'
-                        : 'text-slate-300 hover:bg-white/5 hover:text-white'
+                        ? 'bg-blue-50 text-primary'
+                        : 'text-slate-700 hover:bg-slate-50'
                     }`}
                   >
                     Admin
@@ -147,7 +144,7 @@ export default function Navbar() {
                       signOut();
                       setMobileMenuOpen(false);
                     }}
-                    className="px-4 py-3 glass rounded-xl text-sm font-bold text-white hover:bg-white/10 transition-all text-left"
+                    className="px-4 py-3 bg-slate-100 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-200 transition-all text-left"
                   >
                     Sign Out
                   </button>
@@ -156,7 +153,7 @@ export default function Navbar() {
                 <Link
                   to="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-3 bg-gradient-to-r from-electric-blue to-cyber-cyan rounded-xl text-sm font-bold text-white text-center hover:shadow-lg hover:shadow-electric-blue/50 transition-all"
+                  className="px-4 py-3 bg-primary hover:bg-primary-dark rounded-lg text-sm font-semibold text-white text-center transition-all"
                 >
                   Login
                 </Link>
