@@ -1,58 +1,76 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, Rocket, TrendingUp } from 'lucide-react';
+import { ArrowRight, Award, Shield, TrendingUp } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10"></div>
-        <div className="absolute inset-0" style={{backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(148 163 184 / 0.05) 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
-
-        <div className="relative container mx-auto px-4 pt-32 pb-20">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-8">
-              <Sparkles className="w-4 h-4 text-cyan-400" />
-              <span className="text-cyan-400 text-sm font-semibold">Next-Generation Marketing</span>
+    <div className="min-h-screen bg-white">
+      <section className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-white pt-32 pb-24">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-neutral-900 text-white text-sm font-medium mb-8 shadow-lg">
+              <Award className="w-4 h-4" />
+              <span>Premium Digital Solutions</span>
             </div>
 
-            <h1 className="text-7xl md:text-8xl font-black text-white mb-6 leading-tight">
-              Transform Your
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
-                Digital Future
-              </span>
+            <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 mb-6 leading-tight text-balance">
+              Elevate Your Brand with
+              <span className="block mt-2 text-neutral-700">Exceptional Marketing</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto">
-              Cutting-edge marketing strategies powered by innovation and data
+            <p className="text-xl text-neutral-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Strategic excellence meets creative innovation. We transform businesses through refined digital experiences and data-driven results.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
-                Get Started
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-neutral-900 text-white font-semibold rounded-lg hover:bg-neutral-800 transition-all shadow-lg hover:shadow-xl"
+              >
+                Start Your Journey
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/portfolio" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 text-white font-bold rounded-xl border border-white/10 hover:bg-white/10 backdrop-blur-sm transition-all">
-                View Work
+              <Link
+                to="/portfolio"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-neutral-900 font-semibold rounded-lg border-2 border-neutral-900 hover:bg-neutral-50 transition-all"
+              >
+                View Portfolio
               </Link>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-20 max-w-5xl mx-auto">
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { icon: Rocket, title: 'Fast Growth', desc: 'Accelerate your business with proven strategies' },
-              { icon: TrendingUp, title: 'Real Results', desc: 'Data-driven campaigns that deliver ROI' },
-              { icon: Sparkles, title: 'Innovation', desc: 'Stay ahead with cutting-edge solutions' }
+              {
+                icon: TrendingUp,
+                title: 'Strategic Growth',
+                desc: 'Tailored strategies that drive measurable business outcomes and sustainable expansion.'
+              },
+              {
+                icon: Shield,
+                title: 'Trusted Expertise',
+                desc: 'Industry-leading professionals committed to delivering exceptional quality and results.'
+              },
+              {
+                icon: Award,
+                title: 'Award-Winning Work',
+                desc: 'Recognized excellence in digital marketing, design, and brand development.'
+              }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm hover:border-cyan-500/30 transition-all group">
-                <item.icon className="w-12 h-12 text-cyan-400 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-gray-400">{item.desc}</p>
+              <div key={i} className="group p-8 bg-neutral-50 rounded-lg hover:shadow-xl transition-all duration-300 border border-neutral-200 hover:border-neutral-300">
+                <div className="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <item.icon className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-neutral-900 mb-3">{item.title}</h3>
+                <p className="text-neutral-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

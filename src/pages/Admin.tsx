@@ -5,28 +5,32 @@ export default function Admin() {
   const { user } = useAuth();
 
   const stats = [
-    { icon: Briefcase, label: 'Portfolio Items', value: '0', color: 'cyan' },
-    { icon: FileText, label: 'Blog Posts', value: '0', color: 'blue' },
-    { icon: Mail, label: 'Messages', value: '0', color: 'purple' }
+    { icon: Briefcase, label: 'Portfolio Items', value: '0' },
+    { icon: FileText, label: 'Blog Posts', value: '0' },
+    { icon: Mail, label: 'Messages', value: '0' }
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 pt-24 pb-20">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-white pt-24 pb-20">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <LayoutDashboard className="w-10 h-10 text-cyan-400" />
-            <h1 className="text-5xl font-black text-white">Dashboard</h1>
+            <div className="w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center">
+              <LayoutDashboard className="w-6 h-6 text-white" />
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900">Dashboard</h1>
           </div>
-          <p className="text-xl text-gray-400">Welcome back, {user?.email}</p>
+          <p className="text-lg text-neutral-600">Welcome back, {user?.email}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl">
           {stats.map((stat, i) => (
-            <div key={i} className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm hover:border-cyan-500/30 transition-all group">
-              <stat.icon className={`w-12 h-12 text-${stat.color}-400 mb-4 group-hover:scale-110 transition-transform`} />
-              <p className="text-gray-400 text-sm mb-1">{stat.label}</p>
-              <p className="text-4xl font-black text-white">{stat.value}</p>
+            <div key={i} className="p-8 rounded-lg bg-neutral-50 border border-neutral-200 hover:border-neutral-300 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <stat.icon className="w-7 h-7 text-white" />
+              </div>
+              <p className="text-neutral-600 text-sm mb-2 font-medium">{stat.label}</p>
+              <p className="text-4xl font-bold text-neutral-900">{stat.value}</p>
             </div>
           ))}
         </div>

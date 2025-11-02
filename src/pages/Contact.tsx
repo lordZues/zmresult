@@ -18,71 +18,75 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 pt-24 pb-20">
-      <div className="container mx-auto px-4 max-w-2xl">
+    <div className="min-h-screen bg-white pt-24 pb-20">
+      <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
         <div className="text-center mb-12">
-          <h1 className="text-6xl font-black text-white mb-4">
-            Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Touch</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 mb-6">
+            Let's Connect
           </h1>
-          <p className="text-xl text-gray-400">Let's discuss how we can help grow your business</p>
+          <p className="text-xl text-neutral-600 leading-relaxed">Share your vision with us, and let's create something exceptional together</p>
         </div>
 
-        <div className="rounded-2xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm p-8">
+        <div className="bg-neutral-50 rounded-lg border border-neutral-200 p-8 md:p-10">
           {success && (
-            <div className="mb-6 p-4 rounded-lg bg-green-500/20 border border-green-500/50 flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <p className="text-green-400 font-semibold">Message sent successfully!</p>
+            <div className="mb-8 p-4 rounded-lg bg-green-50 border border-green-200 flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-green-600" />
+              <p className="text-green-800 font-medium">Thank you for reaching out. We'll be in touch shortly.</p>
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Name</label>
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="John Smith"
                 value={formData.name}
                 onChange={e => setFormData({...formData, name: e.target.value})}
                 required
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all"
               />
             </div>
 
             <div>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Email</label>
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="john@company.com"
                 value={formData.email}
                 onChange={e => setFormData({...formData, email: e.target.value})}
                 required
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all"
               />
             </div>
 
             <div>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Company (Optional)</label>
               <input
                 type="text"
-                placeholder="Company (optional)"
+                placeholder="Company Name"
                 value={formData.company}
                 onChange={e => setFormData({...formData, company: e.target.value})}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all"
               />
             </div>
 
             <div>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Message</label>
               <textarea
-                placeholder="Your Message"
+                placeholder="Tell us about your project..."
                 value={formData.message}
                 onChange={e => setFormData({...formData, message: e.target.value})}
                 required
                 rows={6}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none transition-all"
+                className="w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent resize-none transition-all"
               />
             </div>
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-neutral-900 text-white font-semibold rounded-lg hover:bg-neutral-800 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Sending...' : 'Send Message'}
               {!loading && <Send className="w-5 h-5" />}
