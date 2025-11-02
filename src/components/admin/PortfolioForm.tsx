@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { portfolioService } from '../../services/portfolioService';
+import { Portfolio, PortfolioMetric } from '../../lib/supabase';
 import { ArrowLeft, Save, Loader, Plus, X, Calendar } from 'lucide-react';
 
 const PortfolioForm: React.FC = () => {
@@ -199,9 +200,9 @@ const PortfolioForm: React.FC = () => {
       }
 
       navigate('/admin/portfolio');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error saving portfolio:', error);
-      setError(error instanceof Error ? error.message : 'Failed to save portfolio');
+      setError(error.message || 'Failed to save portfolio');
     } finally {
       setSaving(false);
     }

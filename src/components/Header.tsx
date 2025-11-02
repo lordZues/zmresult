@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronRight, Zap } from 'lucide-react';
+import { Menu, X, ChevronRight, Zap, MessageCircle } from 'lucide-react';
 import NAP from './NAP';
 
 const Header: React.FC = () => {

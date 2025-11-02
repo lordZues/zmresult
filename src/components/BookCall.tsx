@@ -88,7 +88,7 @@ const BookCall: React.FC = () => {
         challenges: ''
       });
       
-    } catch {
+    } catch (err) {
       setError('There was an issue submitting your form. Please try again or contact us directly.');
     } finally {
       setIsSubmitting(false);
