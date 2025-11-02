@@ -1,72 +1,61 @@
-import { Target, Share2, Code, Mail, TrendingUp, BarChart, Sparkles, ArrowRight } from 'lucide-react';
+import { Target, Share2, Code, Mail, TrendingUp, BarChart, ArrowRight, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
   const services = [
     {
       icon: Target,
-      name: 'Search Optimization',
-      desc: 'Strategic SEO services that enhance visibility and drive qualified organic traffic to your digital properties.',
-      gradient: 'from-electric-blue to-cyber-cyan',
-      features: ['Keyword Research', 'Technical SEO', 'Content Strategy']
+      name: 'Search Engine Optimization',
+      desc: 'Comprehensive SEO strategies that improve organic rankings and drive qualified traffic to your website.',
+      features: ['Technical SEO Audits', 'Keyword Research & Strategy', 'Content Optimization', 'Link Building Campaigns']
     },
     {
       icon: Share2,
-      name: 'Social Media',
-      desc: 'Cultivate meaningful connections with sophisticated social media strategies and content excellence.',
-      gradient: 'from-cyber-cyan to-neon-teal',
-      features: ['Content Creation', 'Community Management', 'Analytics']
+      name: 'Social Media Marketing',
+      desc: 'Strategic social media management to build brand awareness and engage with your target audience.',
+      features: ['Social Strategy Development', 'Content Creation & Curation', 'Community Management', 'Paid Social Campaigns']
     },
     {
       icon: Code,
       name: 'Web Development',
-      desc: 'Elegant, high-performance websites crafted with precision and optimized for conversion.',
-      gradient: 'from-neon-teal to-electric-blue',
-      features: ['Responsive Design', 'Custom Development', 'Performance Optimization']
+      desc: 'Custom website development using modern technologies to deliver exceptional user experiences.',
+      features: ['Responsive Web Design', 'Custom Application Development', 'API Integration', 'Performance Optimization']
     },
     {
       icon: Mail,
       name: 'Email Marketing',
-      desc: 'Refined email campaigns designed to nurture relationships and drive measurable engagement.',
-      gradient: 'from-electric-blue via-cyber-cyan to-neon-teal',
-      features: ['Campaign Design', 'Automation', 'A/B Testing']
+      desc: 'Targeted email campaigns designed to nurture leads and drive conversions throughout the customer journey.',
+      features: ['Campaign Strategy & Design', 'Marketing Automation', 'List Segmentation', 'A/B Testing & Analytics']
     },
     {
       icon: TrendingUp,
-      name: 'Growth Strategy',
-      desc: 'Comprehensive strategic planning focused on sustainable expansion and market leadership.',
-      gradient: 'from-cyber-cyan to-electric-blue',
-      features: ['Market Analysis', 'Growth Hacking', 'Conversion Optimization']
+      name: 'Growth Consulting',
+      desc: 'Strategic consulting services to identify opportunities and develop data-driven growth strategies.',
+      features: ['Market Analysis', 'Competitive Research', 'Growth Strategy Planning', 'Conversion Optimization']
     },
     {
       icon: BarChart,
-      name: 'Analytics & Insights',
-      desc: 'Advanced data analysis providing actionable intelligence for informed business decisions.',
-      gradient: 'from-neon-teal via-electric-blue to-cyber-cyan',
-      features: ['Data Visualization', 'Reporting', 'Predictive Analytics']
+      name: 'Analytics & Reporting',
+      desc: 'Advanced analytics and reporting to measure performance and inform strategic business decisions.',
+      features: ['Dashboard Development', 'Custom Analytics Setup', 'Performance Tracking', 'Insight & Recommendations']
     }
   ];
 
   return (
-    <div className="min-h-screen bg-deep-space">
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-30"></div>
-        <div className="absolute top-20 right-10 w-96 h-96 bg-electric-blue/20 rounded-full blur-[120px] animate-pulse-slow"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-cyber-cyan/20 rounded-full blur-[120px] animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
-
-        <div className="relative container mx-auto px-6 lg:px-12">
-          <div className="text-center mb-20 max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-8 animate-fade-in">
-              <Sparkles className="w-4 h-4 text-electric-blue" />
-              <span className="text-sm font-medium text-slate-200">Premium Services</span>
+    <div className="min-h-screen bg-white">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-slate-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16 max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-primary text-sm font-semibold rounded-full mb-8">
+              Professional Services
             </div>
 
-            <h1 className="text-6xl md:text-7xl font-black mb-8 animate-slide-up">
-              <span className="text-white">Our</span> <span className="gradient-text">Services</span>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
+              Our <span className="gradient-text">Services</span>
             </h1>
 
-            <p className="text-xl text-slate-300 leading-relaxed animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              Comprehensive solutions engineered to elevate your brand and drive exceptional results in the digital landscape
+            <p className="text-xl text-slate-600 leading-relaxed">
+              Comprehensive digital solutions tailored to your business needs and goals
             </p>
           </div>
 
@@ -74,73 +63,99 @@ export default function Services() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className="group relative p-8 glass rounded-3xl hover:bg-white/10 transition-all duration-500 overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/20 animate-fade-in"
-                style={{ animationDelay: `${i * 0.1}s` }}
+                className="bg-white rounded-xl border border-slate-200 p-8 hover:shadow-xl transition-all duration-300"
               >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10`}></div>
+                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-6">
+                  <service.icon className="w-7 h-7 text-white" />
                 </div>
 
-                <div className="absolute -top-20 -right-20 w-40 h-40 bg-electric-blue/10 rounded-full blur-[60px] group-hover:scale-150 transition-transform duration-700"></div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{service.name}</h3>
+                <p className="text-slate-600 leading-relaxed mb-6">{service.desc}</p>
 
-                <div className="relative z-10">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg shadow-electric-blue/30`}>
-                    <service.icon className="w-8 h-8 text-white" />
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-4">{service.name}</h3>
-                  <p className="text-slate-400 leading-relaxed mb-6">{service.desc}</p>
-
-                  <div className="space-y-2 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm text-slate-300">
-                        <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${service.gradient}`}></div>
-                        <span>{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 text-electric-blue font-semibold hover:gap-4 transition-all group-hover:text-cyber-cyan"
-                  >
-                    Get Started
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
+                <div className="space-y-2 mb-6">
+                  {service.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-start gap-2 text-sm text-slate-600">
+                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
                 </div>
+
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                >
+                  Get Started
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="relative py-32 bg-midnight overflow-hidden">
-        <div className="absolute inset-0 dot-pattern opacity-20"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-teal/10 rounded-full blur-[150px] animate-pulse-slow"></div>
-
-        <div className="relative container mx-auto px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative p-16 glass rounded-[2rem] overflow-hidden group hover:bg-white/10 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-br from-electric-blue/20 via-cyber-cyan/20 to-neon-teal/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-electric-blue/30 rounded-full blur-[80px] group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-neon-teal/30 rounded-full blur-[80px] group-hover:scale-150 transition-transform duration-700"></div>
-
-              <div className="relative text-center">
-                <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-                  Need a <span className="gradient-text">Custom Solution</span>?
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-4xl font-bold text-slate-900 mb-6">
+                  Customized Solutions for Your Business
                 </h2>
-                <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-                  Every business is unique. Let's discuss how we can tailor our services to your specific needs
+                <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                  Every business is unique, and we understand that one-size-fits-all approaches don't deliver optimal results. Our team works closely with you to understand your specific challenges and objectives.
+                </p>
+                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                  We combine industry best practices with innovative strategies to create customized solutions that drive real business outcomes and sustainable growth.
                 </p>
                 <Link
                   to="/contact"
-                  className="group/btn inline-flex items-center justify-center gap-3 px-12 py-6 bg-gradient-to-r from-electric-blue via-cyber-cyan to-neon-teal font-bold rounded-2xl hover:shadow-2xl hover:shadow-electric-blue/50 transition-all duration-300 text-white text-lg hover:scale-105"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-all shadow-lg"
                 >
-                  Let's Talk
-                  <ArrowRight className="w-6 h-6 group-hover/btn:translate-x-2 transition-transform" />
+                  Discuss Your Project
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
+
+              <div className="space-y-4">
+                {[
+                  { title: 'Discovery & Planning', desc: 'We start by understanding your business, goals, and target audience' },
+                  { title: 'Strategy Development', desc: 'Creating a customized roadmap aligned with your objectives' },
+                  { title: 'Implementation', desc: 'Expert execution with regular communication and updates' },
+                  { title: 'Optimization', desc: 'Continuous improvement based on data and performance metrics' }
+                ].map((step, i) => (
+                  <div key={i} className="flex gap-4 bg-white p-6 rounded-lg border border-slate-200">
+                    <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center font-bold text-primary">
+                      {i + 1}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-900 mb-1">{step.title}</h4>
+                      <p className="text-sm text-slate-600">{step.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary text-white">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+              Let's discuss how our services can help you achieve your business goals
+            </p>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary hover:bg-blue-50 font-semibold rounded-lg transition-all shadow-lg"
+            >
+              Contact Us Today
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
