@@ -31,12 +31,12 @@ export async function submitToGoogleSheets(leadData: LeadData): Promise<boolean>
     });
 
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
+      await response.json().catch(() => ({}));
       return false;
     }
 
     return true;
-  } catch (error) {
+  } catch {
     return false;
   }
 }

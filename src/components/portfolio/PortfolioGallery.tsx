@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioService } from '../../services/portfolioService';
 import { PortfolioWithDetails } from '../../lib/supabase';
-import { TrendingUp, Calendar, Filter, Grid, List, Eye, Briefcase } from 'lucide-react';
+import { Filter, Grid, List, Eye, Briefcase } from 'lucide-react';
 
 const PortfolioGallery: React.FC = () => {
   const [portfolios, setPortfolios] = useState<PortfolioWithDetails[]>([]);
@@ -18,6 +18,7 @@ const PortfolioGallery: React.FC = () => {
 
   useEffect(() => {
     filterPortfolios();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedService, selectedIndustry, portfolios]);
 
   const loadPortfolios = async () => {
