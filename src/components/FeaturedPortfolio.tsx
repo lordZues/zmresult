@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioService } from '../services/portfolioService';
 import { PortfolioWithDetails } from '../lib/supabase';
-import { ArrowRight, Briefcase, Eye } from 'lucide-react';
+import { TrendingUp, ArrowRight, Briefcase, Eye } from 'lucide-react';
 
 const FeaturedPortfolio: React.FC = () => {
   const [portfolios, setPortfolios] = useState<PortfolioWithDetails[]>([]);
@@ -20,7 +20,6 @@ const FeaturedPortfolio: React.FC = () => {
     loadFeaturedPortfolios();
 
     return () => clearTimeout(timeout);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadFeaturedPortfolios = async () => {
